@@ -1,103 +1,25 @@
 ---
-title: 'Welcome Bee starter'
-date: 2019-2-6 16:21:13
+title: 'Starting my Blog'
+date: '2017-11-25T11:46:37.121Z'
 category: 'development'
+description: 'Jekyll을 시작하며 썼던 글'
 ---
 
-![](./images/hello.png)
+![](./images/workflow.jpg)
 
-Welcome, Gatsby! This starter is full-package for your new blog!
+## 처음으로 작성해보는 블로그!
 
-## 1. Support Three frontmatter
+다들 많이들 하고 있지만, 눈으로 아는거랑 직접해보는건 역시 항상 다르고,
+레퍼런스 또한 항시 최적화 되지 않기 때문에 그간의 버전업으로 인한 시행 착오도 있었다.
+아무튼 난 루비 무식자 이므로, 큰 변화를 줘가며 이블로그를 운영할 수는 없겠다.
 
-```
----
-title: 'Welcome Bee starter'
-date: 2019-2-6 16:21:13
-category: 'development'
----
-```
+하지만 분명 도움되는 습관이 될것이라 생각이 들었기에, 향후 학습되는 자바스크립트의 지식 수준에 따라,
+더 변화는 줄수 있을 것도 같다.
 
-1. title
-2. date
-3. category
+무엇보다. 그동안은 학습하는것에 급급해서 무언가를 남기는 습관은 항상 부족했기 때문에,
+파이썬을 우선적으로 정리한 뒤에, 차차 영역을 확대해 봐야 겠다. 갈길이 언제나 멀지만,
 
-## 2. Code highlighting
+부디 이번에는 부채를 많이 쌓지 말고, 틈틈히 작성 및 커밋하여, 깃허브도 잘 쓰고, 좀더 잘 운영을 해봤으면
+하는 바램이다.
 
-1. With [Fira Code](https://github.com/tonsky/FiraCode) font
-2. Support highlighting with [prism](https://github.com/PrismJS/prism)
-   2-1. Use inline highlighting
-
-```js{3}
-import React from 'react'
-
-const TEMPLATE = 'gatsby-starter-bee'
-
-class Foo extends React.Component {
-  handleClick = val => {
-    if (val === 'bar') {
-      return 1
-    } else if (val !== 'zoo') {
-      return 2
-    }
-    console.log(`clicked`)
-    return 3
-  }
-
-  render() {
-    return <div>Welcome, Gatsby, ${TEMPLATE}</div>
-  }
-}
-```
-
-_code_
-
-![](./images/code_example.png)
-
-## 3. Support Markdown (h2)
-
-1. With [Noto Sans](https://fonts.google.com/specimen/Noto+Sans) font
-2. Support header anchoring
-
-### h3
-
-#### h4
-
-##### h5
-
-> quote!
-
-**bold** _italic_
-
-## 4. Support emoji :rocket:
-
-Based on [emojione](https://github.com/emojione/emojione) :pray:
-
-## 5. Support light/dark mode
-
-## 6. Support social sharing feature
-
-1. Twitter
-2. Facebook
-
-### Bonus, `Buy me a coffee` button
-
-Set, `buyMeACoffeeId` of `gatsby-meta-config.js`
-
-## 7. Comments feature
-
-You can add comments feature by selecting one of them.
-
-- [ ] Disqus
-- [ ] utterances
-
-## 8. Other features of this template
-
-1. You can add resume to `/about`
-2. Lazy rendering
-3. Scroll restoration
-4. Categorize posts
-5. Offline caching with service worker (based gatsby)
-6. Support GA(Google Analytics)
-
-> Let's Start! [Go](https://github.com/JaeYeopHan/gatsby-starter-bee)
+2017년이 얼마남지 않은 11월 말에 시작하며...
