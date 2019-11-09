@@ -1,7 +1,7 @@
 ---
 title: 'about'
 date: 2019-11-10 00:21:13
-lang: 'ko'
+lang: 'en'
 ---
 
 # Ulfrid
