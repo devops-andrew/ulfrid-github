@@ -3,9 +3,9 @@
   "private": true,
   "description": "Gatsby blog starter template",
   "version": "0.1.0",
-  "author": "Ulfrid[JiHunPark]<fergith0@gmail.com>",
+  "author": "JBee[JaeYeopHan]<?>",
   "bugs": {
-    "url": "https://github.com/ulfrid"
+    "url": "https://github.com/JBee"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
