@@ -7,7 +7,7 @@ category: 'python'
 
 ![](https://onsil-thegreenhouse.github.io/assets/images//programming/django/python-django-logo.jpg)
 
-## 요즘 프로젝트를 진행하면서 PR을 날리고 가장 두근두근하는건 바로
+## 요즘 코드 리뷰를 하거나 코드를 쓰면서 많이 하는 생각중 하나가 코딩 컨벤션을 확립하는 것에 있다.
 
 # 코드 컨벤션
 
