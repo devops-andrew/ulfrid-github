@@ -8,6 +8,20 @@ lang: 'en'
 
 <div align="center">
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+![](../assets/profile.png)
+
+Wecode Mentor & Backend Enginner
+
+Python
+
+Django, Flask
+
+AWS EC2, Lambda, MySQL ,etc
+
+since: 2019.09~
+
+was System Enginner at Payday in 8years.
+
+since : 2010.08~ 2019.04
 
 </div>
