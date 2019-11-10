@@ -4,7 +4,7 @@ date: 2019-11-10 22:11:67
 category: python
 ---
 
-![](http://www.hanbit.co.kr/data/books/B3316273713_l.jpg)
+![](./images/fluent.jpg)
 
 ## 전문가를 위한 파이썬 정리하기
 
