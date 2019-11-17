@@ -1,4 +1,417 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 10 Nov 2019 11:25:18 GMT</lastBuildDate><item><title><![CDATA[Fluent Python 정리하기]]></title><description><![CDATA[전문가를 위한 파이썬 정리하기 파이썬 학습 중 보다 한걸음 나아가기 위해 책을 읽고 공부한 부분을 정리하려고 한다. 오늘의 정리 내용은 2장 데이터 구조체 시퀀스(Sequence) 딕셔너리 와 셋트(Dictionary and Set…]]></description><link>https://ulfrid.github.io/python/fluent-python-정리하기/</link><guid isPermaLink="false">https://ulfrid.github.io/python/fluent-python-정리하기/</guid><pubDate>Sun, 10 Nov 2019 22:12:07 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 Nov 2019 14:13:56 GMT</lastBuildDate><item><title><![CDATA[terraform]]></title><description><![CDATA[Terraform 테라폼은 무엇인가. 테라폼은 IaC도구중 하나이다. 테라폼은 HashiCorp사에서 개발했고, Go언어로 프로그래밍 되어 있는 오픈 소스 도구이다.
+테라폼은 테라폼 바이너리를 통해 코드에 정의된 AWS, Microsoft Azure…]]></description><link>https://ulfrid.github.io/devops/terraform/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/terraform/</guid><pubDate>Sun, 17 Nov 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABhElEQVQoz51SPWvCUBTNH+yQwdVOQkELrTQuQR1EEBQnRdClHQId3Fx1arsUQcxQxMGlRRPiRyyNYsm7p3lP86Fth/bA5fLux+Hce59ERAygIzDGjowDp0U/w5V4IXMJXp+w37DnhFfD4LpuEPPt8GbSZhOwCBVc0WQyocFgQP1+X5jjOEEuWhed4EDMpJsLg56ftphOHep2XwVzu91GLpfDaDSCZVmBAo7xeIxOp/NtgINn0v2tTZfnFuSzB1KURxH1VCGRSEBRFNRqNZRKJTQaDbRaLSSTSaRSKTSbTVQqFRQKBeTzeUqn0+j1ekxyPhhdJ0xod29krzeC0DAM0STLMrLZrGis1+uIxWJQVRXVahWZTAbxeBzlcpnnqVgsQtO0PaF6ZeJF/xSy+c23W76CqRhvNpthuVzCNE0Mh0MRt20buq6L3GKxwHw+J8+wWq2YuPJuR3hfe6cGHe3rDwh3SCEDRc4ffA/u/a8RfXMfyYVX9nl8tv8ojPSGCumfs54SfgFrMyqZvm1u2gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;terraform&quot;
+        title=&quot;terraform&quot;
+        src=&quot;/static/299c202b48b3ecc36892bc61168bcf0f/b9e4f/terraform.png&quot;
+        srcset=&quot;/static/299c202b48b3ecc36892bc61168bcf0f/cf440/terraform.png 148w,
+/static/299c202b48b3ecc36892bc61168bcf0f/d2d38/terraform.png 295w,
+/static/299c202b48b3ecc36892bc61168bcf0f/b9e4f/terraform.png 590w,
+/static/299c202b48b3ecc36892bc61168bcf0f/f9b6a/terraform.png 885w,
+/static/299c202b48b3ecc36892bc61168bcf0f/fea0e/terraform.png 900w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;terraform&quot;&gt;&lt;a href=&quot;#terraform&quot; aria-label=&quot;terraform permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Terraform&lt;/h1&gt;
+&lt;h2 id=&quot;테라폼은-무엇인가&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EB%9D%BC%ED%8F%BC%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;테라폼은 무엇인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테라폼은 무엇인가.&lt;/h2&gt;
+&lt;p&gt;테라폼은 IaC도구중 하나이다. 테라폼은 HashiCorp사에서 개발했고, Go언어로 프로그래밍 되어 있는 오픈 소스 도구이다.
+테라폼은 테라폼 바이너리를 통해 코드에 정의된 AWS, Microsoft Azure, Google Cloud, OpenStack등의 공급자가 제공한 API를 통해 호출을 한다. 테라폼은 기본적으로 각 공급자가 제공한 API 서버 리소스를 활용해 인프라를 구성한다는 것을 알 수 있다.&lt;/p&gt;
+&lt;h2 id=&quot;테라폼이-다른-코드형-인프라-도구와-다른점은&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EB%9D%BC%ED%8F%BC%EC%9D%B4-%EB%8B%A4%EB%A5%B8-%EC%BD%94%EB%93%9C%ED%98%95-%EC%9D%B8%ED%94%84%EB%9D%BC-%EB%8F%84%EA%B5%AC%EC%99%80-%EB%8B%A4%EB%A5%B8%EC%A0%90%EC%9D%80&quot; aria-label=&quot;테라폼이 다른 코드형 인프라 도구와 다른점은 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테라폼이 다른 코드형 인프라 도구와 다른점은?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;테라폼은 구성관리를 하는 Ansible, Puppet, Chef, Saltstack 등의 구성도구와 다른 배포도구이다.&lt;/li&gt;
+&lt;li&gt;테라폼은 구성관리 도구와 달리 변경사항이 발생시 새로운 환경을 구성해서 배포하고 이상이 없으면, 이전 구성을 제거한다. 따라서 문제가 발생시 이전 환경으로 재빨리 되돌릴 수 있다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;선언형 언어이다. 절차적인 상태의 선언이 아닌 최종적으로 원하는 형태를 선언해서 목적을 달성한다. 이는 코드만 봐서는 크게 차이점을 느낄수 없지만, 동작 방식에서 확연히 차이가 난다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;앤서블의 경우 서버를 10대 돌리고 있다가, 15대로 늘려야 할 경우, 코드에 15라고 쓰면 추가로 15대가 생성돼서, 25대가 되버리므로, 기존의 서버 대수를 파악하고, 5대로 수정해서 실행해야한다. 코드 작성 후 이후에는 상태관리가 이뤄질수 없다는 뜻이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;테라폼은 이전의 서버 카운트가 10이었다면, 15로 늘리면, 기존의 상태인 10에서 15로 증가해준다. 이는 이전 정보의 상태를 테라폼이 알고 있기 때문이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;위의 경우는 비단 갯수만이 아닌 다양한 변경사항이 발생할 경우 더욱 빛을 발한다. 서버 이미지의 아이디 변경과 같은 문제 등&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;코드 자체가 마지막 상태를 나타내므로, 별도의 이력 추적이 필요없으며, 수동으로 현재 상태를 파악할 필요가 없어 작업이 수월해진다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;별도의 마스터서버가 필요없음&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;서버 구성 도구와 달리 각 제공사의 API서버와 통신하므로, 별도의 관리 서버가 필요없다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;에이전트도 없음&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;별도의 에이전트가 필요없어 에이전트를 관리해야 하거나, 에이전트로 인한 문제를 겪을 필요가 없음.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;how-it-works&quot;&gt;&lt;a href=&quot;#how-it-works&quot; aria-label=&quot;how it works permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How It Works&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;기본 코드 개요&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;요즘 내가 가장 많이 쓰고 있는 클라우드는 AWS이므로, 예시는 AWS로 진행하려고 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;AWS에서 사용하려면 본인 루트 계정에서 IAM 메뉴에가서, 테라폼을 위한 신규 계정을 발행하고, 프로그램 방식 액세스유형으로 계정을 생성 해야한다.&lt;/p&gt;
+&lt;p&gt;또한, 원하는 도구들에 대한 FullAccess 권한을 줘야하는것은 필수적이다.&lt;/p&gt;
+&lt;p&gt;추가로, 최초 생성시 발행되는 AWS&lt;em&gt;SECRET&lt;/em&gt;KEY 및 ID는 꼭
+별도로 저장하거나(csv다운로드 지원) 기록해둬야 한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;테라폼은 다음과 같이 설치한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#ubuntu&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; terraform
+&lt;span class=&quot;token comment&quot;&gt;#Mac&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; brew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; terraform&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;aws credential은 홈폴더에 .aws/credentials 파일에 별도로 저장하면 된다고 알고 있지만&lt;/p&gt;
+&lt;p&gt;왜인지 잘 되지 않아서, 우선적으로 진행한 방법은 별도로
+&lt;strong&gt;aws.tf&lt;/strong&gt; 라는 파일에 키정보 및 리전 정보를 기록해 두었다.
+추후에 방법을 확인하고 다시 수정하도록 하겠다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;terraform&quot;&gt;&lt;pre class=&quot;language-terraform&quot;&gt;&lt;code class=&quot;language-terraform&quot;&gt;#aws.tf
+provider &amp;quot;aws&amp;quot; {
+  region     = &amp;quot;ap-northeast-2&amp;quot;
+  access_key = &amp;quot;씨크릿 키 ID&amp;quot;
+  secret_key = &amp;quot;씨크릿 키&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;terraform&quot;&gt;&lt;pre class=&quot;language-terraform&quot;&gt;&lt;code class=&quot;language-terraform&quot;&gt;#main.tf
+resource &amp;quot;aws_instance&amp;quot; &amp;quot;example&amp;quot; {
+  ami           = &amp;quot;ami-06e7b9c5e0c4dd014&amp;quot;
+  instance_type = &amp;quot;t2.micro&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;새로운 폴더 생성 후 다음과 같이 작성을 한다.&lt;/p&gt;
+&lt;p&gt;그다음 할일은&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#테라폼 이니셜라이징&lt;/span&gt;
+terraform init
+
+Initializing the backend&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+
+Initializing provider plugins&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+
+The following providers &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; not have any version constraints &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; version &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;...&quot;&lt;/span&gt; constraints to the
+corresponding provider blocks &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;~&gt; 2.36&quot;&lt;/span&gt;
+
+Terraform has been successfully initialized&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+
+You may now begin working with Terraform. Try running &lt;span class=&quot;token string&quot;&gt;&quot;terraform plan&quot;&lt;/span&gt; to see
+any changes that are required &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; your infrastructure. All Terraform commands
+should now work.
+
+If you ever &lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; or change modules or backend configuration &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; Terraform,
+rerun this &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to &lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt; so &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; necessary.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그렇게 이닛이 무사히 완료 되면, 테스트 해보기 위한 plan명령어를 수행한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#테라폼 플랜&lt;/span&gt;
+❯ terraform plan
+
+Refreshing Terraform state in-memory prior to plan&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+The refreshed state will be used to calculate this plan, but will not be
+persisted to &lt;span class=&quot;token builtin class-name&quot;&gt;local&lt;/span&gt; or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  &lt;span class=&quot;token comment&quot;&gt;# aws_instance.example will be created&lt;/span&gt;
+  + resource &lt;span class=&quot;token string&quot;&gt;&quot;aws_instance&quot;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      + ami                          &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;ami-06e7b9c5e0c4dd014&quot;&lt;/span&gt;
+      + arn                          &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + associate_public_ip_address  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + availability_zone            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + cpu_core_count               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + cpu_threads_per_core         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + get_password_data            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+      + host_id                      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + &lt;span class=&quot;token function&quot;&gt;id&lt;/span&gt;                           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + instance_state               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + instance_type                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;t2.micro&quot;&lt;/span&gt;
+      + ipv6_address_count           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + ipv6_addresses               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + key_name                     &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + network_interface_id         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + password_data                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + placement_group              &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + primary_network_interface_id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + private_dns                  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + private_ip                   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + public_dns                   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + public_ip                    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + security_groups              &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + source_dest_check            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+      + subnet_id                    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + tenancy                      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + volume_tags                  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + vpc_security_group_ids       &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+      + ebs_block_device &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          + delete_on_termination &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + device_name           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + encrypted             &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + iops                  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + kms_key_id            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + snapshot_id           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_id             &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_size           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_type           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+      + ephemeral_block_device &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          + device_name  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + no_device    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + virtual_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+      + network_interface &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          + delete_on_termination &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + device_index          &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + network_interface_id  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+      + root_block_device &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          + delete_on_termination &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + encrypted             &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + iops                  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + kms_key_id            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_id             &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_size           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_type           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+Plan: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; to add, &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; to change, &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; to destroy.
+
+------------------------------------------------------------------------
+
+Note: You didn&lt;span class=&quot;token string&quot;&gt;&apos;t specify an &quot;-out&quot; parameter to save this plan, so Terraform
+can&apos;&lt;/span&gt;t guarantee that exactly these actions will be performed &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&quot;terraform apply&quot;&lt;/span&gt; is subsequently run.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;마지막으로 plan 적용을 위한 apply까지 진행하면
+실제로 AWS에 서버가 생성되는걸 볼 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#테라폼 어플라이&lt;/span&gt;
+❯ terraform apply
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  &lt;span class=&quot;token comment&quot;&gt;# aws_instance.example will be created&lt;/span&gt;
+  + resource &lt;span class=&quot;token string&quot;&gt;&quot;aws_instance&quot;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      + ami                          &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;ami-06e7b9c5e0c4dd014&quot;&lt;/span&gt;
+      + arn                          &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + associate_public_ip_address  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + availability_zone            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + cpu_core_count               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + cpu_threads_per_core         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + get_password_data            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+      + host_id                      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + &lt;span class=&quot;token function&quot;&gt;id&lt;/span&gt;                           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + instance_state               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + instance_type                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;t2.micro&quot;&lt;/span&gt;
+      + ipv6_address_count           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + ipv6_addresses               &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + key_name                     &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + network_interface_id         &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + password_data                &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + placement_group              &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      + primary_network_interface_id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                 &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.  중략   &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+          + kms_key_id            &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_id             &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_size           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          + volume_type           &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;known after apply&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+Plan: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; to add, &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; to change, &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only &lt;span class=&quot;token string&quot;&gt;&apos;yes&apos;&lt;/span&gt; will be accepted to approve.
+
+  Enter a value: &lt;span class=&quot;token function&quot;&gt;yes&lt;/span&gt;
+
+aws_instance.example: Creating&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+aws_instance.example: Still creating&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;. &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;10s elapsed&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+aws_instance.example: Still creating&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;. &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;20s elapsed&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+aws_instance.example: Creation complete after 26s &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;i-0b8687e0eaa45d66a&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+Apply complete&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; Resources: &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; added, &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; changed, &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; destroyed.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 33.914612146722796%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAuElEQVQoz61OWw7CMAzr/e/BTfjgCHxMY+8X0AkmjbXJatJOleB7s2TFTiInyq2M6UM4nUtcrh2ml4a1FkQE9mQKOvpf7WfWGkzTG1o/MY4jFATGEqp2QN8PSNIMRdWgrDtkRY266VCUZfCV6LrtkYtP0jzs3fJKahvm94eG8tecAxZaYYWLITnAQfu6UXrEgZY2H/d8j1eAVifVQc3zjA0OR0Ax8xYnbx7BEBhNDN71oTHmL2hv4BcYzSRPXAwvxgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;ec2 apply&quot;
+        title=&quot;ec2 apply&quot;
+        src=&quot;/static/acb8e2a31bf34bfc4f693baacf4e2868/b9e4f/ec2_apply.png&quot;
+        srcset=&quot;/static/acb8e2a31bf34bfc4f693baacf4e2868/cf440/ec2_apply.png 148w,
+/static/acb8e2a31bf34bfc4f693baacf4e2868/d2d38/ec2_apply.png 295w,
+/static/acb8e2a31bf34bfc4f693baacf4e2868/b9e4f/ec2_apply.png 590w,
+/static/acb8e2a31bf34bfc4f693baacf4e2868/f9b6a/ec2_apply.png 885w,
+/static/acb8e2a31bf34bfc4f693baacf4e2868/2d849/ec2_apply.png 1180w,
+/static/acb8e2a31bf34bfc4f693baacf4e2868/e520e/ec2_apply.png 3326w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;생성 된걸 눈으로 봤다면, 이제 제거하자.
+명령어는 ‘terraform destroy’
+이부분은 화면 및 진행상황은 생략한다.&lt;/p&gt;
+&lt;p&gt;매우 잘 제거 됐을 것이다.&lt;/p&gt;
+&lt;p&gt;기본적인 테라폼 구동에 대한 기초 정리는 이쯤에서 마치고, 향후 복합적인 인프라 구성에 대한 글도 작성하려고 한다. 그날이 바로 다음 주가 되길 바라며&lt;/p&gt;
+&lt;p&gt;오늘은 여기까지!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Infrastructure_as_Code]]></title><description><![CDATA[IaC 입문하기 IaC(Infrastructure as Code…]]></description><link>https://ulfrid.github.io/devops/infrastructure_as_code/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/infrastructure_as_code/</guid><pubDate>Sun, 17 Nov 2019 20:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.94791666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAACNUlEQVQozz1S23KaUBTlMXHGqgiBEC5ylSCgEhAQATUHoti0Oq01l6a5TKffkE9pp0/pV+Q90/Yx06fOtD/THc10zZmz9zmz1r6dgzF7e7A2m8DzlqGnUT/yvXEStTRV4DjT1FVZ0pQGz7M0TTMMY1mWqmn0Lo3BAZSKJKBRenF2sjievp5NixxdvT+d5dkw6o0TT1eVrqWa+ypED4NgVhQZQrIkYxBsl6ZNXTlfLSfo8O1iXuTZ4XCIhuk4iY/QKIn7cRQNQjcODtq2DWWtVqtiWjSExpOYIonAtScZ+nB+Ohp4fd+Z5Oji/N3Dw8Ovx8fRaBD4nr4vNiWWJAhIGIah2GiQBInt0lTU91eLgmVoaDiJek7HnGbo75/f9/f3P398//L1cxD6adpzHSuO4wxliixXK5UdkoTM1Hz+6mT1hqJIWWwMBz1ujzrKs08fr5bL5dnpycvjabOpKTIXBl62RqvVqlQqBEFgeB1XFGmUhE1d0xQpz8f9vu95HcvSWZaVZbHdtXiOFUXGNA3f9x3HgRnXqtV6HcdwHK9Wq8wOLolCfpR/u7u7vr50PScM3S7A6bbb1u3tLVTH8zy+BvA3Dlar1cCQJLFd2uY57ubmMgjcHYpkWBpqK5fLdaKWDhNdV7a3tkqlEtwAv7bGs/hFuWyaJkIoTeBdwiw7BOt5T03CtNyDA9s2ez0PCIZh/Nc/iyGJKIowCfg9hrEPgcBXVbXT7cDRti3wdV2HhgVBAPIm8z+AaX7tlZkZzAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;iac&quot;
+        title=&quot;iac&quot;
+        src=&quot;/static/39772607ac80d9f896672d7d8ba6b222/b9e4f/iac.png&quot;
+        srcset=&quot;/static/39772607ac80d9f896672d7d8ba6b222/cf440/iac.png 148w,
+/static/39772607ac80d9f896672d7d8ba6b222/d2d38/iac.png 295w,
+/static/39772607ac80d9f896672d7d8ba6b222/b9e4f/iac.png 590w,
+/static/39772607ac80d9f896672d7d8ba6b222/5cc77/iac.png 768w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;iac-입문하기&quot;&gt;&lt;a href=&quot;#iac-%EC%9E%85%EB%AC%B8%ED%95%98%EA%B8%B0&quot; aria-label=&quot;iac 입문하기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;IaC 입문하기&lt;/h1&gt;
+&lt;h2 id=&quot;iacinfrastructure-as-code&quot;&gt;&lt;a href=&quot;#iacinfrastructure-as-code&quot; aria-label=&quot;iacinfrastructure as code permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;IaC(Infrastructure as Code)&lt;/h2&gt;
+&lt;p&gt;코드형 인프라란 코드 형태로 인프라를 짝성, 정의, 배포, 업데이트 하는 것을 의미한다. 물리 장비를 설정하는 것 뿐만 아니라 모든 운영을 코드로 한다는 인식 전환이 중요하다. 실제로 데브옵스는 서버, 데이터베이스, 네트워크, 로그파일, 애플리케이션 설정, 자동화된 검증 절차, 배포 방법 등 모든 것을 코드 형태로 관리한다.&lt;/p&gt;
+&lt;h2 id=&quot;iac-도구들은-크게-네가지-범주로-나뉜다&quot;&gt;&lt;a href=&quot;#iac-%EB%8F%84%EA%B5%AC%EB%93%A4%EC%9D%80-%ED%81%AC%EA%B2%8C-%EB%84%A4%EA%B0%80%EC%A7%80-%EB%B2%94%EC%A3%BC%EB%A1%9C-%EB%82%98%EB%89%9C%EB%8B%A4&quot; aria-label=&quot;iac 도구들은 크게 네가지 범주로 나뉜다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;IaC 도구들은 크게 네가지 범주로 나뉜다.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;애드 혹 스크립트&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;가장 간단하게 코드 형태로 자동화를 구현할 수 있는 스크립트
+주로 배쉬 스크립트를 의미한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# Update Ubuntu apt&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt&lt;/span&gt; update
+
+&lt;span class=&quot;token comment&quot;&gt;# Install Nginx&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;apt&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;다만, 수동절차이고, 관리 또한 수동이므로 스파게티 코드가 되기 쉽고
+다시 작성할 가능성이 높다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;구성 관리 도구&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Chef, Puppet, Ansible, Saltstack 같은 구성 관리도구 툴들이
+대표적이다. 서버에 소프트웨어를 설치하거나 관리하는 목적으로 사용한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;코딩규칙
+애드 혹 스크립트와 달리 규칙성 있는 문서화 및 파일구성을 통해 관리한다.&lt;/li&gt;
+&lt;li&gt;멱등성
+&lt;em&gt;멱등성&lt;/em&gt;은 같은 코드라면 수행횟수와 상관 없이 결과 값은 항상 같아야 한다는 의미이다. 몇 번을 수행하더라도 항상 같은 형상과 멱등성이 유지된다.&lt;/li&gt;
+&lt;li&gt;분산형 구조
+애드 혹 스크립트는 소규모 인프라에 적합 하다면, 구성관리 도구는 대규모 환경에도 적합하다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;서버 템플릿 도구&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;서버템플릿 도구의 대안으로 말할 수 있는 것으로, Docker, Packer, Vagrant 등이 있다.
+예시로 든 Docker만으로도 어떤 역할을 하는지 알 수 있겠지만
+많은 서버를 배포하고 같은 코드를 서버마다 같은 설정으로 동일하게 수행하는 것이 아니라 소프트웨어와 수행 시에 필요한 설정과 의존성 있는 프로그램 들을 포함한 특정 시점에 운영 체제와 함께 스냅샷 하여 템플릿 이미지화 하는 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;VM 혹은 Container로 구분되지만, 요즘은 거진 Container가 더 범용적이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;서버 템플릿은 변하지 않는 인프라(Immutable Infrastructure)의 주요한 기능이며, 서버를 한번 배포하면 해당 서버는 절대 변하지 않는 설정을 가진다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;서버 프로비전 도구&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Terraform, CloudFormation, Openstack Heat등은 서버 자체를 구성하기 위한 도구이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;서버 및 데이터베이스, 네트워크, dns등 다양한 리소스를 생성하고 관리할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;why-iac&quot;&gt;&lt;a href=&quot;#why-iac&quot; aria-label=&quot;why iac permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why IaC?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2016년도에 발표한 데브옵스 레포트에 따르면 개발에서 상용서비스로 적용을 위해 거쳐야 하는 프로세스가 2천배 이상으로 줄어들고. 배포주기는 200배 빨라지고, 장애복구 시간은 24배 빨라졌다고 한다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;셀프서비스&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;기존의 조직에서는 개발자는 개발을 하고 배포는 배포지정일에 배포해야하고, 문제가 생기면 다같이 밤을 지새우곤 했다. 코드화된 인프라는 개발자가 원하는 시점에 언제든지 배포가 가능하게 해준다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;속도와 안정성&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;배포 자동화가 이루어지면, 운영자가 수동으로 배포하지 않고 컴퓨팅 리소스가 신속하게 배포되므로 속도와 안전성이 눈에 띄게 향상될 것이다. 또한 수동 오류를 줄일 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;문서화&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;인프라의 상태 정보가 시스템 관라지의 머릿속에 존재하는 것이 아닌 누구나 읽을수 있고 관리될 수 있으며, 부재로 인한 문제가 생기지 않는다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;버전관리&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;깃을 통한 형상관리 및 커밋 로그를 통한 문제시 롤백 및 이력을 추적할 수 있게 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;확인 및 검사&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;코드 리뷰가 가능하며, 테스트가 가능하다. 이로 인해 결함을 낮출 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;재사용성&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;모듈화 하여 관리하면, 처음부터 작성할 필요 없이 공통된 사항을 재사용할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IaC에 대한 개념 정리 및 필요성에 대해 정리 해보았다. 다음 글은 이 중 테라폼을 다룰 예정이다.&lt;/p&gt;
+&lt;p&gt;오늘은 여기까지~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fluent Python 정리하기]]></title><description><![CDATA[전문가를 위한 파이썬 정리하기 파이썬 학습 중 보다 한걸음 나아가기 위해 책을 읽고 공부한 부분을 정리하려고 한다. 오늘의 정리 내용은 2장 데이터 구조체 시퀀스(Sequence) 딕셔너리 와 셋트(Dictionary and Set…]]></description><link>https://ulfrid.github.io/python/fluent-python-정리하기/</link><guid isPermaLink="false">https://ulfrid.github.io/python/fluent-python-정리하기/</guid><pubDate>Sun, 10 Nov 2019 22:12:07 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
     &gt;
