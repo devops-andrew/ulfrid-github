@@ -1,4 +1,300 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 Nov 2019 14:13:56 GMT</lastBuildDate><item><title><![CDATA[terraform]]></title><description><![CDATA[Terraform 테라폼은 무엇인가. 테라폼은 IaC도구중 하나이다. 테라폼은 HashiCorp사에서 개발했고, Go언어로 프로그래밍 되어 있는 오픈 소스 도구이다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Nov 2019 13:36:04 GMT</lastBuildDate><item><title><![CDATA[docker part-2]]></title><description><![CDATA[Docker 파트-2 도커이미지를 빌드해서 배포해 보자 feat. AWS 도커파일 Dockerfile이란 Docker Image를 만들기 위한 설정 파일입니다. 여러가지 명령어를 토대로 Dockerfile을 작성하면 설정된 내용대로 Docker…]]></description><link>https://ulfrid.github.io/devops/docker_part2/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/docker_part2/</guid><pubDate>Sun, 24 Nov 2019 22:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 89.21713441654359%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAADd0lEQVQ4y2NgwANMUorAtGlcFoNxejmzaVw2RDwhl4FoYBiZCqadnN0YVNPLGPSzaxiR5U0T88G0hV8oEIdB2WHYDbP0DQHTLpaWKOKmUanCJgl5fmZRqSIgvrWtDYP0o/+MyttfQSz7/5/B0icY00D1rCowrZZdy6iS18BiE57EC+IbZVWFGvev/G9Q0OwL4uv0r2OG6RGedZhFNzgWbLB8aR/CZaqF7RBDM6rgihUKWo5oVE98ols37Ylyw4z/OunlNjA5vbpZRcYVEwNhfPnyCRDXWviEAA2EOFc3LocFRBv4BCkr59QuV62a8EOtceZ/tdop/9WqJ/1XzWs4pJ5SHAFWO2nrCpW5xz6J1szo0MqsMQQ7oKQXEd466RVgjnZikYBOYXu7ctfS/7ptC/6pN8/9o1Q37Z9B+6Lfar0r/6uV9R6xL+6wUJ28fYvAvBN/BbvWnNBOLdMA6ZWrmMQIdWEIOGDdLcw0lXMaZyvM3P9fa+6RHyorrv5TmbD1v+rsw/9UFp7+r9G34bfKkvN/VZde+C89Zdd/zdjs9CA1GX1YxCyGeRkcdvGFLH4WBjxaUdnh7N2b/zNM3v+boX/nX8Wp2/6xTd37F4TZJ+38zTxpz2/W/t3/ZVNrZy5gYGDXjc6SNQ2OZQdHXngSAzwcpfK64N7XLe/fHrvp1P/0raf+i807+p9hzqn/DLNO/GeYcfI/S8/O/6LFkxb8Z2BASZ+gdMmA7EIHV3cGl4g4cKRcY2Bgnb5w0bStx06+CFm+/ztz46rvXPXLngmWz9ikklLpDzPELCCC2co7iMnCN4QR2Sx4ggYbHBrDquMTLgHlclTk52i5xyQphCgL8yUp84viymEYhoFoIPaw8AnuANJpdkGRXtb+YVFgxd5BIeZ+Ya5AXAnETsBcYQh0VToQy1j6hFgAMThrAWlGkCFMUAMdgTgaiG2AeA+U7wTEa4AaPc19Q9mA9GqgS5KAGnOAdDEQlwJxPpAvAHelJdT/QFoDiAuAOAaosRCs0TckCUgXgQwAsvWA7JlAHAfkt0HZhkAcCDWMCVEo+ATDDFUHYhMoWweIDaBsQ6AhOkBNfEDLpEAuAtJGQD4vEPODDQQGGdiFFtBSApj9GBGlTjATkmVMhIo8C6RIBUcGwtAQRqQwZUQKDjAb5AIgZrQE0UB1UD5KLAMAfQhEgwgEMx0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;docker logo&quot;
+        title=&quot;docker logo&quot;
+        src=&quot;/static/fbe6ffad75cc43b4fef5efbcabec2716/b9e4f/docker-logo.png&quot;
+        srcset=&quot;/static/fbe6ffad75cc43b4fef5efbcabec2716/cf440/docker-logo.png 148w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/d2d38/docker-logo.png 295w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/b9e4f/docker-logo.png 590w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/f9b6a/docker-logo.png 885w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/2d849/docker-logo.png 1180w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/5bee8/docker-logo.png 1354w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;docker-파트-2&quot;&gt;&lt;a href=&quot;#docker-%ED%8C%8C%ED%8A%B8-2&quot; aria-label=&quot;docker 파트 2 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker 파트-2&lt;/h1&gt;
+&lt;h3 id=&quot;도커이미지를-빌드해서-배포해-보자-feat-aws&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EB%B9%8C%EB%93%9C%ED%95%B4%EC%84%9C-%EB%B0%B0%ED%8F%AC%ED%95%B4-%EB%B3%B4%EC%9E%90-feat-aws&quot; aria-label=&quot;도커이미지를 빌드해서 배포해 보자 feat aws permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도커이미지를 빌드해서 배포해 보자 feat. AWS&lt;/h3&gt;
+&lt;h4 id=&quot;도커파일&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC&quot; aria-label=&quot;도커파일 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도커파일&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dockerfile이란 Docker Image를 만들기 위한 설정 파일입니다. 여러가지 명령어를 토대로 Dockerfile을 작성하면 설정된 내용대로 Docker Image를 만들 수 있습니다. 이전 포스트에서도 설명했듯이 Dockerfile을 읽을줄 안다는 것은 해당 이미지가 어떻게 구성되어 있는지 알 수 있다는 의미입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;docker-file-작성-예&quot;&gt;&lt;a href=&quot;#docker-file-%EC%9E%91%EC%84%B1-%EC%98%88&quot; aria-label=&quot;docker file 작성 예 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker File 작성 예&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;vim&quot;&gt;&lt;pre class=&quot;language-vim&quot;&gt;&lt;code class=&quot;language-vim&quot;&gt;$ &lt;span class=&quot;token keyword&quot;&gt;vim&lt;/span&gt; Dockerfile
+
+# 기반 이미지 
+FROM &lt;span class=&quot;token keyword&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;
+
+# 프로젝트 소스가 실행될 위치
+WORKDIR &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;usr&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;src&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;app
+
+## Install packages
+COPY requirements&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;txt &lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;
+RUN pip install &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;r&lt;/span&gt; requirements&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;txt
+
+## Copy &lt;span class=&quot;token keyword&quot;&gt;all&lt;/span&gt; src &lt;span class=&quot;token keyword&quot;&gt;files&lt;/span&gt;
+COPY &lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;
+
+## Run the application &lt;span class=&quot;token keyword&quot;&gt;on&lt;/span&gt; the port &lt;span class=&quot;token number&quot;&gt;8080&lt;/span&gt;
+EXPOSE &lt;span class=&quot;token number&quot;&gt;8000&lt;/span&gt;
+
+#CMD &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;python&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;./setup.py&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;runserver&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;--host=0.0.0.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;-p 8080&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+CMD &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;gunicorn&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;--bind&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;0.0.0.0:8000&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;order.wsgi:application&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+
+&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;wq&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;FROM &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;기반이 되는 이미지 레이어입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#x3C;이미지 이름&gt;:&amp;#x3C;태그&gt; 형식으로 작성 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ex) python:3 파이썬 버전 3가 셋팅된 이미지파일&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WORKDIR  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CMD에서 설정한 실행 파일이 실행될 디렉터리입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;EXPOSE &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;호스트와 연결할 포트 번호입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;COPY&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;현재 경로의 소스를 생성되는 이미지의 WORKDIR에 복사 .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CMD&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;컨테이너가 시작되었을 때 실행할 실행 파일 또는 셸 스크립트입니다. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;해당 명령어는 DockerFile내 1회만 쓸 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;dockerignore&quot;&gt;&lt;a href=&quot;#dockerignore&quot; aria-label=&quot;dockerignore permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;.dockerignore&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;dockerignore 파일 생성시 Docker 이미지 생성 시 이미지안에 들어가지 않을 파일을 지정 할 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;vim&quot;&gt;&lt;pre class=&quot;language-vim&quot;&gt;&lt;code class=&quot;language-vim&quot;&gt;$ &lt;span class=&quot;token keyword&quot;&gt;vim&lt;/span&gt; dockerignore
+
+node_modules
+
+npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;log
+
+Dockerfile&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+
+docker&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;compose&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+
+&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;dockerignore
+
+&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;git
+
+&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;gitignore
+
+README&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;md
+
+LICENSE
+
+&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;vscode
+
+
+&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;wq&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;작성-된-docker-file로-image-만들기&quot;&gt;&lt;a href=&quot;#%EC%9E%91%EC%84%B1-%EB%90%9C-docker-file%EB%A1%9C-image-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot; aria-label=&quot;작성 된 docker file로 image 만들기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;작성 된 Docker File로 Image 만들기&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker build -t ‘도커 계정명/프로젝트명:태그’ .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ex) docker build -t abcd/order:0.1 .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;해당 명령어는 반드시 DockerFile 경로에서 입력해야 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;별-문제가-없다면-이미지-빌드가-잘-됐을-것이다&quot;&gt;&lt;a href=&quot;#%EB%B3%84-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%97%86%EB%8B%A4%EB%A9%B4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B9%8C%EB%93%9C%EA%B0%80-%EC%9E%98-%EB%90%90%EC%9D%84-%EA%B2%83%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;별 문제가 없다면 이미지 빌드가 잘 됐을 것이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;별 문제가 없다면 이미지 빌드가 잘 됐을 것이다.&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker images&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;실행을-해보자&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89%EC%9D%84-%ED%95%B4%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;실행을 해보자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행을 해보자&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker run —name order -p 8000:8000 -d abcd/order:0.1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;위와 같이 실행하면 order라는 이름의 컨테이너가 로컬 8000 포트를 통해 잘 실행될 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;실행중인-도커에-접속하는-방법&quot;&gt;&lt;a href=&quot;#%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-%EB%8F%84%EC%BB%A4%EC%97%90-%EC%A0%91%EC%86%8D%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;실행중인 도커에 접속하는 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;실행중인 도커에 접속하는 방법?&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker exec -it order /bin/bash&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;그렇다면-이제-자신의-저장소에-로그인하고-push한다&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EB%A0%87%EB%8B%A4%EB%A9%B4-%EC%9D%B4%EC%A0%9C-%EC%9E%90%EC%8B%A0%EC%9D%98-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%95%98%EA%B3%A0-push%ED%95%9C%EB%8B%A4&quot; aria-label=&quot;그렇다면 이제 자신의 저장소에 로그인하고 push한다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그렇다면 이제 자신의 저장소에 로그인하고 push한다.&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker login &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker push abcd/order:0.1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;배포를-원하는-aws-ec2-서버에-접속해서-docker-설치-후-로그인-후-풀하고-실행해보자&quot;&gt;&lt;a href=&quot;#%EB%B0%B0%ED%8F%AC%EB%A5%BC-%EC%9B%90%ED%95%98%EB%8A%94-aws-ec2-%EC%84%9C%EB%B2%84%EC%97%90-%EC%A0%91%EC%86%8D%ED%95%B4%EC%84%9C-docker-%EC%84%A4%EC%B9%98-%ED%9B%84-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9B%84-%ED%92%80%ED%95%98%EA%B3%A0-%EC%8B%A4%ED%96%89%ED%95%B4%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;배포를 원하는 aws ec2 서버에 접속해서 docker 설치 후 로그인 후 풀하고 실행해보자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배포를 원하는 aws EC2 서버에 접속해서 Docker 설치 후 로그인 후 풀하고 실행해보자&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker pull abcd/order:0.1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker run —name order -p 8000:8000 -d abcd/order:0.1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;위와-같은-과정을-통하면-수동적인-절차지만-초심자-입장에서-도커파일을-통해-이미지를-빌드하고-배포하는-가장-기본적인&quot;&gt;&lt;a href=&quot;#%EC%9C%84%EC%99%80-%EA%B0%99%EC%9D%80-%EA%B3%BC%EC%A0%95%EC%9D%84-%ED%86%B5%ED%95%98%EB%A9%B4-%EC%88%98%EB%8F%99%EC%A0%81%EC%9D%B8-%EC%A0%88%EC%B0%A8%EC%A7%80%EB%A7%8C-%EC%B4%88%EC%8B%AC%EC%9E%90-%EC%9E%85%EC%9E%A5%EC%97%90%EC%84%9C-%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC%EC%9D%84-%ED%86%B5%ED%95%B4-%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B3%A0-%EB%B0%B0%ED%8F%AC%ED%95%98%EB%8A%94-%EA%B0%80%EC%9E%A5-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8&quot; aria-label=&quot;위와 같은 과정을 통하면 수동적인 절차지만 초심자 입장에서 도커파일을 통해 이미지를 빌드하고 배포하는 가장 기본적인 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;위와 같은 과정을 통하면 수동적인 절차지만 초심자 입장에서 도커파일을 통해 이미지를 빌드하고 배포하는 가장 기본적인&lt;/h4&gt;
+&lt;h4 id=&quot;과정을-익혔다고-볼-수-있다-차후에는-이를-조금-더-자동화하는-과정을-진행해-보도록-하겠다&quot;&gt;&lt;a href=&quot;#%EA%B3%BC%EC%A0%95%EC%9D%84-%EC%9D%B5%ED%98%94%EB%8B%A4%EA%B3%A0-%EB%B3%BC-%EC%88%98-%EC%9E%88%EB%8B%A4-%EC%B0%A8%ED%9B%84%EC%97%90%EB%8A%94-%EC%9D%B4%EB%A5%BC-%EC%A1%B0%EA%B8%88-%EB%8D%94-%EC%9E%90%EB%8F%99%ED%99%94%ED%95%98%EB%8A%94-%EA%B3%BC%EC%A0%95%EC%9D%84-%EC%A7%84%ED%96%89%ED%95%B4-%EB%B3%B4%EB%8F%84%EB%A1%9D-%ED%95%98%EA%B2%A0%EB%8B%A4&quot; aria-label=&quot;과정을 익혔다고 볼 수 있다 차후에는 이를 조금 더 자동화하는 과정을 진행해 보도록 하겠다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;과정을 익혔다고 볼 수 있다. 차후에는 이를 조금 더 자동화하는 과정을 진행해 보도록 하겠다.&lt;/h4&gt;
+&lt;h4 id=&quot;오늘은-여기까지&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98%EC%9D%80-%EC%97%AC%EA%B8%B0%EA%B9%8C%EC%A7%80&quot; aria-label=&quot;오늘은 여기까지 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘은 여기까지!&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[docker part-1]]></title><description><![CDATA[Docker 파트-1 컨테이너 가상화이자 현재 인프라 스트럭쳐에서 모를수 없는 요소인 도커 혹은 다커~ 그간 세션을 진행하거나 할때 많이 하지만 정확히 정리해놓은 글이 없어 정리해보는 시간을 가지기로 했다. 도커는? Docker…]]></description><link>https://ulfrid.github.io/devops/docker_part1/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/docker_part1/</guid><pubDate>Sun, 24 Nov 2019 20:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 89.21713441654359%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAADd0lEQVQ4y2NgwANMUorAtGlcFoNxejmzaVw2RDwhl4FoYBiZCqadnN0YVNPLGPSzaxiR5U0T88G0hV8oEIdB2WHYDbP0DQHTLpaWKOKmUanCJgl5fmZRqSIgvrWtDYP0o/+MyttfQSz7/5/B0icY00D1rCowrZZdy6iS18BiE57EC+IbZVWFGvev/G9Q0OwL4uv0r2OG6RGedZhFNzgWbLB8aR/CZaqF7RBDM6rgihUKWo5oVE98ols37Ylyw4z/OunlNjA5vbpZRcYVEwNhfPnyCRDXWviEAA2EOFc3LocFRBv4BCkr59QuV62a8EOtceZ/tdop/9WqJ/1XzWs4pJ5SHAFWO2nrCpW5xz6J1szo0MqsMQQ7oKQXEd466RVgjnZikYBOYXu7ctfS/7ptC/6pN8/9o1Q37Z9B+6Lfar0r/6uV9R6xL+6wUJ28fYvAvBN/BbvWnNBOLdMA6ZWrmMQIdWEIOGDdLcw0lXMaZyvM3P9fa+6RHyorrv5TmbD1v+rsw/9UFp7+r9G34bfKkvN/VZde+C89Zdd/zdjs9CA1GX1YxCyGeRkcdvGFLH4WBjxaUdnh7N2b/zNM3v+boX/nX8Wp2/6xTd37F4TZJ+38zTxpz2/W/t3/ZVNrZy5gYGDXjc6SNQ2OZQdHXngSAzwcpfK64N7XLe/fHrvp1P/0raf+i807+p9hzqn/DLNO/GeYcfI/S8/O/6LFkxb8Z2BASZ+gdMmA7EIHV3cGl4g4cKRcY2Bgnb5w0bStx06+CFm+/ztz46rvXPXLngmWz9ikklLpDzPELCCC2co7iMnCN4QR2Sx4ggYbHBrDquMTLgHlclTk52i5xyQphCgL8yUp84viymEYhoFoIPaw8AnuANJpdkGRXtb+YVFgxd5BIeZ+Ya5AXAnETsBcYQh0VToQy1j6hFgAMThrAWlGkCFMUAMdgTgaiG2AeA+U7wTEa4AaPc19Q9mA9GqgS5KAGnOAdDEQlwJxPpAvAHelJdT/QFoDiAuAOAaosRCs0TckCUgXgQwAsvWA7JlAHAfkt0HZhkAcCDWMCVEo+ATDDFUHYhMoWweIDaBsQ6AhOkBNfEDLpEAuAtJGQD4vEPODDQQGGdiFFtBSApj9GBGlTjATkmVMhIo8C6RIBUcGwtAQRqQwZUQKDjAb5AIgZrQE0UB1UD5KLAMAfQhEgwgEMx0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;docker logo&quot;
+        title=&quot;docker logo&quot;
+        src=&quot;/static/fbe6ffad75cc43b4fef5efbcabec2716/b9e4f/docker-logo.png&quot;
+        srcset=&quot;/static/fbe6ffad75cc43b4fef5efbcabec2716/cf440/docker-logo.png 148w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/d2d38/docker-logo.png 295w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/b9e4f/docker-logo.png 590w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/f9b6a/docker-logo.png 885w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/2d849/docker-logo.png 1180w,
+/static/fbe6ffad75cc43b4fef5efbcabec2716/5bee8/docker-logo.png 1354w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;docker-파트-1&quot;&gt;&lt;a href=&quot;#docker-%ED%8C%8C%ED%8A%B8-1&quot; aria-label=&quot;docker 파트 1 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker 파트-1&lt;/h1&gt;
+&lt;h2 id=&quot;컨테이너-가상화이자-현재-인프라-스트럭쳐에서-모를수-없는-요소인-도커-혹은-다커&quot;&gt;&lt;a href=&quot;#%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B0%80%EC%83%81%ED%99%94%EC%9D%B4%EC%9E%90-%ED%98%84%EC%9E%AC-%EC%9D%B8%ED%94%84%EB%9D%BC-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B3%90%EC%97%90%EC%84%9C-%EB%AA%A8%EB%A5%BC%EC%88%98-%EC%97%86%EB%8A%94-%EC%9A%94%EC%86%8C%EC%9D%B8-%EB%8F%84%EC%BB%A4-%ED%98%B9%EC%9D%80-%EB%8B%A4%EC%BB%A4&quot; aria-label=&quot;컨테이너 가상화이자 현재 인프라 스트럭쳐에서 모를수 없는 요소인 도커 혹은 다커 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;컨테이너 가상화이자 현재 인프라 스트럭쳐에서 모를수 없는 요소인 도커 혹은 다커~&lt;/h2&gt;
+&lt;h3 id=&quot;그간-세션을-진행하거나-할때-많이-하지만-정확히-정리해놓은-글이-없어-정리해보는-시간을-가지기로-했다&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EA%B0%84-%EC%84%B8%EC%85%98%EC%9D%84-%EC%A7%84%ED%96%89%ED%95%98%EA%B1%B0%EB%82%98-%ED%95%A0%EB%95%8C-%EB%A7%8E%EC%9D%B4-%ED%95%98%EC%A7%80%EB%A7%8C-%EC%A0%95%ED%99%95%ED%9E%88-%EC%A0%95%EB%A6%AC%ED%95%B4%EB%86%93%EC%9D%80-%EA%B8%80%EC%9D%B4-%EC%97%86%EC%96%B4-%EC%A0%95%EB%A6%AC%ED%95%B4%EB%B3%B4%EB%8A%94-%EC%8B%9C%EA%B0%84%EC%9D%84-%EA%B0%80%EC%A7%80%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4&quot; aria-label=&quot;그간 세션을 진행하거나 할때 많이 하지만 정확히 정리해놓은 글이 없어 정리해보는 시간을 가지기로 했다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그간 세션을 진행하거나 할때 많이 하지만 정확히 정리해놓은 글이 없어 정리해보는 시간을 가지기로 했다.&lt;/h3&gt;
+&lt;h3 id=&quot;도커는&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EB%8A%94&quot; aria-label=&quot;도커는 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도커는?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker는 가상화 기술이다. Docker 라는 회사가 container virtualization 을 개발하였고 그래서 docker가 container virtualization 기술의 또다른 이름으로 오해하시는 분들이 있는데 container virtualization은 docker 이전에 이미 개발되어 존재 하고 있었다. Docker는 가상화 컨테이너에 application 배포를 자동화 시켜주는 오픈소스 엔진이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker는 container 가상화 실행 환경 위에 application 배포 엔진을 더함으로서 사용자의 코드를 어디서든 빠르고 가볍게 실행시킬수 있는 기술을 제공한다. 이는 요즘 널리 사용되는 MSA(Micro Service Architecture)와 CI/CD 와 아주 잘 조화되어서 많은 각광을 받게 된다. 실제로 docker는 한 컨데이너 당 하나의 application이나 프로세스를 실행하는 것을 권한다. MSA의 철학과 일맥상통 하는것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;docker-구조&quot;&gt;&lt;a href=&quot;#docker-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;docker 구조 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker 구조&lt;/h3&gt;
+&lt;h4 id=&quot;docker는-크게-4가지-부분으로-되어-있다&quot;&gt;&lt;a href=&quot;#docker%EB%8A%94-%ED%81%AC%EA%B2%8C-4%EA%B0%80%EC%A7%80-%EB%B6%80%EB%B6%84%EC%9C%BC%EB%A1%9C-%EB%90%98%EC%96%B4-%EC%9E%88%EB%8B%A4&quot; aria-label=&quot;docker는 크게 4가지 부분으로 되어 있다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker는 크게 4가지 부분으로 되어 있다.&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker client 와 server (server는 docker engine으로 불리기도 한다)&lt;/li&gt;
+&lt;li&gt;Docker 이미지&lt;/li&gt;
+&lt;li&gt;Docker registries&lt;/li&gt;
+&lt;li&gt;Docker containers&lt;/li&gt;
+&lt;li&gt;Docker client 와 server&lt;/li&gt;
+&lt;li&gt;Docker는 클라이언트 와 서버 구조로 이루어저 있다. 클라이언트가 서버에 명령을 전달하고 서버가 실행시키는 구조이다. docker binrary 커맨드가 docker 클라이언트 이고 dockerd 가 docker daemon 혹은 docker engine이다. Docker engine과 interact하기 위한 Restful API도 제공된다. 클라이언트와 서버는 동일한 호스트 안에서 운영 될수도 있으며 서로 다른 호스트에서 운영 될수도 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;docker-이미지&quot;&gt;&lt;a href=&quot;#docker-%EC%9D%B4%EB%AF%B8%EC%A7%80&quot; aria-label=&quot;docker 이미지 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker 이미지&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker의 life cycle에서 docker 이미지는 “build”의 부분에 해당된다. Docker container에서 실행시키고 싶은 application을 docker 이미지로 빌드해서 실행시키게 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;docker-registries&quot;&gt;&lt;a href=&quot;#docker-registries&quot; aria-label=&quot;docker registries permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker registries&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker registires는 docker 이미지를 저장하는 repository라고 보면 된다. Source code를 github에 저장하여 관리하듯 docker 이미지는 dockerhub 같은 docker registries에 저장한다고 생각하면 된다. Github가 마찬가지로 public registry 가 있고 private registry가 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;docker-containers&quot;&gt;&lt;a href=&quot;#docker-containers&quot; aria-label=&quot;docker containers permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker containers&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker container에서 docker 이미지가 실행된다. 즉 docker 이미지를 실행시키는 가상화 공간 이다. Docker container는 하나 혹은 그 이상의 프로세스를 실행 시킬수 있다 (하지만 하나의 프로세스만 실행시키는 것을 권장).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;docker-compose-and-swarm&quot;&gt;&lt;a href=&quot;#docker-compose-and-swarm&quot; aria-label=&quot;docker compose and swarm permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker Compose And Swarm&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker에서는 여러 docker container들로 이루어진 stack이나 cluster를 관리 하는 서비스도 제공하는데 바로 docker compose 와 docker swarm이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker compose는 복수의 docker container들을 모아서 종합적인 application stack을 정의 하고 운영할수 있도록 해주는 서비스이다. Compose 파일을 사용하여 전체적인 application 서비스를 설정한후, application을 이루고 있는 각각의 컨테이너들 (예를 들어, web 서버 컨테이너, api 서버 컨테이너 등등)을 따로 실행시킬 필요 없이 한번에 생성하고 실행할 수 있도록 해준다. Docker swarm은 docker containers 들로 이러우진 cluster를 관리할수 있도록 해주는 서비스이다. 즉 docker container를 위한 clustering tool 이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;docker-vs-configuration-management-tools&quot;&gt;&lt;a href=&quot;#docker-vs-configuration-management-tools&quot; aria-label=&quot;docker vs configuration management tools permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker VS Configuration Management Tools&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker가 Chef나 Puppet, Ansible 같은 CM tool들을 대체하는가 에 대해서 물어보시는 분들이 많다. Docker를 사용함으로서 많은 CM(configuration management) 부분이 해결되는것은 맞지만 그래도 여전히 CM의 역활이 남아있다. 예를 들어, docker를 사용하기 위해서는 docker가 호스트에 설치되어 있어야 한다. 이러한 부분은 CM tool을 사용하여 관리할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;그-외-docker의-특징들&quot;&gt;&lt;a href=&quot;#%EA%B7%B8-%EC%99%B8-docker%EC%9D%98-%ED%8A%B9%EC%A7%95%EB%93%A4&quot; aria-label=&quot;그 외 docker의 특징들 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그 외 Docker의 특징들&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker는 modern한 리눅스 커널이 설치되어 있는 x64 호스트에서는 다 실행 가능하다 하지만 커널 버젼 3.10 이상에서 실행되는 것이 overhead가 적기 때문에 권장된다. 최근에는 docker를 Windows 나 Mac에서도 사용 가능하다. 하지만 Windows 및 Mac에서 docker를 직접 실행시키면 내부적으로 가상머신이 실행되어 그 안에서 docker가 실행되기 때문에 개발용 및 테스트 용으로는 괜찮지만 production 용도로는 적합하지 않다. Docker 컨테이너는 독립된 root 파일 시스템이기도 하다 그러므로 파일 시스템 분리가 이루어져 있다. 또한 docker 컨테이너는 호스트와 분리된 프로세스 환경을 가지고 있으므로 독립적인 프로세스를 실행할수 있다. 파일 시스템과 프로세스 환경과 마찬가지로 네트워크 또한 분리 되어 있어서 독립적인 가상 네트워크 인터페이스 와 IP 주소를 가질 수 있다. Resource isolation and grouping - 커널의 cgroups 기능을 통해서 docker container마다 독립적인 CPU와 메모리 가 할당 될수 있다. Docker 파일 시스템은 copy-on-write 을 사용하여서 효율적이며 빠른 디스크 IO를 실행한다. Docker의 copy-on-write은 중요한 특징중 하나이므로 다음에 더 자세히 설명하겠다. Docker 컨테이너에서 STDOUT, STDERR, STDIN을 통해서 생성되는 로그들은 전부 수집되어서 분석하거나 trouble-shooting을 가능하게 해준다. 그뿐만 아니라, 실행되고 있는 docker container의 shell에 접속해서 interact할 수도 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;docker-images&quot;&gt;&lt;a href=&quot;#docker-images&quot; aria-label=&quot;docker images permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker Images&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker image는 파일시스템들의 layer로 만들어져 있다. 가장 base layer는 boot filesystem bootfs로 일반적인 Linux boot 파일시스템으로 되어있다. Docker 유저가 직접적으로 boot filesystem을 사용할 일은 없으며, 실제로 container가 부팅이 되면 메모리로 옴겨지고 boot 파일시스템은 unmount된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Boot layer 다음에는 rootfs 라고 하는 root 파일 시스템 layer이다. Root 파일 시스템은 실제 OS 가 설치된다(예를 들어 Debian 이나 Ubuntu). 원래 리눅스에서는 root filesystem은 처음 mount될때는 read-only로 mount가 된후 integrity check후 read-write으로 바뀐다. 하지만 Docker에서는 계속해서 read-only 모드이다. Read-write 모드로 변환하지 않는 이유는 Docker는 union mount를 사용해서 read-only 파일 시스템들을 root 파일 시스템 위에 덮는 구조로 이루어져 있기 때문이다. 참고로 union mount는 여러게의 파일 시스템을 mount하되 하나의 파일 시스템만이 mount된것 처럼 사용하는 방법이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker 구조에서는 이러한 파일 시스템 하나 하나가 바로 image이다. 그럼으로 image들을 서로 위에 layer시키는 구조로 되어있다. Base가 되는 이미지를 부모 이미지라고하며 맨 위의 이미지 부터 가장 밑 부분의 이미지 까지 횡단 하는 구조로 되어있다. 즉 filesystem / image를 수정하는 구조가 아니라 read-only filesystem / image 들을 서로 위에 layer 시키되 union mount 기법으로 마지막에는 하나의 파일 시스템으로 보이는 구조를 가지고 있는 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;모든 read-only 파일시스템들이 mount가 되고 docker 컨테이너가 이미지로부터 시작될때 docker는 마지막으로 read-write 파일 시스템을 파일 시스템 layer 맨 위에 mount한다. 마지막에는 read-only가 아니라 read-write으로 올려놓는 이유는 read-write 파일 시스템에 컨테이너가 필요한 프로세스를 생성하고 실행하기 위해서이다. 글로 설명하면 굉장히 어려울수 있지만 아래 그림을 보면 비교적 이해가 어렵지 않을것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 202px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 123.26732673267327%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAFwUlEQVQ4y2WVWVNbVxaF+Zedx7hTyVN3peNKl91JSIhxYowBM4jJYEaDsB1GIRACbAGWERhJaEATszVypTtIV+hKYPrrg+gkdPXDqn3qVN3vrr3XqXNqFEXhWqqqVnW9luXcf/cKouZvJOeRcxq5nEou+//KZmUkSaLmNkhRZLHWyGslNFUhk42RliKkzyLVmjoLk8yEqkqkb3S9TmWCnEmnApqj5k+HuoCUkJU08fQGu9FedqJP8B21snvYWq1VXa+P2/CfXNenePabce495Ci+JjrI3wBvHO4LF7McxBuJnPxA+LiWRPYx2UIbktZKRm3hTHuKlG8lITdzmGli77gRb6wRT+yhMOEQrQugqmgCmMKXfITr9J+4E7WseL9mfutvOML/Yj1aK/QjrvgvrO3X4TyoYydcx3tfHd6DBvYzLQSTzZxmtgVQuwaKgatxIpkHBNL32ZOuP36APd6ELd2GPdPOstTJW7UP+1kXbyQT71NdbCT72MiYsSbf0h/xspNIouWqM8wLhwlORBtRtQl/vgtP8RnBYj+nxRHi+RGO5UGhAY6VIY61QbwfLSz5N5nYCDC0GqHdH8adTJKX5ZuUc6pMZ/KEuswRDdlThlISQ95Det75Gd05ZCGmMRfJYd3LYfNnmVwJMf6bn5dmH+ZZH6bAHp5UioLIQwDFuVNU6sUfBrcz7E6rbL+SWBs9wTYQYXX4iA+vc+xNFnAu60wv53k1FWB43kePK0h3NExvJIIvlUYX5mrymghFBPNzJo5z8ozLu3GWPp9m/Usbb7+wsP7FAhtf2SndT7D/LMuIU6XfHaFnL8TzcITBYJgO4XBHGCoKVo1eKKAKmcShbEnLdH2U6Y1rDAcVxlxZXrlUZtznTH/Qee0tMhYrMrkV5bU9yKtpPxNTfjp8t4BFXUcR6s5mac6J2Z1pWE8vmXBLdDuijG2nWY5dMR86Zz5oYN0qMD0XxPzSx4uZAIMiGFPoZoY3QOFOy+u05LM45zJc1Up47r5n82sHnm832fpmneB9L6V6ifCAzOSCzLgtRNdWgPaoqEdhOkX77uTvQP26ZZ2uvIrFJeMfy2IZCmLpD/CmJ4Kty89a3z7RIZk1q8pAuMCQT8xuO8jYmtBqgA5/8NYMRbt5oT5xW/xczPKwLOrBER17abr9GVrdcdo8ccaODCZiZaaCOlOrIZG0X7TtZ2w2iEn8YCeR/jOUglCHImHelfDNqDjHP7I0FGZj/JTVkRjvRA1OqWwua8zaNQHbEyA3445NXvic9J4s4VWiFMV1Vw3lXD+nraDhmpbh2xzq9ynW79hwfL6E66t1irUyxj2J2DMV8+aZSH+TwdASz1O/0Znvp8lowq3vUFSK1BilEuclg1H9A+bcG+aSDmbEzTGfdbIibbCeXuJtagFHchF7zspsaYbp3ChjejvD5RYGy09pKbWzU/D8DjQoGecMVPp5dNlMEx08khv53nePXzzf0OD5O2bpIRa9hRmxv5jtYFEzYdXrWSx/x+LFD7SW224BDYNyxaD/0yjdxR4mTwexxUaxBPuZ9vUzE3iONTyELTLOSnyCebWTxUo985f3sF78yMtyE81G+/8CLy7K9FyZcSqPibnusDj3GR7XX/ngvMPKwmfYrX9hf/dL4uU6LJc/YTtvYb7YIBz+xIJw+NRoZbvgvg2s0HPxgrlPvUS1Pua3n+AItbJ5aMLubWbR3cxR/jk7ygAWpQv7+WPR6j3mBGyk0kCrYcJXCKAr+s0My+USnRfDvKs84d/irxdX9Xh2/4FHzC8UvsunqwdcGHUcG78Kh98xV/mV4VKzCHIMe8HBQf7oj4eu6rBUEqEYZhyVZ6QuTRxfdOL62Mj6waNqPa6YSIh9b6WX8dIAU0UL7wvbpLSUcCXOsZAqrkBFXIU1xWJRAMVrZ8hkSjKpkiakkinfKG0ofCzkqkoUsqT0MzRdo6Sdk68+H8ofuob+B2KuqEGFnba8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;docker images&quot;
+        title=&quot;docker images&quot;
+        src=&quot;/static/f7d3ae596949be58819c154f11c990c0/37c45/docker-images.png&quot;
+        srcset=&quot;/static/f7d3ae596949be58819c154f11c990c0/cf440/docker-images.png 148w,
+/static/f7d3ae596949be58819c154f11c990c0/37c45/docker-images.png 202w&quot;
+        sizes=&quot;(max-width: 202px) 100vw, 202px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이러한 pattern을 copy on write이라고 한다. 이 copy on write 구조는 Dockerfile 을 이용해 docker image 를 빌드할때 효과적이다. Docker image를 빌드할때 Dockerfile의 각각의 instruction이 바로 filesystem / image가 되는것이다. 그러므로 빌드를 할때 처음부터 다 빌드하는 것이 아니라 바뀐 파일시스템만 mount하면 됨으로 효과적이고 빠르게 빌드 할 수 있으며 빌드가 도중에 실패하더라도 마지막으로 성공한 instruction은 빌드가 되어있는 상태이므로 그 이미지에 shell 접속을 해서 디버깅을 한다거나 하는 것이 가능해진다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;개념-정리가-이루어-졌다면-뭘해야-할까-바로-실습이다&quot;&gt;&lt;a href=&quot;#%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%EA%B0%80-%EC%9D%B4%EB%A3%A8%EC%96%B4-%EC%A1%8C%EB%8B%A4%EB%A9%B4-%EB%AD%98%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C-%EB%B0%94%EB%A1%9C-%EC%8B%A4%EC%8A%B5%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;개념 정리가 이루어 졌다면 뭘해야 할까 바로 실습이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;개념 정리가 이루어 졌다면 뭘해야 할까? 바로 실습이다!&lt;/h3&gt;
+&lt;h4 id=&quot;도커의-기본적인-실행에-앞서-상태를-보는-명령어&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EC%9D%98-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-%EC%8B%A4%ED%96%89%EC%97%90-%EC%95%9E%EC%84%9C-%EC%83%81%ED%83%9C%EB%A5%BC-%EB%B3%B4%EB%8A%94-%EB%AA%85%EB%A0%B9%EC%96%B4&quot; aria-label=&quot;도커의 기본적인 실행에 앞서 상태를 보는 명령어 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도커의 기본적인 실행에 앞서 상태를 보는 명령어&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#도커 컨테이너 현황 보기&lt;/span&gt;
+docker ps  &lt;span class=&quot;token comment&quot;&gt;# docker container ls 와 같다.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#전체 보기&lt;/span&gt;
+docker ps &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;a  &lt;span class=&quot;token comment&quot;&gt;# docker container ls -a 와 같다.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#도커 이미지 목록 보기&lt;/span&gt;
+docker images
+&lt;span class=&quot;token comment&quot;&gt;#도커 이미지 전체 보기&lt;/span&gt;
+docker images &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;도커를-실행하려면&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EB%A5%BC-%EC%8B%A4%ED%96%89%ED%95%98%EB%A0%A4%EB%A9%B4&quot; aria-label=&quot;도커를 실행하려면 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도커를 실행하려면&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#우분투 서버를 올려보자&lt;/span&gt;
+docker run &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;name &lt;span class=&quot;token string&quot;&gt;&apos;컨테이너 이름&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;d ubuntu
+&lt;span class=&quot;token comment&quot;&gt;# --name 옵션은 컨테이너 이름을 정해주는 옵션 만약 이 옵션이 빠지면? 영문 두단어로 이루어진 이름 조합이 생성된다&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# ex) troy_siban&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# -d 옵션은 데몬옵션(프로세스가 계속 실행되기 위한)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# 이미지가 이미 존재한다면 풀하지 않지만 존재하지 않으면 공개 리포에 공유되어 있는 이미지를 풀 해옴.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;도커의-삭제&quot;&gt;&lt;a href=&quot;#%EB%8F%84%EC%BB%A4%EC%9D%98-%EC%82%AD%EC%A0%9C&quot; aria-label=&quot;도커의 삭제 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;도커의 삭제&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;docker&quot;&gt;&lt;pre class=&quot;language-docker&quot;&gt;&lt;code class=&quot;language-docker&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#도커 컨테이너의 삭제 및 이미지 삭제&lt;/span&gt;
+docker stop &lt;span class=&quot;token string&quot;&gt;&apos;컨테이너 명&apos;&lt;/span&gt;
+docker rm &lt;span class=&quot;token string&quot;&gt;&apos;컨테이너 명&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#모든 도커 컨테이너 삭제하기&lt;/span&gt;
+docker stop $(docker ps &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;a &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;q)
+docker rm $(docker ps &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;a &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;q)
+&lt;span class=&quot;token comment&quot;&gt;#도커 이미지 제거&lt;/span&gt;
+docker rmi &lt;span class=&quot;token string&quot;&gt;&apos;이미지 명&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#모든 도커 이미지 삭제하기&lt;/span&gt;
+docker rmi $(docker images &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;q)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;기본적인-플로우는-여기까지-하고-2부에서-dockerfile을-이용한-python-django-배포를-진행하겠다&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-%ED%94%8C%EB%A1%9C%EC%9A%B0%EB%8A%94-%EC%97%AC%EA%B8%B0%EA%B9%8C%EC%A7%80-%ED%95%98%EA%B3%A0-2%EB%B6%80%EC%97%90%EC%84%9C-dockerfile%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-python-django-%EB%B0%B0%ED%8F%AC%EB%A5%BC-%EC%A7%84%ED%96%89%ED%95%98%EA%B2%A0%EB%8B%A4&quot; aria-label=&quot;기본적인 플로우는 여기까지 하고 2부에서 dockerfile을 이용한 python django 배포를 진행하겠다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기본적인 플로우는 여기까지 하고 2부에서 DockerFile을 이용한 Python Django 배포를 진행하겠다.&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[terraform]]></title><description><![CDATA[Terraform 테라폼은 무엇인가. 테라폼은 IaC도구중 하나이다. 테라폼은 HashiCorp사에서 개발했고, Go언어로 프로그래밍 되어 있는 오픈 소스 도구이다.
 테라폼은 테라폼 바이너리를 통해 코드에 정의된 AWS, Microsoft Azure…]]></description><link>https://ulfrid.github.io/devops/terraform/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/terraform/</guid><pubDate>Sun, 17 Nov 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
