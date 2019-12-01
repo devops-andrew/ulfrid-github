@@ -1,4 +1,124 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Nov 2019 13:36:04 GMT</lastBuildDate><item><title><![CDATA[docker part-2]]></title><description><![CDATA[Docker 파트-2 도커이미지를 빌드해서 배포해 보자 feat. AWS 도커파일 Dockerfile이란 Docker Image를 만들기 위한 설정 파일입니다. 여러가지 명령어를 토대로 Dockerfile을 작성하면 설정된 내용대로 Docker…]]></description><link>https://ulfrid.github.io/devops/docker_part2/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/docker_part2/</guid><pubDate>Sun, 24 Nov 2019 22:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Dec 2019 13:55:49 GMT</lastBuildDate><item><title><![CDATA[Microservice]]></title><description><![CDATA[마이크로서비스 아키텍쳐란 MSA? Microservice 마이크로 서비스 아키텍처 (Micro Service Architecture…]]></description><link>https://ulfrid.github.io/devops/microservice/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/microservice/</guid><pubDate>Sun, 01 Dec 2019 20:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.39838220424671%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAACE0lEQVQoz01R32vTUBTOqzjQR2H4LqgTOoRNEPwL/CNEfdMHcZs+SFWQObquhUpdug4mrFOrY2gdmxXZalzXoYyN2nTiZhvW9Gat2iZNcpPmJvXcxBUPycl3z/2+nF+MRYiiY1nXVYxbGDuO0/nPiG23dKwZhmoYmmkCaFtW95axwAjpUomLnUMjxNYwFWCz7XrTaLcpzX0YoK5s5yPvlp6kljL5gqe0bRuA7VYh1OoX7voHRvyDd/w/kdSNA42K780le6/dOHn95sOX83A0LcsTey38aamBhdSDueT4QkqS5eXvu4mvW6/yRf6g7orTmYux2UvxxP2PHBwVjD3xv14OGwHfUNXLz5K+yPTpUIzNbVLx7Mbm0OvF4fnF51+2XF4HplBXtf1GU/j1WzEM1FJ3xGqpVpcx/iHVChVRVFTTIlSc3eYTyysv0qsb33a8DFVZGYzO9IXYU8HJ0dX1/sj02Qm2Lzw1lsmdCbEQH4jOiLLCQIXQpOMWBvMkbsGaYXKCmEM1roIKUo3br64j6nmJRgB/EkTYHNOh+yDhWDw8FffW4zV8gNDj4AS3tga4WCw+CgR4ngf8OZsdHQ9KCNE9w6tq2olzvl7feU3HcIT04N+mPzA9x6/cGgIceMoyR3rGopOAr94eZo4ee/M+TcWQB7JVEKpUUTctfAzT3CsLjWbT+/tuqQSeDrwp75XLcAucvwzMLpcP3k9SAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;monolithic vs microservices&quot;
+        title=&quot;monolithic vs microservices&quot;
+        src=&quot;/static/171970e03c6292ff0acbbc4c93ff9810/b9e4f/monolithic-vs-microservices.png&quot;
+        srcset=&quot;/static/171970e03c6292ff0acbbc4c93ff9810/cf440/monolithic-vs-microservices.png 148w,
+/static/171970e03c6292ff0acbbc4c93ff9810/d2d38/monolithic-vs-microservices.png 295w,
+/static/171970e03c6292ff0acbbc4c93ff9810/b9e4f/monolithic-vs-microservices.png 590w,
+/static/171970e03c6292ff0acbbc4c93ff9810/f9b6a/monolithic-vs-microservices.png 885w,
+/static/171970e03c6292ff0acbbc4c93ff9810/0a791/monolithic-vs-microservices.png 989w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;마이크로서비스-아키텍쳐란-msa&quot;&gt;&lt;a href=&quot;#%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%EB%9E%80-msa&quot; aria-label=&quot;마이크로서비스 아키텍쳐란 msa permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;마이크로서비스 아키텍쳐란 MSA?&lt;/h1&gt;
+&lt;h2 id=&quot;microservice&quot;&gt;&lt;a href=&quot;#microservice&quot; aria-label=&quot;microservice permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Microservice&lt;/h2&gt;
+&lt;p&gt;마이크로 서비스 아키텍처 (Micro Service Architecture) 란, 최근에 각광받고 있는 웹 기반 분산 서비스 시스템 아키텍처를 말하며, 이러한 아키텍처를 갖는 서비스 자체를 마이크로 서비스 (Micro Service) 라 한다.&lt;/p&gt;
+&lt;h3 id=&quot;마이크로서비스는-다음과-같은-특징을-지니고-있다&quot;&gt;&lt;a href=&quot;#%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4%EB%8A%94-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%9D%80-%ED%8A%B9%EC%A7%95%EC%9D%84-%EC%A7%80%EB%8B%88%EA%B3%A0-%EC%9E%88%EB%8B%A4&quot; aria-label=&quot;마이크로서비스는 다음과 같은 특징을 지니고 있다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;마이크로서비스는 다음과 같은 특징을 지니고 있다.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;마이크로서비스들은 모듈화 개념이다. 마이크로서비스들의 목적은 대규모 소프트웨어 시스템을 작은 부분들로 나누는 것이다. 따라서 이들은 조직과 소프트웨어 시스템의 개발에 영향을 미친다.&lt;/li&gt;
+&lt;li&gt;마이크로서비스는 서로에게 독립적으로 배포할 수 있다. 한 마이크로서비스에 대한 벼경은 다른 마이크로서비스의 변경과는 독립적으로 생산 환경에 적용할 수 있다.&lt;/li&gt;
+&lt;li&gt;마이크로서비스는 서로 다른 기술로 구현될 수 있다. 각각의 마이크로서비스에 대해 프로그래밍 언어나 플랫폼에 관련된 제약은 없다.&lt;/li&gt;
+&lt;li&gt;마이크로서비스는 자체적인 데이터 저장소(개별 데이터베이스 또는 공유된 데이터베이스 내에서 완전하게 분리된 스키마)를 갖는다.&lt;/li&gt;
+&lt;li&gt;마이크로서비스는 검색엔진이나 특정 데이터베이스 같은 해당 서비스를 지원하는 서비스를 가질 수 있다. 물론, 모든 마이크로서비스에 대한 공통적인 플랫폼(예를 들어, 가상 머신)도 있다.&lt;/li&gt;
+&lt;li&gt;마이크로서비스는 독립적인 프로세스나 서비스를 지원하기 위한 가상 머신이다.&lt;/li&gt;
+&lt;li&gt;마이크로서비스는 네트워크를 통해 통신해야 한다. 이를 위해, 마이크로서비스는 REST나 메세징같은 느슨한 결함을 지원하는 프로토콜을 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;왜-마이크로서비스인가&quot;&gt;&lt;a href=&quot;#%EC%99%9C-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;왜 마이크로서비스인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;왜 마이크로서비스인가~&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;강력한 모듈화&lt;/li&gt;
+&lt;li&gt;쉬운 교체 가능성&lt;/li&gt;
+&lt;li&gt;지속 가능한 개발&lt;/li&gt;
+&lt;li&gt;레거시 애플리케이션의 추가 개발&lt;/li&gt;
+&lt;li&gt;적시 출시&lt;/li&gt;
+&lt;li&gt;독립적인 확장&lt;/li&gt;
+&lt;li&gt;기술의 자유로운 선택&lt;/li&gt;
+&lt;li&gt;지속적인 전달&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;단점&quot;&gt;&lt;a href=&quot;#%EB%8B%A8%EC%A0%90&quot; aria-label=&quot;단점 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;단점&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;숨겨진 관계&lt;/li&gt;
+&lt;li&gt;리팩토링의 어려움&lt;/li&gt;
+&lt;li&gt;도메인 아키텍쳐의 중요성&lt;/li&gt;
+&lt;li&gt;마이크로서비스 실행의 복잡함&lt;/li&gt;
+&lt;li&gt;분산 시스템의 복잡성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;마이크로서비스의-크기를-결정하는-요소&quot;&gt;&lt;a href=&quot;#%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98-%ED%81%AC%EA%B8%B0%EB%A5%BC-%EA%B2%B0%EC%A0%95%ED%95%98%EB%8A%94-%EC%9A%94%EC%86%8C&quot; aria-label=&quot;마이크로서비스의 크기를 결정하는 요소 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;마이크로서비스의 크기를 결정하는 요소&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;팀의 크기가 상한을 결정한다. 각 팀이 분리된 배포 단위에 대해 작업할때만 가능하다. 반대로 한팀이 여러 마이크로서비스를 작업할 수 있다.&lt;/li&gt;
+&lt;li&gt;더 많은 모듈화는 마이크로서비스의 크기를 제한한다.마이크로서비스는 개발자가 이해하고 더 개발하는 것을 허용하는 크기가 바람직하다.&lt;/li&gt;
+&lt;li&gt;교체가능성은 마이크로서비스의 크기를 감소시킨다.&lt;/li&gt;
+&lt;li&gt;마이크로서비스 크기의 하한은 인프라스트럭처에 의해 설정된다. 마이크로서비스에 필요한 인프라스트럭처를 제공하기 어렵다면 그수를 더 제한해야한다.&lt;/li&gt;
+&lt;li&gt;분산통신은 마이크로서비스의 개수에 따라 증가한다.&lt;/li&gt;
+&lt;li&gt;데이터의 일관성과 트랜잭션은 오직 하나의 마이크로서비스내에서만 보장된다. 따라서 마이크로서비스는 일관성과 트랜잭션에 여러 마이크로서비스가 관련될 수 있을 정도로 너무 작아서는 안 된다.&lt;/li&gt;
+&lt;li&gt;마이크로 서비스는 독립적으로 확장될 수 있는 단위가 보장되는 크기로 선택되야 한다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Fluent Python tuple]]></title><description><![CDATA[전문가를 위한 파이썬 정리하기 파이썬 학습 중 보다 한걸음 나아가기 위해 책을 읽고 공부한 부분을 정리하려고 한다. 오늘의 정리 내용은 2장 데이터 구조체 중 시퀀스 중 튜플을 이어서 한다. 튜플(Tuple…]]></description><link>https://ulfrid.github.io/python/fluent-python-tuple/</link><guid isPermaLink="false">https://ulfrid.github.io/python/fluent-python-tuple/</guid><pubDate>Sat, 30 Nov 2019 22:12:07 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 131.20000000000002%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAaABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQL/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHX5hRWu6Qk5VroBzFAL//EABsQAAMAAwEBAAAAAAAAAAAAAAECAwAREyAj/9oACAEBAAEFAqINKsWwAKKH6E5CgE+aHDFN8l8f/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQERL/2gAIAQMBAT8ByxluP//EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAECAQE/ASP/xAAeEAACAQMFAAAAAAAAAAAAAAAAARECECESIDEycf/aAAgBAQAGPwKdCZhIhKCr22WS6UdcHD2f/8QAHhAAAgICAgMAAAAAAAAAAAAAAAERMSFBUWEQkbH/2gAIAQEAAT8hklZtrk3L4jJGEnQ6CfYYlj6Rp0zsbDYN9GYjhoSfDdlUf//aAAwDAQACAAMAAAAQiDu8/8QAGREBAQEAAwAAAAAAAAAAAAAAAQAhETFh/9oACAEDAQE/EM8YcKN6Xd//xAAZEQADAAMAAAAAAAAAAAAAAAAAAREQITH/2gAIAQIBAT8QqaY+leP/xAAeEAEBAAICAgMAAAAAAAAAAAABEQAhMUFRYXGBsf/aAAgBAQABPxDYi6jY7nvNG/s4H1m3I2CGb0wWrJiZQDeKb5uWuX2lx2IVXk4wJNE1R8+8CAl0WfmXEOAfnENBD1n/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;fluent&quot;
+        title=&quot;fluent&quot;
+        src=&quot;/static/c9740c7577c95a8a8a1617aac0046c49/48a11/fluent.jpg&quot;
+        srcset=&quot;/static/c9740c7577c95a8a8a1617aac0046c49/8ee9c/fluent.jpg 148w,
+/static/c9740c7577c95a8a8a1617aac0046c49/ebbe7/fluent.jpg 295w,
+/static/c9740c7577c95a8a8a1617aac0046c49/48a11/fluent.jpg 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;전문가를-위한-파이썬-정리하기&quot;&gt;&lt;a href=&quot;#%EC%A0%84%EB%AC%B8%EA%B0%80%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0&quot; aria-label=&quot;전문가를 위한 파이썬 정리하기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;전문가를 위한 파이썬 정리하기&lt;/h2&gt;
+&lt;h2 id=&quot;파이썬-학습-중-보다-한걸음-나아가기-위해-책을-읽고-공부한-부분을-정리하려고-한다&quot;&gt;&lt;a href=&quot;#%ED%8C%8C%EC%9D%B4%EC%8D%AC-%ED%95%99%EC%8A%B5-%EC%A4%91-%EB%B3%B4%EB%8B%A4-%ED%95%9C%EA%B1%B8%EC%9D%8C-%EB%82%98%EC%95%84%EA%B0%80%EA%B8%B0-%EC%9C%84%ED%95%B4-%EC%B1%85%EC%9D%84-%EC%9D%BD%EA%B3%A0-%EA%B3%B5%EB%B6%80%ED%95%9C-%EB%B6%80%EB%B6%84%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EB%A0%A4%EA%B3%A0-%ED%95%9C%EB%8B%A4&quot; aria-label=&quot;파이썬 학습 중 보다 한걸음 나아가기 위해 책을 읽고 공부한 부분을 정리하려고 한다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;파이썬 학습 중 보다 한걸음 나아가기 위해 책을 읽고 공부한 부분을 정리하려고 한다.&lt;/h2&gt;
+&lt;h3 id=&quot;오늘의-정리-내용은-2장-데이터-구조체-중-시퀀스-중-튜플을-이어서-한다&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A0%95%EB%A6%AC-%EB%82%B4%EC%9A%A9%EC%9D%80-2%EC%9E%A5-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B5%AC%EC%A1%B0%EC%B2%B4-%EC%A4%91-%EC%8B%9C%ED%80%80%EC%8A%A4-%EC%A4%91-%ED%8A%9C%ED%94%8C%EC%9D%84-%EC%9D%B4%EC%96%B4%EC%84%9C-%ED%95%9C%EB%8B%A4&quot; aria-label=&quot;오늘의 정리 내용은 2장 데이터 구조체 중 시퀀스 중 튜플을 이어서 한다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘의 정리 내용은 2장 데이터 구조체 중 시퀀스 중 튜플을 이어서 한다.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;튜플(Tuple)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;튜플에-대해-알아본다&quot;&gt;&lt;a href=&quot;#%ED%8A%9C%ED%94%8C%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B8%EB%8B%A4&quot; aria-label=&quot;튜플에 대해 알아본다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;튜플에 대해 알아본다.&lt;/h3&gt;
+&lt;p&gt;파이썬 에서 튜플은 단순히 ‘불변 리스트’로 설명 되기도 한다. 하지만, 튜플은 불변 리스트로서 만이 아닌 필드명이 없는 레코드로 사용할 수도 있다.&lt;/p&gt;
+&lt;p&gt;튜플은 레코드를 담고 있다. 튜플의 각 항목은 레코드의 필드하나를 의미하며 항목의 위치가 의미를 결정한다.
+그러므로 정렬을 하게 되면 정보가 파괴된다는 점에 주의해야 한다.&lt;/p&gt;
+&lt;p&gt;또한 튜플은 언패킹 매커니즘을 이용해 임시 변수없이 두 변수의 값을 서로 교환할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;대표적인 튜플 언패킹의 예&lt;/p&gt;
+&lt;h3 id=&quot;초과-항목을-잡기-위해-사용하기&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EA%B3%BC-%ED%95%AD%EB%AA%A9%EC%9D%84-%EC%9E%A1%EA%B8%B0-%EC%9C%84%ED%95%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0&quot; aria-label=&quot;초과 항목을 잡기 위해 사용하기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초과 항목을 잡기 위해 ’*‘사용하기&lt;/h3&gt;
+&lt;p&gt;반복을 위해 사용하기도 하지만, 병렬할당시에도 사용하게 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;rest &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; rest
+&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#단 병렬 할당시 단 하나의 변수에만 적용할 수 있다.&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;head&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; d &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;또한 구조체의 표현식이 (1,2(3,4)) 와 같이 일치한다면, 제대로 처리한다.&lt;/p&gt;
+&lt;h3 id=&quot;named-tuple&quot;&gt;&lt;a href=&quot;#named-tuple&quot; aria-label=&quot;named tuple permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Named Tuple&lt;/h3&gt;
+&lt;p&gt;튜플을 공부하면서 가장 매력적으로 다가온 명명된 튜플 혹은 네임드 튜플은 기본자료형은 아니다.
+collections에 namedtuple 함수를 이용해서 만들 수 있다.
+또한 namedtuple이 반환하는 값은 클래스다.&lt;/p&gt;
+&lt;p&gt;네임드 튜플을 생성할때는 변수명과 클래스명을 통일 시키는 것이 좋습니다.
+이름을 통일하지 않으면 생성시 혼동될 수 있기 때문입니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;biz_card = namedtuple(&amp;#39;biz_card&amp;#39;,&amp;#39;name age phonenumber&amp;#39;)
+
+john_card = biz_card(&amp;#39;john&amp;#39;,&amp;#39;30&amp;#39;,&amp;#39;010-123-1234&amp;#39;)
+
+john_card._asdict() 메소드를 쓰면 딕셔너리로 변환할 수 있다.
+
+john_info = {&amp;#39;name&amp;#39;:&amp;#39;john&amp;#39;,&amp;#39;age&amp;#39;:30,&amp;#39;phonenumber&amp;#39;:&amp;#39;010-123-1234&amp;#39;}
+john_card = biz_card(**john_info)
+또한 딕셔너리를 넘겨서 생성할 수 있다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;여기까지 튜플을 알아보았다. 다음에는 이어서 시퀀스를 계속 살펴볼 예정이다. 그럼 오늘은 여기까지~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[docker part-2]]></title><description><![CDATA[Docker 파트-2 도커이미지를 빌드해서 배포해 보자 feat. AWS 도커파일 Dockerfile이란 Docker Image를 만들기 위한 설정 파일입니다. 여러가지 명령어를 토대로 Dockerfile을 작성하면 설정된 내용대로 Docker…]]></description><link>https://ulfrid.github.io/devops/docker_part2/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/docker_part2/</guid><pubDate>Sun, 24 Nov 2019 22:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
@@ -707,7 +827,7 @@ Apply complete&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; Resour
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;IaC에 대한 개념 정리 및 필요성에 대해 정리 해보았다. 다음 글은 이 중 테라폼을 다룰 예정이다.&lt;/p&gt;
-&lt;p&gt;오늘은 여기까지~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fluent Python 정리하기]]></title><description><![CDATA[전문가를 위한 파이썬 정리하기 파이썬 학습 중 보다 한걸음 나아가기 위해 책을 읽고 공부한 부분을 정리하려고 한다. 오늘의 정리 내용은 2장 데이터 구조체 시퀀스(Sequence) 딕셔너리 와 셋트(Dictionary and Set…]]></description><link>https://ulfrid.github.io/python/fluent-python-정리하기/</link><guid isPermaLink="false">https://ulfrid.github.io/python/fluent-python-정리하기/</guid><pubDate>Sun, 10 Nov 2019 22:12:07 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;오늘은 여기까지~&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fluent Python - data structure]]></title><description><![CDATA[전문가를 위한 파이썬 정리하기 파이썬 학습 중 보다 한걸음 나아가기 위해 책을 읽고 공부한 부분을 정리하려고 한다. 오늘의 정리 내용은 2장 데이터 구조체 시퀀스(Sequence) 딕셔너리 와 셋트(Dictionary and Set…]]></description><link>https://ulfrid.github.io/python/fluent-python-data_structure/</link><guid isPermaLink="false">https://ulfrid.github.io/python/fluent-python-data_structure/</guid><pubDate>Sun, 10 Nov 2019 22:12:07 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
     &gt;
@@ -743,7 +863,7 @@ Apply complete&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; Resour
 &lt;li&gt;균일시퀀스 (str, bytes, bytearray, memoryview, array.array)&lt;/li&gt;
 &lt;li&gt;컨테이너 시퀀스 (list, tuple, collections, deque)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;균일 시퀀스는 작고 빠르고, 사용하기 쉽지만 숫자, 문자, 바이트 처럼 원자적인 데이터만 저장할 수 있다. &lt;/p&gt;
+&lt;p&gt;균일 시퀀스는 작고 빠르고, 사용하기 쉽지만 숫자, 문자, 바이트 처럼 원자적인 데이터만 저장할 수 있다.&lt;/p&gt;
 &lt;p&gt;컨테이너 시퀀스는 융통성이 있지만, 가변 객체를 저장할 때는 예상치 못할 일이 발생할 수도 있다. 따라서 내포된 데이터 구조체와 함꼐 컨테이너 시퀀스를 사용할 때는 주의해야한다.&lt;/p&gt;
 &lt;p&gt;리스트 컴프리헨션 (list comprehension) 과 제너레이터(generator)&lt;/p&gt;
 &lt;p&gt;리스트 컴프리헨션은 전형적인 파이써닉한 코드 스타일을 보여준다.&lt;/p&gt;
@@ -765,7 +885,7 @@ Apply complete&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; Resour
 &lt;p&gt;하지만 리스트 컴프리헨션은 어디까지나, 리스트를 만드는데만 쓰인다.&lt;/p&gt;
 &lt;p&gt;다른 종류의 시퀀스를 채우기 위해서는 제너레이터 표현식을 써야한다.&lt;/p&gt;
 &lt;p&gt;제너레이터는 이책의 후반에서 자세히 다루므로 그떄 정리하도록 한다.&lt;/p&gt;
-&lt;p&gt;다음 정리는 튜플에서 이어서 할 계획이다. &lt;/p&gt;
+&lt;p&gt;다음 정리는 튜플에서 이어서 할 계획이다.&lt;/p&gt;
 &lt;p&gt;See You Later&lt;/p&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[Ulfrid  Wecode Mentor & Backend Enginner Python Django, Flask AWS EC2, Lambda, MySQL ,etc since: 2019.09~ was System Enginner at Payday in…]]></description><link>https://ulfrid.github.io/resume-en/</link><guid isPermaLink="false">https://ulfrid.github.io/resume-en/</guid><pubDate>Sun, 10 Nov 2019 00:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;ulfrid&quot;&gt;&lt;a href=&quot;#ulfrid&quot; aria-label=&quot;ulfrid permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ulfrid&lt;/h1&gt;
 &lt;div align=&quot;center&quot;&gt;
 &lt;p&gt;&lt;span
