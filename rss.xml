@@ -1,4 +1,233 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Dec 2019 13:55:49 GMT</lastBuildDate><item><title><![CDATA[Microservice]]></title><description><![CDATA[마이크로서비스 아키텍쳐란 MSA? Microservice 마이크로 서비스 아키텍처 (Micro Service Architecture…]]></description><link>https://ulfrid.github.io/devops/microservice/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/microservice/</guid><pubDate>Sun, 01 Dec 2019 20:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Dec 2019 13:37:37 GMT</lastBuildDate><item><title><![CDATA[node.js 2회차]]></title><description><![CDATA[node.js 지난시간에는… node.js를 실행하고, 모듈로 임포트/익스포트하고 내장 객체를 이용하는 방법등을 공부해왔다. 오늘도 이어서 진행한다. 노드? 내장 모듈 os os 모듈은 운영체제의 정보를 가져올 수 있는 모듈이다. python의 os…]]></description><link>https://ulfrid.github.io/node.js/nodejs_second/</link><guid isPermaLink="false">https://ulfrid.github.io/node.js/nodejs_second/</guid><pubDate>Sun, 08 Dec 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 440px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.13636363636365%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAChklEQVQoz21SbUhTURg+d7NCRPFHUBlJtbTCOe+959y7+XG1jK0PP3O6VY7J7l3bZW5JSVaugiQECYJK+3bLoiToGxUjCPom6Gf98b8/C/ybwek9a0eG9sLDOec9z/uc933PixAYxljIQMHoC00zFzo5FUCJR0HhyJXOzFlxEiTLspDl34B9gscyP79jJCvKGibYWohs6Ni7Vgui/3yxiYCl90VQ2FlawR7Ny4pMQ9z3FfEYW/mmCMu4FC2z+MOAbbkPuIWAGRD6zH2KU9moVisFPMMuIMwTQihkeH41EldFPuyy98/63vRN9iyGbx++NTgbXVu2YUcxKxVAGRfiXosOMQ/OA1KVtCiJ0hzEH0SqqrLLj3Bxx+lyUrtN3h+ebnpy7luA9j/WfyeehmjnvZZE5VbHCVe1iwLvEuAn4CUI7CWYUG1f3VuX5vwlS/If5HJlSAZRcZGiqFTBpLUt7Z6Kveqip58dXeh54Keem3tOSeXSBfg0xl0D+AR4TxTSIVXJ1DvQPuRLeg+Urd9ezkqeB9QAOV/G+Ksqkmbtam28ZdRDB2dM6h9rX9DG6jR7SWUj8BYVReElJwGbQXgOS5iKDmmE97CYN1fViFUS5SK2bxjW6vWUb7j3fqjWHA+7+57HtIbmehl6dQ1KdfMYKDOf9R4Qq7DZBZQzh0s/6bvclvl+c9wsiaaMjmhad0TuhjzxyUj30I/kFs6raay2LJ8ClB1KPocIxgdFJvQMEYSaoyl9E2DETBtnouN63BgNbmN33Rf9ufFWSMiSm9SSea83gZDBBXebKcNtpvTjINgBOAvi6zLZpw0hZzbRf8W4gQhfC0DUZ6b1VlgPATwAIfsYe3hF7F8Tot+Ch8juSQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;nodejs&quot;
+        title=&quot;nodejs&quot;
+        src=&quot;/static/cbb1ff38857c4a25e44c0e85ac854b03/4f7c9/nodejs.png&quot;
+        srcset=&quot;/static/cbb1ff38857c4a25e44c0e85ac854b03/cf440/nodejs.png 148w,
+/static/cbb1ff38857c4a25e44c0e85ac854b03/d2d38/nodejs.png 295w,
+/static/cbb1ff38857c4a25e44c0e85ac854b03/4f7c9/nodejs.png 440w&quot;
+        sizes=&quot;(max-width: 440px) 100vw, 440px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;nodejs&quot;&gt;&lt;a href=&quot;#nodejs&quot; aria-label=&quot;nodejs permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;node.js&lt;/h1&gt;
+&lt;h2 id=&quot;지난시간에는&quot;&gt;&lt;a href=&quot;#%EC%A7%80%EB%82%9C%EC%8B%9C%EA%B0%84%EC%97%90%EB%8A%94&quot; aria-label=&quot;지난시간에는 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;지난시간에는…&lt;/h2&gt;
+&lt;p&gt;node.js를 실행하고, 모듈로 임포트/익스포트하고 내장 객체를 이용하는 방법등을 공부해왔다. 오늘도 이어서 진행한다.&lt;/p&gt;
+&lt;h2 id=&quot;노드&quot;&gt;&lt;a href=&quot;#%EB%85%B8%EB%93%9C&quot; aria-label=&quot;노드 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;노드?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;내장 모듈&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;os&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;os 모듈은 운영체제의 정보를 가져올 수 있는 모듈이다. python의 os와 같다.
+os.arch() 아키텍쳐 정보
+os.platform() 운영체제 정보
+os.type() 운영체제의 종류
+os.uptime() 운영체제의 실행 시간
+os.hostname() 운영체제의 이름
+os.release() 운영체제의 버전
+os.homedir() 홈 디렉토리 경로
+os.tmpdir() 임시파일 저장경로
+os.cpus() 컴퓨터의 코어 정보
+os.cpus().length 코어 개수를 카운트
+os.freemem() 사용가능한 메모리
+os.totalmem() 전체 메모리 용량&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;path&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;폴더와 파일의 경로를 쉽게 조작하도록 도와주는 모듈
+운영체제별로 경로 구분자가 다르기 때문에 필요.
+Windows 타입: ₩, POSIX 타입(macOS, linux 등): /
+path.sep 경로 구분자
+path.delimiter 환경변수의 구분자
+path.dirname(경로) 파일이 위치한 폴더 경로를 보여준다.
+path.extname(경로) 파일의 확장자를 보여준다.
+path.basename(경로, 확장자) 파일의 이름 및 확장자를 보여줌
+path.parse(경로) 파일경로를 root, dir, base, ext, name으로 분류
+path.format(객체) path.parse()한 객체를 파일경로로 합침
+path.normalize(경로) \ 나 /를 실수로 여러 번 사용했거나 혼용했을때 정상적인 경로로 변환
+path.isAbsolute(경로) 절대 경로 여부를 boolean으로 리턴
+path.relative(기준경로, 비교경로) 경로를 두 개 넣으면 첫 번째 경로에서 두번째 경로로 가는 방법을 알려줌
+path.join(경로, …) 여러인자를 넣으면 하나의 경로로 합쳐줌. 상대경로도 알아서 처리해줌
+path.resolve(경로, …) 조인과 같은 일을 하지만, 절대경로로 인식하고 앞의 경로를 무시한다.
+\의 경우 윈도우에서 \로 경로 구분을 하는데 자바스크립트에서는 \ 가 특수문자이므로 수식처리해야한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;url&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;인터넷 주소를 쉽게 조작하도록 도와주는 모듈
+WHATWG 방식과 기존 노드 url구분 방식
+URL() 생성자로 처리하는 방법과 기존의 url.parse()
+두가지를 다 지원하는 url.format()
+WHATWG 방식 username, password, origin, searchParams
+node 방식 auth, query
+pathname만 오는 경우 기존 node방식을 써야만 읽어올 수 있다.
+URL() searchParams는 쿼리스트링 방식이 간편해지는 장점이 있다.
+node는 querystring을 쓰려면 querystring모듈을 사용해야 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;querystring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;querystring.parse(쿼리) url 쿼리를 자바스크립트 객체로 분해함.
+querystring.stringify(객체) 분해된 쿼리 객체를 문자열로 다시 조립함.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;crypto&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;암호화를 도와주는 모듈&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이후에는 뭔가 만들면서 정리 해볼 생각이다. 오늘은 여기까지 화이팅!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[node.js 시작하기]]></title><description><![CDATA[node.js 개인적인 호기심도 있지만, 클라우드 관련 왠만한 튜토리얼이 노드 위주라서 아에 애매하게 하지 말고, 학습을 해보기로 했다. node.js 학습을 위해 책을 구매 이책을 통해 그동안 등한시한 자바스크립트 지식 보충 및 노드JS…]]></description><link>https://ulfrid.github.io/node.js/nodejs_start/</link><guid isPermaLink="false">https://ulfrid.github.io/node.js/nodejs_start/</guid><pubDate>Sat, 07 Dec 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 440px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.13636363636365%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAChklEQVQoz21SbUhTURg+d7NCRPFHUBlJtbTCOe+959y7+XG1jK0PP3O6VY7J7l3bZW5JSVaugiQECYJK+3bLoiToGxUjCPom6Gf98b8/C/ybwek9a0eG9sLDOec9z/uc933PixAYxljIQMHoC00zFzo5FUCJR0HhyJXOzFlxEiTLspDl34B9gscyP79jJCvKGibYWohs6Ni7Vgui/3yxiYCl90VQ2FlawR7Ny4pMQ9z3FfEYW/mmCMu4FC2z+MOAbbkPuIWAGRD6zH2KU9moVisFPMMuIMwTQihkeH41EldFPuyy98/63vRN9iyGbx++NTgbXVu2YUcxKxVAGRfiXosOMQ/OA1KVtCiJ0hzEH0SqqrLLj3Bxx+lyUrtN3h+ebnpy7luA9j/WfyeehmjnvZZE5VbHCVe1iwLvEuAn4CUI7CWYUG1f3VuX5vwlS/If5HJlSAZRcZGiqFTBpLUt7Z6Kveqip58dXeh54Keem3tOSeXSBfg0xl0D+AR4TxTSIVXJ1DvQPuRLeg+Urd9ezkqeB9QAOV/G+Ksqkmbtam28ZdRDB2dM6h9rX9DG6jR7SWUj8BYVReElJwGbQXgOS5iKDmmE97CYN1fViFUS5SK2bxjW6vWUb7j3fqjWHA+7+57HtIbmehl6dQ1KdfMYKDOf9R4Qq7DZBZQzh0s/6bvclvl+c9wsiaaMjmhad0TuhjzxyUj30I/kFs6raay2LJ8ClB1KPocIxgdFJvQMEYSaoyl9E2DETBtnouN63BgNbmN33Rf9ufFWSMiSm9SSea83gZDBBXebKcNtpvTjINgBOAvi6zLZpw0hZzbRf8W4gQhfC0DUZ6b1VlgPATwAIfsYe3hF7F8Tot+Ch8juSQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;nodejs&quot;
+        title=&quot;nodejs&quot;
+        src=&quot;/static/cbb1ff38857c4a25e44c0e85ac854b03/4f7c9/nodejs.png&quot;
+        srcset=&quot;/static/cbb1ff38857c4a25e44c0e85ac854b03/cf440/nodejs.png 148w,
+/static/cbb1ff38857c4a25e44c0e85ac854b03/d2d38/nodejs.png 295w,
+/static/cbb1ff38857c4a25e44c0e85ac854b03/4f7c9/nodejs.png 440w&quot;
+        sizes=&quot;(max-width: 440px) 100vw, 440px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;nodejs&quot;&gt;&lt;a href=&quot;#nodejs&quot; aria-label=&quot;nodejs permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;node.js&lt;/h1&gt;
+&lt;h2 id=&quot;개인적인-호기심도-있지만-클라우드-관련-왠만한-튜토리얼이-노드-위주라서-아에-애매하게-하지-말고-학습을-해보기로-했다&quot;&gt;&lt;a href=&quot;#%EA%B0%9C%EC%9D%B8%EC%A0%81%EC%9D%B8-%ED%98%B8%EA%B8%B0%EC%8B%AC%EB%8F%84-%EC%9E%88%EC%A7%80%EB%A7%8C-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B4%80%EB%A0%A8-%EC%99%A0%EB%A7%8C%ED%95%9C-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC%EC%9D%B4-%EB%85%B8%EB%93%9C-%EC%9C%84%EC%A3%BC%EB%9D%BC%EC%84%9C-%EC%95%84%EC%97%90-%EC%95%A0%EB%A7%A4%ED%95%98%EA%B2%8C-%ED%95%98%EC%A7%80-%EB%A7%90%EA%B3%A0-%ED%95%99%EC%8A%B5%EC%9D%84-%ED%95%B4%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4&quot; aria-label=&quot;개인적인 호기심도 있지만 클라우드 관련 왠만한 튜토리얼이 노드 위주라서 아에 애매하게 하지 말고 학습을 해보기로 했다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;개인적인 호기심도 있지만, 클라우드 관련 왠만한 튜토리얼이 노드 위주라서 아에 애매하게 하지 말고, 학습을 해보기로 했다.&lt;/h2&gt;
+&lt;p&gt;node.js 학습을 위해 책을 구매 이책을 통해 그동안 등한시한 자바스크립트 지식 보충 및 노드JS 이해도를 높이고,
+책의 예시 및 그동안 제작했었던 파이썬 백엔드도 노드로 재구현 해볼까 한다.
+제일 좋은건 확장성 있는 앱들을 만들어 보는건데, 아직 생각에만 머무를뿐.. 좀더 고민해 보도록 하겠다.
+이 자료는 누군가에게 설명을 하기보다, 개인적인 자료 정리에 가깝다.
+뭔가 프로젝트를 하나 해보면 플로우대로 정리한 글을 연재해볼까 한다. 시간이 맞아야 할텐데~&lt;/p&gt;
+&lt;h2 id=&quot;노드&quot;&gt;&lt;a href=&quot;#%EB%85%B8%EB%93%9C&quot; aria-label=&quot;노드 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;노드?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;REPL(Read, Eval, Print, Loop)이란, 리플은 학습도구로서 잘 사용했었는데, 이게 노드에서 제공하는 자바스크립트
+실행 콘솔을 의미한다.
+맨날 자바스크립트 코드 실행은 브라우저에서만 한다고 생각했는데, node에 있었다니 충격적!!! 역시 사람은 배워야한다.
+당연히 실행법은 Node가 설치된 컴퓨터에서 맥은 터미널, 윈도우는 CMD다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;node &lt;span class=&quot;token comment&quot;&gt;//라고 치면 끝&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; hello &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Hello World!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;hello&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+Hello World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;종료는 &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;c&lt;/kbd&gt; 두번 누르거나, .exit를 입력한다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;js 파일을 실행하는 법은 마찬가지다. 그냥 node 명령어 뒤에 파일명에서 .js를 빼고 실행하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//helloworld.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Hello World&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위의 자바스크립트 파일을 실행한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;node helloWorld&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;모듈&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2015 자바스크립트에도 import/export라는 모듈 개념이 도입되었다고 한다. 브라우저에서는 크롬 60 버전부터 지원해서 사용가능하다고 한다. 현재 오늘 체크한 버전:78.0.3904.108(공식 빌드) (64비트).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;모듈 개념은 파이썬에서는 익숙한데, 자바스크립트를 가볍게 익히는 동안은 다가오지 않았다가 리액트를 접하면서 인지하고, 이번에 노드를 공부하면서 다시 접하게 되었다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;그럼 어떻게 임포트 하는가.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;먼저 임포트될 js파일에 선언된 변수나 함수등을 module.exports = 에 여러개의 요소면 객체에 담고, 단일 요소면 함수 혹은 변수명을 넘긴다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;임포트는 require(‘경로’)를 통해 임포트 해온다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;노드의 내장객체&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;global은 브라우저의 window와 같다.
+각 객체는 node 콘솔에서 global을 입력해보면 출력된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;node
+&amp;gt;global&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;require등도 global이 생략된 사용이다. console도 마찬가지다.
+global 객체의 속성에 값을 대입해서 파일간에 데이터를 공유할 수 있지만, 이를 남용하는건 지양해야 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;console은 우리가 애용하는 console.log등과 같이 똑같다.
+console.time(‘이름’)/ console.timeEnd(‘이름’)를 통해 시간 측정도 가능하다.
+console.error() 에러 로그
+console.trace() 에러 추적
+console.dir(객체, 옵션) 객체를 콘솔에 표시할 때 사용한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;setTimeout, setImmediate, setInterval
+워낙 많이 써서 크게 정리하지 않는다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;console.log(&lt;strong&gt;filename);
+console.log(&lt;/strong&gt;dirname);
+위와 같이 경로를 확인할때 줄수 있는 옵션 인자가 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;module.exports는 exports만으로도 사용할 수 있다.
+둘 다 같은 객체를 참조하기 때문이다.
+단, module.exports에는 어떤값을 대입해도 되지만, exports에는 반드시 속성명과 속성값을 대입해야한다.
+즉, exports는 객체만 대입해야 한다.
+또한, 한번 exports로 시작했다면 중간에 혼용하는것은 좋지 않다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;process
+말그대로 node의 프로세스를 관리하는 객체이다.
+process.version 노드 버전
+process.arch 아키텍쳐 정보
+process.platform 운영체제 정보
+process.pid 프로세스 id
+process.uptime() 프로세스의 실행누적시간
+process.execPath 노드의 경로
+process.cwd() 프로세스가 실행된 경로
+process.cpuUsage() 프로세스의 CPU사용률&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;process.env 말그대로 시스템 환경변수를 의미한다.
+이곳에 노출하고 싶지 않은 SECRET_KEY등을 저장하고 사용할수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; secretId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;SECRET_ID&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;process.nextTick(callback)
+넥스트 틱은 setImmediate나 setTimeout보다 먼저 실행된다. 해당 사항은 마이크로태스크라고 따로 구분지어 부른다.
+process.exit()
+노드 종료&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;오늘의 종료는 여기까지 나머지는 내일 이어서 정리하자!! 화이팅!!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Microservice]]></title><description><![CDATA[마이크로서비스 아키텍쳐란 MSA? Microservice 마이크로 서비스 아키텍처 (Micro Service Architecture…]]></description><link>https://ulfrid.github.io/devops/microservice/</link><guid isPermaLink="false">https://ulfrid.github.io/devops/microservice/</guid><pubDate>Sun, 01 Dec 2019 20:39:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
