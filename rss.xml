@@ -1,4 +1,220 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Dec 2019 13:37:37 GMT</lastBuildDate><item><title><![CDATA[node.js 2회차]]></title><description><![CDATA[node.js 지난시간에는… node.js를 실행하고, 모듈로 임포트/익스포트하고 내장 객체를 이용하는 방법등을 공부해왔다. 오늘도 이어서 진행한다. 노드? 내장 모듈 os os 모듈은 운영체제의 정보를 가져올 수 있는 모듈이다. python의 os…]]></description><link>https://ulfrid.github.io/node.js/nodejs_second/</link><guid isPermaLink="false">https://ulfrid.github.io/node.js/nodejs_second/</guid><pubDate>Sun, 08 Dec 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Ulfrid_log]]></title><description><![CDATA[Blog posted about Development]]></description><link>https://ulfrid.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Dec 2019 13:58:55 GMT</lastBuildDate><item><title><![CDATA[우리는 왜 sudo를 쓰는가]]></title><description><![CDATA[우리는 왜 sudo를 쓰는가? 우분투를 처음 사용하다보면, 내 맘대로 되는 일이 별로 없다. sudo는 Super user do로 유래 됐으나, 요즘은 Subsititute user do로도 말한다. 뭐만 하면 ‘Permission Denied…]]></description><link>https://ulfrid.github.io/infrastructure/linux-sudo/</link><guid isPermaLink="false">https://ulfrid.github.io/infrastructure/linux-sudo/</guid><pubDate>Sun, 15 Dec 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABBElEQVQoz5WSzUoCURTH5zV8sR5BXLUriDYK0QMELYraFREECkNlGg66SGmTWjooojMD4dd17vc940fYjbZXHH+rc7n3f885/3MsZoJSqpRsfrqu21FK6aPxmcXMUIDo+DB5kjmaL5a7iaXkwzH6yKevzw763jeAObllqplAtCw41ZCwl6JzcXWz+lkTQmKIKeUiCoet8v2+/qL79XZ5ugcCUSb03VYxZmqNu7fwYFUez8t3KWEnZhOPC7VdrHsTQgRB0G+Veu3aoPM+8uuYSs5i9KzFANCoN56eX3M5u+RUslnb9z0pDZ6Z3db2IDTFOJz9gXYbFedcF/8faDbswsYlicUvOHlcDANU4RYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;linux&quot;
+        title=&quot;linux&quot;
+        src=&quot;/static/dc98064e8bc40d83d91362d4ce1dd9d3/b9e4f/linux.png&quot;
+        srcset=&quot;/static/dc98064e8bc40d83d91362d4ce1dd9d3/cf440/linux.png 148w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/d2d38/linux.png 295w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/b9e4f/linux.png 590w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/f9b6a/linux.png 885w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/2d849/linux.png 1180w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/0309e/linux.png 1280w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;우리는-왜-sudo를-쓰는가&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EB%A6%AC%EB%8A%94-%EC%99%9C-sudo%EB%A5%BC-%EC%93%B0%EB%8A%94%EA%B0%80&quot; aria-label=&quot;우리는 왜 sudo를 쓰는가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우리는 왜 sudo를 쓰는가?&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;우분투를 처음 사용하다보면, 내 맘대로 되는 일이 별로 없다.&lt;/li&gt;
+&lt;li&gt;sudo는 Super user do로 유래 됐으나, 요즘은 Subsititute user do로도 말한다.&lt;/li&gt;
+&lt;li&gt;뭐만 하면 ‘Permission Denied’을 만나고, 이럴거면 그냥 첨부터 root사용자로 하던지 이런저런 불만이 쌓인다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;root는-뭐길래&quot;&gt;&lt;a href=&quot;#root%EB%8A%94-%EB%AD%90%EA%B8%B8%EB%9E%98&quot; aria-label=&quot;root는 뭐길래 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;root는 뭐길래?&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;root는 말그대로 root근원 ’/‘리눅스의 기준경로와 같은 이름으로 리눅스의 Super User 최고 권한자를 칭한다.&lt;/li&gt;
+&lt;li&gt;리눅스는 권한관리를 통해 여러 사용자의 작업 분배 및 다양한 종류의 서비스를 수행할 수 있다.&lt;/li&gt;
+&lt;li&gt;그럼 우리가 만든 유저는 왜 슈퍼 유저가 아닌가? 그것은 설계상, 일반사용자 계정이 루트권한을 분리하지 않고 갖게되면,
+핵심적인 부분에 대해 훼손이 일어날 경우 심각한 사고로 이어질 가능성이 크기 때문이다.&lt;/li&gt;
+&lt;li&gt;루트 계정은 유일하지만, 사용자 계정은 여러개가 될 수 있다.&lt;/li&gt;
+&lt;li&gt;경로상 root계정의 홈 디렉토리는 &lt;em&gt;/root&lt;/em&gt; 지만, 사용자 계정은 &lt;em&gt;/home/&lt;/em&gt; 안에 존재한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;그럼-어떻게-확인할까&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EB%9F%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%99%95%EC%9D%B8%ED%95%A0%EA%B9%8C&quot; aria-label=&quot;그럼 어떻게 확인할까 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그럼 어떻게 확인할까?&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;리눅스는 우리가 추가 하는 사용자 외에도 프로그램을 실행할 때에도 사용자가 추가되서, 이 사용자들이 프로그램을 실행하고 passwd 파일에 관리가 된다.&lt;/li&gt;
+&lt;li&gt;유닉스의 영향을 받아서 파일을 생성할 때나 프로세스 생성 시에도 반드시 소유자를 명시하도록 되어 있고 해당 소유자의 권한을 승계하는 형태로 운영된다.&lt;/li&gt;
+&lt;li&gt;그말인 즉 단일 책임제로 각자의 역할은 각자가 지고, 이외의 전체적인 리눅스에 대한 부분은 root가 책임지는 것이다.&lt;/li&gt;
+&lt;li&gt;그래서 ls -l 등으로 리스팅을 하면 항상 root root 와 같이 유저소유권과 그룹소유권을 명기하고 있다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 27.187499999999996%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAA20lEQVQY01VPa2/DIAzM//9tVdNvXfZIKAnkAStrXg3Y2INNmrSTdbIt+3RXkFIkW0bYkM1C0xfaJULkBMrE8zNqBz6v6K9+URAijyN3HYsGndtDOoocAt9ubAzHiIC7p/Vg7XB8xCR9hCxLxAV5351OoixtVS1K236qy/LtcpmuV3E+p0a/VEpPr7WU2oh2aOQgu/79ozbGFEkkTKNvWxAiah0RD2ufQsC27cOwNQ3MMyIAhOzhh70Pyuyfs8/PvK7c98kn3e95BGDnclzv2RpOuf4jIC1HChK/AV28HF81SxV6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;permission&quot;
+        title=&quot;permission&quot;
+        src=&quot;/static/6385dc5947dfcea8380aec52cd536a4f/b9e4f/permission.png&quot;
+        srcset=&quot;/static/6385dc5947dfcea8380aec52cd536a4f/cf440/permission.png 148w,
+/static/6385dc5947dfcea8380aec52cd536a4f/d2d38/permission.png 295w,
+/static/6385dc5947dfcea8380aec52cd536a4f/b9e4f/permission.png 590w,
+/static/6385dc5947dfcea8380aec52cd536a4f/e49a9/permission.png 640w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;따라서 우리는 우리가 주체가 아닌 파일을 편집하려면 반드시 sudo를 넣어야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;sudo를-안쓰고-싶거나-간편화-하고-싶을때&quot;&gt;&lt;a href=&quot;#sudo%EB%A5%BC-%EC%95%88%EC%93%B0%EA%B3%A0-%EC%8B%B6%EA%B1%B0%EB%82%98-%EA%B0%84%ED%8E%B8%ED%99%94-%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%84%EB%95%8C&quot; aria-label=&quot;sudo를 안쓰고 싶거나 간편화 하고 싶을때 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;sudo를 안쓰고 싶거나 간편화 하고 싶을때&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;유저를 root 그룹에 편입시킨다.&lt;/li&gt;
+&lt;li&gt;/etc/sudoer에 등록해서 허용한다.&lt;/li&gt;
+&lt;li&gt;특정 명령어에만 유저를 그룹에 등록시킨다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[linux]]></title><description><![CDATA[…]]></description><link>https://ulfrid.github.io/infrastructure/linux/</link><guid isPermaLink="false">https://ulfrid.github.io/infrastructure/linux/</guid><pubDate>Sat, 14 Dec 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABBElEQVQoz5WSzUoCURTH5zV8sR5BXLUriDYK0QMELYraFREECkNlGg66SGmTWjooojMD4dd17vc940fYjbZXHH+rc7n3f885/3MsZoJSqpRsfrqu21FK6aPxmcXMUIDo+DB5kjmaL5a7iaXkwzH6yKevzw763jeAObllqplAtCw41ZCwl6JzcXWz+lkTQmKIKeUiCoet8v2+/qL79XZ5ugcCUSb03VYxZmqNu7fwYFUez8t3KWEnZhOPC7VdrHsTQgRB0G+Veu3aoPM+8uuYSs5i9KzFANCoN56eX3M5u+RUslnb9z0pDZ6Z3db2IDTFOJz9gXYbFedcF/8faDbswsYlicUvOHlcDANU4RYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;linux&quot;
+        title=&quot;linux&quot;
+        src=&quot;/static/dc98064e8bc40d83d91362d4ce1dd9d3/b9e4f/linux.png&quot;
+        srcset=&quot;/static/dc98064e8bc40d83d91362d4ce1dd9d3/cf440/linux.png 148w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/d2d38/linux.png 295w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/b9e4f/linux.png 590w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/f9b6a/linux.png 885w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/2d849/linux.png 1180w,
+/static/dc98064e8bc40d83d91362d4ce1dd9d3/0309e/linux.png 1280w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;리눅스에-대해서&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EB%88%85%EC%8A%A4%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C&quot; aria-label=&quot;리눅스에 대해서 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리눅스에 대해서&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;리눅스를 사용한지는 꽤 됐다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;처음 시스템 엔지니어를 시작했을때 아무것도 모른채 업무에 투입되면서 많은 어려움과 배움의 연속이었다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;리눅스를 배우기 위해 다양한 공부를 했지만, 남에게 설명해주려 하면, 사실 좀 막연했다. 왜냐하면 굉장히 방대한 지식이기 때문이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;리눅스를 공부해 본 사람이라면 이 말에 공감할 것이라고 생각한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이번에 설명하려고 하는 내용은 전체에 대한 이야기는 아니다. 단순히 지금 이제 막 개발을 시작하려는 사람이 리눅스를 접할 때 도움이 되었으면 하는 자료 정리이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;세상에는 다양한 리눅스가 있다. Linux는 리누스 토르발스 혹은 라이너스 토발즈가 대학교 2학년때 전공수업으로 운영체제를
+배우던 중, 교수님이 만든 minix를 본인의 스타일로 변경하여 만든 커널로 시작된다. 초기 리눅스는 프로세스 스케쥴링, 가상 메모리 및 파일 관리, 장치 입출력 등의 기본적인 서비스를 제공하는 운영체제의 커널이었지만, GNU에서 공개 라이센스로 공개하고, 이를 통해 개발된 유틸리티 및 공개 소프트웨어가 포팅되면서 발전했다.&lt;/li&gt;
+&lt;li&gt;공개 소프트웨어로서 무료로 사용이 가능하다.&lt;/li&gt;
+&lt;li&gt;유닉스와의 완벽한 호환성을 유지한다.&lt;/li&gt;
+&lt;li&gt;GUI 환경 제공, 보통 리눅스는 까만창에 커서만 깜빡인다고 하지만, GUI환경 또한 제공하고 있다.&lt;/li&gt;
+&lt;li&gt;서버용으로 널리 사용되고 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;리눅스의-구조&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EB%88%85%EC%8A%A4%EC%9D%98-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;리눅스의 구조 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리눅스의 구조&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 550px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 40%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAARlAAAEZQAGA43XUAAABmUlEQVQY0z2R21PaUBDG+es7HR98sa9OSwtoHeMD0qBQcFDGikwgXExokzSERBA05yQhhJOcW5Oi7sxeHvY38+23OZ4Go3wXGJMoTHyXwBUBSwLS+kIAoH5ANiFNYkqzTcZYmumQ21F0u95AC7q676mbcLKBClrIdCpRs0eMAdUUpmnM0Kk9owAwStl/KoPxi7Ocj43V1nS5CcgTsiH/43N9Hchsdsdmv+j0lk96WB5iWU56/URVOUIZzHzf05t9J2zJ3onYTevACZ2oM7Z/zqkU2A2zUVBqea7WjbLQPDy8Kxb6pSLs3qfic+k9YCC0tMVRExYurFLdbWtLB1/9DupT0oKK8HyVn7c+o+5JWBeX5+egKq7OBPfm+lV2/Kgb0mlNGv4YPTcMQ9lemrxioTLUClz6wgdfefcbrQm8esGrIhdF1umwKNrB2fFk7Xl/r+1h0R4dzPv7q9u98PIDrnxMKvvo9FNSypPj70mljNptZFkEY/5u2M73rGNK/CBeOMhQ0WQYPcjb0TieaLE1wxCQOH596dur/gG62KnYwDV1PwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;linux structure&quot;
+        title=&quot;linux structure&quot;
+        src=&quot;/static/4e1259cbf0ec019acfde93212957ceb9/2cf63/linux_structure.png&quot;
+        srcset=&quot;/static/4e1259cbf0ec019acfde93212957ceb9/cf440/linux_structure.png 148w,
+/static/4e1259cbf0ec019acfde93212957ceb9/d2d38/linux_structure.png 295w,
+/static/4e1259cbf0ec019acfde93212957ceb9/2cf63/linux_structure.png 550w&quot;
+        sizes=&quot;(max-width: 550px) 100vw, 550px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;커널&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;리눅스의 핵심, 프로세스 관리, 메모리 관리, 파일 및 장치 등 컴퓨터의 하드웨어를 모두 제어하는 영역&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;셸&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;커널과 사용자간의 접점으로 셸을 통해 우리는 컴퓨터가 원하는 동작을 하도록 할 수 있다.
+대표적인 셸은 BASH(Bourne-again Shell)이 있고 요즘은 zsh(Z shell)이 많이 쓰이고 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;응용 프로그램&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;각종 프로그램 시스템을 위한 프로그램, 사용자의 문서 편집 도구, 브라우저, 네트워크 도구 등 다양한 프로그램을 말한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;다양한-리눅스의-형제들&quot;&gt;&lt;a href=&quot;#%EB%8B%A4%EC%96%91%ED%95%9C-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%9D%98-%ED%98%95%EC%A0%9C%EB%93%A4&quot; aria-label=&quot;다양한 리눅스의 형제들 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;다양한 리눅스의 형제들&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;아래 그림에서 리눅스의 갈래를 보여주고 있다. 이는 축약된 대표적인 버전들을 말하고 있다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.58974358974359%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADLUlEQVQ4y0WSW2/bRhCF+cf7AwqkT30piiZoEyQBEriBb3HgBIljx7Jau7J8EWXxJlESKVIUb1rxqtWcDuUGXeDDmV1wZ4dzRvnl7Zn8dbe9frp3KX/bZfau5LODjnx6cC2fvb+Rvx/dyRfHPfn8WJV/HPfli08D+fKzLl99MeXLE0u+/jqSr09t+eZ8Kl+dTgdKna+ARYx8PofMOK5KoCyAIgfyDGjOVg0CEMxyiY34P6YkAcXxFmxqQykSgVx3KLEmlE5ntJx6j4w5HruU2g6lo/8YTmhpuxR0OmRdXNCk26Owb1CgarRQNWRxaiiu6+Ly8pJSrmC9kSirClVdc6GsZcnFFihzJsuZjOMSq7N9zG7a8D0PC3dKC2cLiiwzlDRdwnVmVJU15HqNNSdbf1em5ge+x9s9P1KLFBtuzUbK5g7Jek3bWEpDqco1LGNE+sDAYhEiTVOkSYqEexPHERMjYaIo2hJGISLeNxosAr4T0JYwQFEUhvKlZeKHJx+o0/sHvYcehuMhRkyj9mSMga7BGBl8NoI1smDZFlT+7kF7gDkyoZka3dx1qbkrVsJQWn+p+OnnHfLCGYI0QLQMESYBUna//bCHrzdv4MZjGG4f08UYbjTByDcxCUZwwjHGwZAsVyd7biErVoZS1yW0QY+SOOGebFCxARUb0PTRMFRomoo8F/CjMRIRIFkFWOYh65wf9xifWBvY0LxJWIMXNVpykq3DjbNshlxLNoINqmqs4hD6XRfXV9fotK+wcHykPvfcW1AyC2jpBU0xhsLOoCxL2nDWkpsueIyqIEDe4PvIeDQK1pXrIBmamN5z1a2/4al9xLqJcKBTxCQDHWW6NJS5P6ecEx7++IRaO39S9/ycZgONcs+nlevSynEpcxzKpoxtk3s/oH6rSzYPdaDqtNQtmt32yblRqUiXumLenza/jHBowXMm8AOfB7rA4+K6m9pJArJ+ZF0j8mLEXghnMoc59HHaVuHZM+5bZSnvjs/E7klPHLZ1cXShiw/M+3NN7J89iP1vmjg45/2FyVjikDlqj8SnzkR8vnbEuwtbPD+xxE7LFie3vvjYDW7/BQuwAQ54TT2qAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gnu linux distribution timeline&quot;
+        title=&quot;gnu linux distribution timeline&quot;
+        src=&quot;/static/ab7be4aa2fc315d20c8927460869d7a5/b9e4f/gnu-linux-distribution-timeline.png&quot;
+        srcset=&quot;/static/ab7be4aa2fc315d20c8927460869d7a5/cf440/gnu-linux-distribution-timeline.png 148w,
+/static/ab7be4aa2fc315d20c8927460869d7a5/d2d38/gnu-linux-distribution-timeline.png 295w,
+/static/ab7be4aa2fc315d20c8927460869d7a5/b9e4f/gnu-linux-distribution-timeline.png 590w,
+/static/ab7be4aa2fc315d20c8927460869d7a5/857ee/gnu-linux-distribution-timeline.png 624w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;아래의 링크를 누르면 더 자세한 맵을 볼 수 있다.
+[linux_distribution]: &lt;a href=&quot;https://en.wikipedia.org/wiki/Linux_distribution#/media/File:Linux_Distribution_Timeline.svg&quot;&gt;https://en.wikipedia.org/wiki/Linux_distribution#/media/File:Linux_Distribution_Timeline.svg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;우분투의-종류&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EB%B6%84%ED%88%AC%EC%9D%98-%EC%A2%85%EB%A5%98&quot; aria-label=&quot;우분투의 종류 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우분투의 종류&lt;/h1&gt;
+&lt;h2 id=&quot;debian&quot;&gt;&lt;a href=&quot;#debian&quot; aria-label=&quot;debian permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Debian&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GNU의 공식적인 후원을 받고 있는 유일한 배포판 계열이다. 대표적으로 UBUNTU가 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;redhat&quot;&gt;&lt;a href=&quot;#redhat&quot; aria-label=&quot;redhat permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redhat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;세계에서 가장 인기 많은 배포판으로 RPM이라는 패키지가 대표적이다.&lt;/li&gt;
+&lt;li&gt;redhat은 유료 리눅스로 큰 성공을 거두었고, 최근엔 IBM이 인수했다.&lt;/li&gt;
+&lt;li&gt;레드햇의 지원을 받지 않지만 레드햇 엔터프라이즈 리눅스를 완벽 호환하는 CentOS는 많은 기업에서 사용중에 있다.&lt;/li&gt;
+&lt;li&gt;Fedora은 레드햇에서 후원하는 순수 오픈소스 프로젝트 rpm기반의 리눅스 중에 새로운 케이스다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;리눅스의-설치는-대체로-초심자에게-어렵다&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EB%88%85%EC%8A%A4%EC%9D%98-%EC%84%A4%EC%B9%98%EB%8A%94-%EB%8C%80%EC%B2%B4%EB%A1%9C-%EC%B4%88%EC%8B%AC%EC%9E%90%EC%97%90%EA%B2%8C-%EC%96%B4%EB%A0%B5%EB%8B%A4&quot; aria-label=&quot;리눅스의 설치는 대체로 초심자에게 어렵다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리눅스의 설치는 대체로 초심자에게 어렵다.&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;윈도우와 달리 리눅스의 인스톨 체계는 초반에는 굉장히 불친절했다.&lt;/li&gt;
+&lt;li&gt;지금도 일부 모델들은 호환성 문제가 잦다.&lt;/li&gt;
+&lt;li&gt;최신 버전들을 그나마, 인스톨러 자체가 굉장히 친절해 졌다.&lt;/li&gt;
+&lt;li&gt;나는 주로 CentOS를 많이 썼는데, 요즘은 업무상 Ubuntu를 많이 하고 있다.&lt;/li&gt;
+&lt;li&gt;서버외에 데스크탑 기반으로 설치하는 일은 드물지만, 최근에는 업무상 많이 지원하고 있다.&lt;/li&gt;
+&lt;li&gt;윈도우 기반의 노트북을 위해 주로 우분투를 설치하고 있는데, 여태까지의 설치 경험을 통한 자료를 적어본다.&lt;/li&gt;
+&lt;li&gt;삼성 : 예전 버전은 평이하나, 최근에 나온 Ativ계열이나, 시리즈 계열은 보안 옵션을 제거하고 설치하면 대부분 괜찮다.&lt;/li&gt;
+&lt;li&gt;LG : 그램들은 최신 모델의 경우, 버전을 탈때가 있어서 몇차례 어려움이 많았는데, 대부분 큰 설정 변경없이도 듀얼부팅 설치는 잘됐다.&lt;/li&gt;
+&lt;li&gt;Dell : 특유의 바이오스나, RAID 설정, 보안설정이 독특하지만, 그 설정들에 대해 가이드만 확인하면 대체로 잘됐다.&lt;/li&gt;
+&lt;li&gt;Lenovo : 레노보는 인스톨시 항상 nomodeset 옵션을 추가해야 만사형통.&lt;/li&gt;
+&lt;li&gt;HP : 실패 케이스가 많다. 되거나 안되거나, 가끔은 어떤 옵션을 추가해도 잘 안될때도 많고, 반 포기 상태&lt;/li&gt;
+&lt;li&gt;Asus : 주로 많이 겪는 증상은 와이파이 안잡힘. 일단 랜선 꽂고 설치 후 설정 변경으로 되게 만드는 경우가 많았다.&lt;/li&gt;
+&lt;li&gt;위의 설치 경험은 주로 개인적인 경험이므로, 정확하지 않을 수 있다.&lt;/li&gt;
+&lt;li&gt;항상 우분투 설치하다 보면 하게 되는 말은 기승전 맥 쓰세요.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[node.js 2회차]]></title><description><![CDATA[node.js 지난시간에는… node.js를 실행하고, 모듈로 임포트/익스포트하고 내장 객체를 이용하는 방법등을 공부해왔다. 오늘도 이어서 진행한다. 노드? 내장 모듈 os os 모듈은 운영체제의 정보를 가져올 수 있는 모듈이다. python의 os…]]></description><link>https://ulfrid.github.io/node.js/nodejs_second/</link><guid isPermaLink="false">https://ulfrid.github.io/node.js/nodejs_second/</guid><pubDate>Sun, 08 Dec 2019 22:15:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 440px;&quot;
     &gt;
