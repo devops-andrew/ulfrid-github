@@ -1,0 +1,1032 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=2"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:Catamaran;font-weight:800;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.2;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:56px;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:20px;color:inherit;font-family:Catamaran;font-weight:700;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.2;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:6px;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:2px;}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#0687f0;text-decoration:none;box-shadow:none;}a:hover,a:active{text-decoration:underline;}a.gatsby-resp-image-link{box-shadow:none;text-decoration:none;}a:hover{text-decoration:none;}</style><style data-href="/styles.0b7016e73e897377ca31.css" id="gatsby-global-css">@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:100;src:local("Noto Sans KR Thin "),local("Noto Sans KR-Thin"),url(/static/noto-sans-kr-latin-100-2de137ca3e12ea146ee47485a97f1e78.woff2) format("woff2"),url(/static/noto-sans-kr-latin-100-b965647685dd9fc531d1f8a1cc25e024.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:300;src:local("Noto Sans KR Light "),local("Noto Sans KR-Light"),url(/static/noto-sans-kr-latin-300-4f773a0fce88aa857d70b56c5b0a1d26.woff2) format("woff2"),url(/static/noto-sans-kr-latin-300-ee87751dac814562bac316d848e35748.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans KR Regular "),local("Noto Sans KR-Regular"),url(/static/noto-sans-kr-latin-400-be09f2ced7ff9fa6eda5f0416e2fc840.woff2) format("woff2"),url(/static/noto-sans-kr-latin-400-4c50be0fe5b21a153b8e40a392c2d3fe.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:500;src:local("Noto Sans KR Medium "),local("Noto Sans KR-Medium"),url(/static/noto-sans-kr-latin-500-416698c2fc4b3951f8d63d3d2ae23900.woff2) format("woff2"),url(/static/noto-sans-kr-latin-500-28601458e118110e494903a1fcd6dcf5.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans KR Bold "),local("Noto Sans KR-Bold"),url(/static/noto-sans-kr-latin-700-04e782e08729f3725ae5a9c95da0c8ba.woff2) format("woff2"),url(/static/noto-sans-kr-latin-700-b9e989a96027f839a9569d2d011e0b71.woff) format("woff")}@font-face{font-family:Noto Sans KR;font-style:normal;font-display:swap;font-weight:900;src:local("Noto Sans KR Black "),local("Noto Sans KR-Black"),url(/static/noto-sans-kr-latin-900-c41f1395489a117ca36d550142a1695f.woff2) format("woff2"),url(/static/noto-sans-kr-latin-900-589f5fbf84d9dc9984a969bae969fd60.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:100;src:local("Catamaran Thin "),local("Catamaran-Thin"),url(/static/catamaran-latin-100-3570195a7b5f619dd9b2419d8fa3f089.woff2) format("woff2"),url(/static/catamaran-latin-100-e82908f57f6d2f23eb9876b2d6868195.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:200;src:local("Catamaran Extra Light "),local("Catamaran-Extra Light"),url(/static/catamaran-latin-200-987ea210308405ac77ba2f36430a70c9.woff2) format("woff2"),url(/static/catamaran-latin-200-bb5993d2f001b739bb9ab7c3ed9725c3.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:300;src:local("Catamaran Light "),local("Catamaran-Light"),url(/static/catamaran-latin-300-2b8a4bd13e9d5ba755f010f8732b0bb6.woff2) format("woff2"),url(/static/catamaran-latin-300-c2696c65c33dcf37871b72bad51ee1ce.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:400;src:local("Catamaran Regular "),local("Catamaran-Regular"),url(/static/catamaran-latin-400-640947b787a38ec35d097129637d9130.woff2) format("woff2"),url(/static/catamaran-latin-400-97e5bc807a3e915e3fbf40ce5fcb1128.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:500;src:local("Catamaran Medium "),local("Catamaran-Medium"),url(/static/catamaran-latin-500-884483dd213f37ae3b5c98f73dd190a5.woff2) format("woff2"),url(/static/catamaran-latin-500-412cf386e31213e3601cb2132b9c4c2d.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:600;src:local("Catamaran SemiBold "),local("Catamaran-SemiBold"),url(/static/catamaran-latin-600-eb6ebda25331e50d3f42c45a41f613bb.woff2) format("woff2"),url(/static/catamaran-latin-600-215c58c6114e0556cb1c332c0fda463a.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:700;src:local("Catamaran Bold "),local("Catamaran-Bold"),url(/static/catamaran-latin-700-3196f49881b324fa5a5f937875cc380f.woff2) format("woff2"),url(/static/catamaran-latin-700-05f6e51c518dd3b521b258e5c05d0e72.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:800;src:local("Catamaran ExtraBold "),local("Catamaran-ExtraBold"),url(/static/catamaran-latin-800-601b1d0f1b78fd65c3205b2c004bbe60.woff2) format("woff2"),url(/static/catamaran-latin-800-3b1675e4ede7e86ec79fa84c1203908e.woff) format("woff")}@font-face{font-family:Catamaran;font-style:normal;font-display:swap;font-weight:900;src:local("Catamaran Black "),local("Catamaran-Black"),url(/static/catamaran-latin-900-6bb5f96614acb7754020b922e1a63d24.woff2) format("woff2"),url(/static/catamaran-latin-900-79292dba48851cc3a212863c860d8f09.woff) format("woff")}.custom-hr{margin:64px;background:linear-gradient(72deg,#fa7268,#48689a);border:none;height:2px}.github{float:right;padding:14px;opacity:.6}.top{position:relative;width:100%;height:60px;background:linear-gradient(72deg,#fa7268,#48689a)}.top .link{display:inline-block;font-size:28px;padding-top:8px;color:#fff;opacity:.7;margin-left:20px;font-family:Catamaran;font-weight:800}.home-header{margin-top:0;border-bottom:none;font-weight:900;font-size:48px;letter-spacing:-2px}.link{box-shadow:none;text-decoration:none;color:inherit}.switch-container{text-align:right}.switch-container .icon{text-align:center;color:#222;font-size:14px;font-weight:900}.footer{padding-top:52px;text-align:center;font-size:12px}.footer a{text-decoration:none!important}body.light{background-color:#fff;text-shadow:0 0 .1px rgba(0,0,0,.3)}body.light .home-header{color:#333}body.light .bio .author-name-content{background-color:#ecf0f2}body.light .bio .author-introduction{color:#7d7d7d}body.light .bio a{color:navy}body.light .category-container{border-color:#ecf0f2;border-style:solid;border-width:1px 6px;background-color:#f4f7f8}body.light .category-container .item{border:1px solid #ecf0f2;background-color:#fff;box-shadow:0 1px 1px rgba(0,0,0,.1)}body.light .category-container .item a{color:#666}body.light .category-container .item[aria-selected=true]{border:2px solid #909da1;font-weight:bolder}body.light .category-container .item[aria-selected=true] a{color:#636c6e}body.light .thumbnail h3{color:#333}body.light .thumbnail p{color:#7d7d7d}body.light .thumbnail:hover{text-shadow:0 0 6px rgba(0,0,0,.2)}body.light .footer{color:#aaa}body.light .footer a{color:#333}body.light .navigator a{background-color:#fceff7;color:#cc007a}body.dark{background-color:#282c35;text-shadow:0 0 .1px hsla(0,0%,100%,.3)}body.dark,body.dark .home-header{color:#eee}body.dark .bio .author-name-content{background-color:#383636}body.dark .bio .author-introduction{color:#d8d7d7}body.dark .bio a{color:#bb72ec}body.dark .category-container{border-color:#383636;border-style:solid;border-width:1px 6px;background-color:#24272c}body.dark .category-container .item{border:1px solid #383636;background-color:#282c35;box-shadow:0 1px 1px hsla(0,0%,100%,.1)}body.dark .category-container .item a{color:#d8d7d7}body.dark .category-container .item[aria-selected=true]{border:2px solid #666;font-weight:bolder}body.dark .category-container .item[aria-selected=true] a{color:#fff}body.dark .thumbnail h3{color:#eee}body.dark .thumbnail p{color:#d8d7d7}body.dark .thumbnail:hover{text-shadow:0 0 6px hsla(0,0%,100%,.2)}body.dark .footer{color:#d8d7d7}body.dark .footer a{color:#fff}body.dark blockquote{border-left:4px solid hsla(0,0%,100%,.822)}body.dark h1,body.dark h2{border-bottom-color:hsla(0,0%,100%,.3)}body.dark .navigator a{background-color:#fceff7;color:#cc007a}body{font-family:Noto Sans KR,sans-serif;background-color:#fff;-webkit-text-size-adjust:antialiased;-moz-osx-font-smoothing:grayscale;transition:background-color .3s,color .3s}.resp-sharing-button--facebook:hover{background-color:#2d4373}.resp-sharing-button--facebook{background-color:#3b5998;border-color:#3b5998}.resp-sharing-button--facebook:active,.resp-sharing-button--facebook:hover{background-color:#2d4373;border-color:#2d4373}.resp-sharing-button--twitter:hover{background-color:#2795e9}.resp-sharing-button--twitter{background-color:#55acee;border-color:#55acee}.resp-sharing-button--twitter:active,.resp-sharing-button--twitter:hover{background-color:#2795e9;border-color:#2795e9}.social-share{text-align:right;height:100%}.resp-sharing-button__icon,.resp-sharing-button__link{display:inline-block;vertical-align:middle;border:none}.resp-sharing-button__link{text-decoration:none;color:#fff;margin:4px;height:33px}.resp-sharing-button__link .service-label{font-size:12px;padding-right:4px}.resp-sharing-button{height:33px;border-radius:6px;transition:25ms ease-out;padding:3px 8px 3px 10px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}.resp-sharing-button__icon svg{width:1em;height:1.5em;margin-right:.4em;vertical-align:top}.resp-sharing-button__icon{stroke:#fff;fill:none}.resp-sharing-button__icon--solid{fill:#fff;stroke:none}.sponsor-button{text-align:right;margin:4px}.sponsor-button .bmc-button{display:inline-block;padding:0 7px;width:133px;height:33px;text-decoration:none;background-color:#bb5794;color:#fff;border:1px solid transparent;border-radius:6px;letter-spacing:-.08px;box-sizing:border-box;font-size:12px;line-height:30px;text-align:left}.sponsor-button .bmc-button:active,.sponsor-button .bmc-button:hover{background-color:#a0457d}.sponsor-button .bmc-button img{width:20px;margin-bottom:1px;box-shadow:none;border:none;vertical-align:middle}.sponsor-button .bmc-button span{margin-left:6px}.bio{margin-bottom:24px}.bio .author-description{display:flex}.bio .author-image{margin-top:12px;margin-right:12px;margin-bottom:0;min-width:72px}.bio .author-name-prefix{font-size:90%;margin-right:4px}.bio .author-name-content{display:inline-block;font-size:95%;padding:2px 6px;font-weight:bolder;border-radius:8px;transform-origin:center;animation:flutter 2s linear infinite}.bio .author-introduction{margin-top:4px;font-size:80%;line-height:1.4}.bio .author-socials{margin-top:4px}.bio a{margin-right:8px;font-size:80%}.bio a.visited{text-decoration:none}@keyframes flutter{0%{transform:rotate(0deg)}35%{transform:rotate(0deg)}40%{transform:rotate(-5deg)}60%{transform:rotate(5deg)}65%{transform:rotate(0deg)}to{transform:rotate(0deg)}}.category-container{position:sticky;position:-webkit-sticky;top:0;line-height:0;white-space:nowrap;overflow-x:scroll;-ms-overflow-style:none;overflow:-moz-scrollbars-none;z-index:1;padding:6px 20px}.category-container .item{display:inline-block;margin:.25rem 6px .25rem 0;border-radius:15px;white-space:normal;box-sizing:border-box;cursor:pointer}.category-container .item div{display:block;padding:14px 16px 16px;font-size:13px;box-sizing:border-box}.category-container .item:last-child{margin-right:0}.category-container::-webkit-scrollbar{display:none}.thumbnail-container{min-height:calc(100vh - 3.5rem)}.thumbnail{display:block;margin-bottom:12px;padding:4px 4px 12px;box-shadow:none;transition:text-shadow .3s,opacity .4s;opacity:0}.thumbnail p{font-size:90%;line-height:1.4}.thumbnail.visible{opacity:1}.navigator{margin:40px 0;display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0}.navigator li{margin-bottom:12px}.navigator a{padding:7px 16px 8px;border-radius:6px;font-size:12px;opacity:.8}.gatsby-highlight-code-line{background-color:#022a4b;display:block;margin-right:-1.2em;margin-left:-1.2em;padding-right:1em;padding-left:.75em;border-left:.35em solid #0687f0}blockquote{color:#999}code[class*=language-],pre[class*=language-]{color:#e0e0e0;background:none;font-family:Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.6;font-size:13px;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;-ms-overflow-style:none;overflow:-moz-scrollbars-none}pre[class*=language-]::-webkit-scrollbar{display:none}pre[class*=language-]{padding:1.2em;margin:1.5em 0;overflow:auto;border-radius:.6em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#212121}:not(pre)>code[class*=language-]{padding:.1em .6em;border-radius:.2em;white-space:normal;background:#ece5f1;color:#4b2043}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#616161}.token.punctuation{color:#e0e0e0}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#ff9100}.token.class-name,.token.constant,.token.property,.token.symbol{color:#ff0}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#b388ff}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#00e676}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.32.11"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="icon" href="/favicon-32x32.png?v=08d1167632bb288cc6b3d20157af049c" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=08d1167632bb288cc6b3d20157af049c"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">Kubernetes | Ulfrid_log</title><meta data-react-helmet="true" name="description" content="Why? Kubernetes 쿠버네티스는 조종사 조타수를 뜻하는 그리스어입니다. 201…"/><meta data-react-helmet="true" property="og:title" content="Kubernetes"/><meta data-react-helmet="true" property="og:description" content="Why? Kubernetes 쿠버네티스는 조종사 조타수를 뜻하는 그리스어입니다. 201…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="[ulfrid]"/><meta data-react-helmet="true" name="twitter:title" content="Kubernetes"/><meta data-react-helmet="true" name="twitter:description" content="Why? Kubernetes 쿠버네티스는 조종사 조타수를 뜻하는 그리스어입니다. 201…"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-f4b5444aca52378c1927.js"/><link as="script" rel="preload" href="/framework-305b3707783ccc9d7ca6.js"/><link as="script" rel="preload" href="/app-b5d5590d1ae2e2c1dbd2.js"/><link as="script" rel="preload" href="/styles-e9d24b1846c7d6eb9685.js"/><link as="script" rel="preload" href="/133dca110fad53aa1997b630637bbac3134a2d14-053e3a1c7a3e8968b985.js"/><link as="script" rel="preload" href="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-d44b6b4c4a028d914d9b.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-dac198b907be935f6361.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-319b7d624799590c3221.js"/><link as="fetch" rel="preload" href="/page-data/devops/kubernetes/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3128451518.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/96099027.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="top"><a class="link" href="/">Ulfrid_log</a><a href="https://github.com/ulfrid" class="github" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a></div><div style="margin-left:auto;margin-right:auto;max-width:61.75rem;padding:2.4375rem 1.21875rem"><div class="switch-container"><label for="normal-switch"><div style="position:relative;display:inline-block;text-align:left;opacity:1;direction:ltr;border-radius:12px;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s;touch-action:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none"><div class="react-switch-bg" style="height:24px;width:48px;margin:0;position:relative;background:#d9dfe2;border-radius:12px;cursor:pointer;-webkit-transition:background 0.25s;-moz-transition:background 0.25s;transition:background 0.25s"><div style="height:24px;width:26px;position:relative;opacity:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon checkedIcon">D</div></div><div style="height:24px;width:26px;position:absolute;opacity:1;right:0;top:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon uncheckedIcon">L</div></div></div><div class="react-switch-handle" style="height:22px;width:22px;background:#ffffff;display:inline-block;cursor:pointer;border-radius:50%;position:absolute;transform:translateX(1px);top:1px;outline:0;border:0;-webkit-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;-moz-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s"></div><input type="checkbox" role="switch" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px" id="normal-switch"/></div></label></div><h1>Kubernetes</h1><div><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADOElEQVQ4y22TfUzNURjHn25Xf3gZSwvdvOcfI/M2jIXZMEMz8lrdkDbSaIhmeSvLrIRappA1wjCWSJZoMisxjaEwqX6/22/d29u9t9v9/brn+J7b2x+3s332PL9zvs9znuf8ziHqG5xz6rC73FawP7tVWP/Cyq6k3ZctpuirFulFtSMRc2MP57YN6GyO3hiPISatXS6vPuHou2/tqRHpFvPUaJlP2iPzyWD6PpkbMyxKQbn9LDQj+mKGTqj1MDp1p907+X4HISBlWYLCA6NkPmWvrOW8tLpyS2yuqfADIiW+PFHhD97ZE7OfW+lKYae+paNn6AqJ1oI0SshrK/PbKfFz9zrU0i8OnlVkZdeLrazks4NffNypjo+Q+PG89iKi19AXeg1ZYWWts7/dMdGZrS26DY38ZH67K+eljeEcWXG1g+WU2Bg6cOlDG3lMZmsTtMNFTFWd0zNhWY1D97VeJcnSs2op2g2Oa2bPqroYWmXf6lWONY7WGX4MWxDfzENOKAytLqltUgld6DwSvvrs8P7ws5u+N6jGhQhAQjXjaSdPf9LJ8stsDD+JpcEXGwQfbNYWH1H4b1kL+/TbSa9rHN4eCVFZ/1XwwTlV+IdL3HdHk/qwwi5+gDuhOE+cnzoOa9ioFFqdiBGxHuNHo0p1kqbrS2qIv9GmjNraxDcmt3QvPaZoi48qWmhKSzc24UdutjVA4ye09Yqm+4m2B0agUSZDlAzvjbvCvFKbXuzocrEVkZcsfOYB0yD7TRyXnEG3SDwCVOz98ZeTqn85PRJ64c554aqQYHOqWY/Dpz8mbRVaPXmv3H5UUAD/r6KFfPjRTeHpFv2ESEmHS++OBQR0IqGPwf0h0UQsBBilYTgnotX/6HapjXalmWlLqpnCLpgJL4cevbdjrYEMRkkkoN7YQZBQ2oRJX4NRHoOk8zCZEmCU9bCTZsWaxuO5BeGFzMUTnB0UI0+be6jZF2sToV0HtiF2JL5nADE/R1RYDCcM9gwEyfBzQRooAkngKlgDroEMcAtkgfPQH4ZFnFwAhJ8pEp4G6/FxGYK4XqEcDS6BcLBdnDPsboPwo+RUEIe5+bAHQCwQhawUMf8Bg9BseAIkt3UAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="kubernetes"
+        title="kubernetes"
+        src="/static/a535840c5a27d4a3b700c164c8dad20d/fcda8/kubernetes.png"
+        srcset="/static/a535840c5a27d4a3b700c164c8dad20d/12f09/kubernetes.png 148w,
+/static/a535840c5a27d4a3b700c164c8dad20d/e4a3f/kubernetes.png 295w,
+/static/a535840c5a27d4a3b700c164c8dad20d/fcda8/kubernetes.png 590w,
+/static/a535840c5a27d4a3b700c164c8dad20d/0a47e/kubernetes.png 600w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h1 id="why-kubernetes" style="position:relative;"><a href="#why-kubernetes" aria-label="why kubernetes permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why? Kubernetes</h1>
+<p>쿠버네티스는 조종사 조타수를 뜻하는 그리스어입니다.</p>
+<p>2013년 등장한 도커와 클라우드의 발전은 기존 모놀리스 방식에서 마이크로서비스로의 변화를 이끌었고, 이로 인해 기존에 비해 늘어난 개별적인 개발, 배포, 업데이트, 확장에 대한 규모가 커지면서, 이를 원할하게 구성, 관리, 유지하는 일이 어려워졌습니다. 또한 대량의 컨테이너를 일일히 사람이 관리하기란 매우 어려운 일입니다. 이로인해 등장한 것이 바로 쿠버네티스입니다.</p>
+<p>쿠버네티스는 하드웨어 인프라를 추상화하고 데이터센터 전체를 하나의 컴퓨팅 리소스로 제공합니다.</p>
+<p>1주일에 수십억 개의 컨테이너를 생성하는 구글이 내부 배포시스템으로 사용하던 <a href="https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/">borg</a>를 기반으로 2014년 프로젝트를 시작했고 여러 커뮤니티의 아이디어와 좋은 사례를 모아 빠르게 발전하고 있습니다.</p>
+<p>단순한 컨테이너 플랫폼이 아닌 마이크로서비스, 클라우드 플랫폼을 지향하고 컨테이너로 이루어진 것들을 손쉽게 담고 관리할 수 있는 그릇 역할을 합니다. 서버리스, CI/CD, 머신러닝 등 다양한 기능이 쿠버네티스 플랫폼 위에서 동작합니다.</p>
+<h2 id="msa-micro-service-achitecture" style="position:relative;"><a href="#msa-micro-service-achitecture" aria-label="msa micro service achitecture permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MSA (Micro Service Achitecture)</h2>
+<ul>
+<li>마이크로서비스들은 모듈화 개념입니다. 마이크로서비스들의 목적은 대규모 소프트웨어 시스템을 작은 부분들로 나누는 것입니다. 따라서 이들은 조직과 소프트웨어 시스템의 개발에 영향을 미칩니다.</li>
+<li>마이크로서비스는 서로에게 독립적으로 배포할 수 있으며, 한 마이크로서비스에 대한 변경은 다른 마이크로서비스의 변경과는 독립적으로 생산 환경에 적용할 수 있습니다.</li>
+<li>마이크로서비스는 서로 다른 기술로 구현될 수 있습니다. 각각의 마이크로서비스에 대해 프로그래밍 언어나 플랫폼에 관련된 제약은 없습니다.</li>
+<li>마이크로서비스는 자체적인 데이터 저장소(개별 데이터베이스 또는 공유된 데이터베이스 내에서 완전하게 분리된 스키마)를 갖습니다.</li>
+<li>마이크로서비스는 검색엔진이나 특정 데이터베이스 같은 해당 서비스를 지원하는 서비스를 가질 수 있습니다. 물론, 모든 마이크로서비스에 대한 공통적인 플랫폼(예를 들어, 컨테이너 가상머신)도 있습니다.</li>
+<li>마이크로서비스는 독립적인 프로세스나 서비스를 지원하기 위한 가상 머신(컨테이너)입니다.</li>
+<li>마이크로서비스는 네트워크를 통해 통신해야 합니다. 이를 위해, 마이크로서비스는 REST나 메세징같은 느슨한 결함을 지원하는 프로토콜을 사용합니다.</li>
+</ul>
+<p><a href="https://aws.amazon.com/ko/microservices/">마이크로서비스란 무엇입니까? | AWS</a></p>
+<p><a href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4">마이크로서비스</a></p>
+<p><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=90212803">마이크로서비스</a></p>
+<h3 id="쿠버네티스의-구조" style="position:relative;"><a href="#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%EC%9D%98-%EA%B5%AC%EC%A1%B0" aria-label="쿠버네티스의 구조 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>쿠버네티스의 구조</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 26.351351351351354%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+klEQVQY02WQsU7EMBBE85dU/AwV34JET3MloqBICo6OOxEgp6AQ4thxbK+9w9ooOiRWWq2L8duZrSDFzNhqe/M0IR0PYCJwSuBZASEgRcb0rhEsFV2eycUyc1cbwFoL59wvLLcAWGuk5yfwOIIFBu9APsFpj+Flwnc7F/1CAVGW0voHWNc1mqYpYGMMzDBgVAr28gL+9gZOZF6WaGURQbi7esDu+hEqGdz3b1hjRBSn1RazbVt0XXeOvRgEidvv91CffYmbHQb5lIhxeu3xcTwVfT9+gURLazw7/HfDZSmRM4jdCha3yNHkhm72El18CtybAFoIXodywx8mxYFoT7intwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="structure"
+        title="structure"
+        src="/static/5baa88e16123ebca5c8be7309f61da2c/fcda8/structure.png"
+        srcset="/static/5baa88e16123ebca5c8be7309f61da2c/12f09/structure.png 148w,
+/static/5baa88e16123ebca5c8be7309f61da2c/e4a3f/structure.png 295w,
+/static/5baa88e16123ebca5c8be7309f61da2c/fcda8/structure.png 590w,
+/static/5baa88e16123ebca5c8be7309f61da2c/efc66/structure.png 885w,
+/static/5baa88e16123ebca5c8be7309f61da2c/c83ae/structure.png 1180w,
+/static/5baa88e16123ebca5c8be7309f61da2c/7e21b/structure.png 1626w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>쿠버네티스는 전체 클러스터를 관리하는 마스터와 컨테이너가 배포되는 노드로 구성되어 있습니다. 모든 명령은 마스터의 API 서버를 호출하고 노드는 마스터와 통신하면서 필요한 작업을 수행합니다. 특정 노드의 컨테이너에 명령하거나 로그를 조회할 때도 노드에 직접 명령하는 게 아니라 마스터에 명령을 내리고 마스터가 노드에 접속하여 대신 결과를 응답합니다.</p>
+<h3 id="마스터컨트롤-플레인노드" style="position:relative;"><a href="#%EB%A7%88%EC%8A%A4%ED%84%B0%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%8C%EB%A0%88%EC%9D%B8%EB%85%B8%EB%93%9C" aria-label="마스터컨트롤 플레인노드 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>마스터(컨트롤 플레인)노드</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 49.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaklEQVQoz3VSyU4DMQydj+QL+AROSPwMHDlUcOHGCanigDhB2VShghAFWrWlWWayeB6OMzNMWSw92XGc5yUu0JO6rrNeLFA/TYDSZljDumxgO7vWGrW13duEojU6pEtjJHClDXTlUHmP5ZrPSkOxb6VKfCqTY23WrRT4IRJU5qxqsAczPACx7U+2EW4O4dheX2yhmg9zvNGiKZCgaNvcaLkhpLtTLEdnQujGRwizK9gqonzeZ8eLJCetQJEQ2B9dROG5Hc2zSEh2IqU0H4pdK2t+ND+/xPT6FqaqEBMRX8YYmFCzXQtZ9E2FSikhjDEihIDIMxTbOxAn8Uxgd3egjgeYczKjViBOSBxD3DJRr8JE4JwTJFuEq/g5Bs9jcFXZOoVEoDPhRoW/fpkf9n1JHh4nmL59ZD4i+T65526I++8q/POX+xU2enQ/xuv77DumvU87Kkn+2cN2FWRp0z42gM0L3vd1Mc0YknwBjVgK+2aDh60AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="master node"
+        title="master node"
+        src="/static/28dc9c79d9481a61eea6662548c44373/fcda8/master_node.png"
+        srcset="/static/28dc9c79d9481a61eea6662548c44373/12f09/master_node.png 148w,
+/static/28dc9c79d9481a61eea6662548c44373/e4a3f/master_node.png 295w,
+/static/28dc9c79d9481a61eea6662548c44373/fcda8/master_node.png 590w,
+/static/28dc9c79d9481a61eea6662548c44373/efc66/master_node.png 885w,
+/static/28dc9c79d9481a61eea6662548c44373/c83ae/master_node.png 1180w,
+/static/28dc9c79d9481a61eea6662548c44373/260cd/master_node.png 1845w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Master마스터 서버는 다양한 모듈이 확장성을 고려하여 기능별로 쪼개져 있는 것이 특징 고통 입니다. 관리자만 접속할 수 있도록 보안 설정을 해야 하고 마스터 서버가 죽으면 클러스터를 관리할 수 없기 때문에 보통 3대를 구성하여 안정성을 높입니다. AWS EKS 같은 경우 마스터를 AWS에서 자체 관리하여 안정성을 높였고(마스터에 접속 불가) 개발 환경이나 소규모 환경에선 마스터와 노드를 분리하지 않고 같은 서버에 구성하기도 합니다.</p>
+<ul>
+<li>쿠버네티스 API서버는 사용자, 컨트롤 플레인 구성요소와 통신합니다.</li>
+<li>스케쥴러는 애플리케이션의 배포를 담당합니다.</li>
+<li>컨트롤러 매니저는 구성요소 복제본, 워커 노드 추적, 노드 장애 처리 등과 같은 클러스터단의 기능을 수행합니다.</li>
+<li>Etcd는 클러스터 구성을 지속적으로 저장하는 신뢰할 수 있는 분산 데이터 저장소입니다.</li>
+</ul>
+<h3 id="워커노드" style="position:relative;"><a href="#%EC%9B%8C%EC%BB%A4%EB%85%B8%EB%93%9C" aria-label="워커노드 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>워커노드</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+0lEQVQ4y42TTW8TMRCG84/5BT0W6BUhwYULF9SeSiQ4FKRKQGiaUiBNW4FUqChku5vs93p37bW9L+P9SLZNihjp1WjG9uPx2O6VZYlWxrTScH+GCK5i8EQgj1pxiosql4W8ik1eJBKSSVw5OWw7Q6/GYAFUUiP1chSZxG1Thao27FrCGBRnePrJwu6pjx5MdUoZYrNIQ8t6kdYapS4rr2jO7r19vNk8RMgCsITBsizYjoPpr0scXzp4dTqnCjkHsgw6z6G0gsjpWKkgiKogBmZk7Kz/Axf7v0H4qtI4juEHAdLQx9vvNvoTAxQC4DlKwWtgJsBJutQLoPHGBk/GGD6bVEBuCiGTzdiD4QzbJ3ccWQm16KtRW+HrjQH2NocIYh+z2bxuS7Nua+TVwJVLIZjkqkku88YKWVBFy8uqNmvGH3328fIsIOCtZ9MFtrkoihCG9JSoX8abvkVx1FxcPefxFx/985CO/I8K29xH9w8G3hQfSO+NKB56Vj1ft0d2sVP18D+A49jFCenIv8aIQF/jOSaJdwP48NDF9vgOoLmYrpWox1jKKjXtveG3jjzsTIL1wNTPkcfLb8cbL+jrma/WzaX0DZEWuP/OwYtjdxUoCRhOE0TXbFVWo04upFjOU2zsWXh+MFsD5DUwttl66BqldorRtxDnFxH+ApjzMdRNLBk5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="worker node"
+        title="worker node"
+        src="/static/deb23e8c69cfdb3472a2154d3a2f09d6/fcda8/worker_node.png"
+        srcset="/static/deb23e8c69cfdb3472a2154d3a2f09d6/12f09/worker_node.png 148w,
+/static/deb23e8c69cfdb3472a2154d3a2f09d6/e4a3f/worker_node.png 295w,
+/static/deb23e8c69cfdb3472a2154d3a2f09d6/fcda8/worker_node.png 590w,
+/static/deb23e8c69cfdb3472a2154d3a2f09d6/efc66/worker_node.png 885w,
+/static/deb23e8c69cfdb3472a2154d3a2f09d6/c83ae/worker_node.png 1180w,
+/static/deb23e8c69cfdb3472a2154d3a2f09d6/7af19/worker_node.png 1359w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>워커 노드는 컨테이너화 된 애플리케이션을 실행하는 시스템입니다. 애플리케이션을 실행하고 모니터링하며 애플리케이션에 서비스를 제공하는 작업은 다음 구성 요소에 의해 수행됩니다.</p>
+<ul>
+<li>컨테이너를 실행하는 도커,rkt 또는 다른 컨테이너 런타임</li>
+<li>API서버와 통신하고 노드의 컨테이너를 관리하는 kubelet</li>
+<li>애플리케이션 구성 요소 간에 네트워크 트래픽을 로드밸런싱하는 쿠버네티스 프록시</li>
+</ul>
+<h3 id="쿠버네티스가-파드를-생성하는-과정" style="position:relative;"><a href="#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%EA%B0%80-%ED%8C%8C%EB%93%9C%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94-%EA%B3%BC%EC%A0%95" aria-label="쿠버네티스가 파드를 생성하는 과정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>쿠버네티스가 파드를 생성하는 과정</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 69.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACv0lEQVQ4y42TyWsUQRSH84958uLds3qICh69eRcVBS+KgogoaASVBPcIRg2JcWZ6mX1LZpJZO9OZpSez9Gw905+ve1QUInp4vFdV1Fe/t9SCC7jjEexXoG6CaUCxgJ0r00rtQUn2SyU5b0DVxNk/oLNvY9cHtMptCrEyvZot1qdd6rKA6yFh9myJyYVFnBtXIa7jLC8yfnQcvj1lur7C8PZJRvfOQqWI/jTHi/NrfLquUFQMvtzQeHfpK+k3uyy4ApzOZsyWHjE+d4bJtcu4AmTlNO7jYxB4IsBl7JsnGN49BUYJ7ckOS6dXWbuqUIs1WbsS4tXFdVKvBWi125jVKn1J09nagHQCtjNiBSaZImQkzmZwtvOyl8MpVGjmOzRyLZo5uZts0tixqO+0qGcsAVoWVrNBdzdP77mkF9ikoyn0gutMtY+QkgeSUZyYjhvTcIplzJRFNWyyH61jJpq+r0ZMavGm1NCr32AgF+PYYZWOEqCnafS/fWC2fkfU5eQshhOPSinCc2C6jeEDGj7Q80b0wI99oN/lTJKhrjIUaDsU4nDzPe7GfZxkmnFEZRzV/g/oj83oBzA8Bw7EbC2IrWxyGNzCUhTs1YegbeCUDAFa/1D4A9hXQ/TUoA+1dYWurPtqgLaq03t5C9QvTCs1Kf4htcS8fn4N43WM2BHAUUST1HSm8QiTWNhfDwTcUUXhxlvcSJCedHtHLZJezVNWanOwNMOIHKVQmyv0UvbirjTIUzsS6+oatpx10tuUEjUCD6JE3qfIqwWyn3dJvsrTyFp/Agf6vH6eyqGo89L24pGYF4/0EPVogqyyR/hFiopicpBqUtZqFAOGxK3fgDLQU0nTTcb8EfK8l7oXezaVsUG6PN4tYEhq1Z9Nic+b4tXx1xz6YyO/wxWVbjb1V/MfrRjyKzq+soN065eZsq6L/w7IfOvYo33Y2AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="how works"
+        title="how works"
+        src="/static/1879941d1453ae8a75f31b8627ab9b56/fcda8/how_works.png"
+        srcset="/static/1879941d1453ae8a75f31b8627ab9b56/12f09/how_works.png 148w,
+/static/1879941d1453ae8a75f31b8627ab9b56/e4a3f/how_works.png 295w,
+/static/1879941d1453ae8a75f31b8627ab9b56/fcda8/how_works.png 590w,
+/static/1879941d1453ae8a75f31b8627ab9b56/efc66/how_works.png 885w,
+/static/1879941d1453ae8a75f31b8627ab9b56/c83ae/how_works.png 1180w,
+/static/1879941d1453ae8a75f31b8627ab9b56/742d3/how_works.png 2550w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>각 모듈은 서로 통신하지 않고 오직 API 서버와 통신합니다.</p>
+<p>API 서버를 통해 Etcd에 저장된 상태를 체크하고 현재 상태와 원하는 상태가 다르면 필요한 작업을 수행합니다.</p>
+<h3 id="컨테이너--파드pods" style="position:relative;"><a href="#%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88--%ED%8C%8C%EB%93%9Cpods" aria-label="컨테이너  파드pods permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>컨테이너 = 파드(pods)</h3>
+<p>파드는 하나의 개별적인 컨테이너가 아닌 컨테이너의 그룹을 의미합니다.</p>
+<p>쿠버네티스는 개별적인 컨테이너를 직접 다루지 않습니다.</p>
+<p>쿠버네티스에서 배포할 수 있는 가장 작은 단위로 한 개 이상의 컨테이너와 스토리지, 네트워크 속성을 가집니다. Pod에 속한 컨테이너는 스토리지와 네트워크를 공유하고 서로 localhost로 접근할 수 있습니다. 컨테이너를 하나만 사용하는 경우도 반드시 Pod으로 감싸서 관리합니다.</p>
+<p>파드는 하나 이상의 밀접하게 연관된 컨테이너의 그룹으로 같은 워커노드에서 같은 리눅스 네임스페이스로 함께 실행됩니다. 각 파드는 자체 IP, 호스트이름, 프로세스 등이 있는 논리적으로 분리된 머신입니다.</p>
+<h3 id="replicaset-레플리카-셋" style="position:relative;"><a href="#replicaset-%EB%A0%88%ED%94%8C%EB%A6%AC%EC%B9%B4-%EC%85%8B" aria-label="replicaset 레플리카 셋 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ReplicaSet 레플리카 셋</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9UlEQVQoz61Ty27TQBTtD0ARv9UdC1as+BE2ZYMQQiJlxx+QAhFCihRFoDYlKk2duHFDHOQqdpxx6vEjqV9N4hzujIhJCzuY6GqcM3PPOT5X3sJf1mq1knsYhjBNE4wxWZZlYblcIk1TRFGELMuQJImsPM9lz9a6WezrWh8Oh0NUKhXUajXU63VUq1VJ5nkedF3HaDSSd2zbluSScNPRvy7BUzjMSJlzDt/3ixJOxK5pGgzDQBAEErtdIoY/CJnDMJlM4FMT/0UkyvU4FtSQkKC7ISjuBCJjynU6m90i/A+vvDYmM8zpzyDkeNb9il21AZ2eQedLGo7mT7B71pBnFzNfNs3JcZszPOkc4OX5Mexo+tuheFA9B4+OPuL+u9e4U36Fnc9vcR5couXaeHDwHvf293CX8IeHH/Bj6qHhmNj5Usb2fgnb5RIeNz8VYpKwH7q4zGKUdAUv+i2wNJKYcCfw571v2Bu04V2n6PoOeiTG0hhPtSbeGF34hAusIFT4GNlijv7JKQanbSzIunAtHOb0elrzGEbnDGKWijuW9ykntA+PYGo9ZJSPShEUhJzUTqj5O3egMgstariaX8Mlp2u8w0woHkNCwiyeSbG+60AZm1DJdUz4zS+FflY8xTi5ujE9MTCTQneIfHMtaGDDKJSRbE76J6nsgQaVV7cqAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="replicaset"
+        title="replicaset"
+        src="/static/d29a2ba6655d942164d6e521b806d23a/fcda8/replicaset.png"
+        srcset="/static/d29a2ba6655d942164d6e521b806d23a/12f09/replicaset.png 148w,
+/static/d29a2ba6655d942164d6e521b806d23a/e4a3f/replicaset.png 295w,
+/static/d29a2ba6655d942164d6e521b806d23a/fcda8/replicaset.png 590w,
+/static/d29a2ba6655d942164d6e521b806d23a/91e7e/replicaset.png 692w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>Pod을 여러 개(한 개 이상) 복제하여 관리하는 오브젝트입니다. Pod을 생성하고 개수를 유지하려면 반드시 ReplicaSet을 사용해야 합니다. ReplicaSet은 복제할 개수, 개수를 체크할 라벨 선택자, 생성할 Pod의 설정값(템플릿)등을 가지고 있습니다. 직접적으로 ReplicaSet을 사용하기보다는 Deployment등 다른 오브젝트에 의해서 사용되는 경우가 많습니다.</p>
+<h3 id="service-서비스" style="position:relative;"><a href="#service-%EC%84%9C%EB%B9%84%EC%8A%A4" aria-label="service 서비스 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Service 서비스</h3>
+<p>네트워크와 관련된 오브젝트입니다. Pod을 외부 네트워크와 연결해주고 여러 개의 Pod을 바라보는 내부 로드 밸런서를 생성할 때 사용합니다. 내부 DNS에 서비스 이름을 도메인으로 등록하기 때문에 서비스 디스커버리 역할도 합니다.</p>
+<h3 id="volume-볼륨" style="position:relative;"><a href="#volume-%EB%B3%BC%EB%A5%A8" aria-label="volume 볼륨 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Volume 볼륨</h3>
+<p>저장소와 관련된 오브젝트입니다. 호스트 디렉토리를 그대로 사용할 수도 있고 EBS 같은 스토리지를 동적으로 생성하여 사용할 수도 있습니다. 사실상 인기 있는 대부분의 저장 방식을 지원합니다.</p>
+<h3 id="파드의-이해--필요성" style="position:relative;"><a href="#%ED%8C%8C%EB%93%9C%EC%9D%98-%EC%9D%B4%ED%95%B4--%ED%95%84%EC%9A%94%EC%84%B1" aria-label="파드의 이해  필요성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>파드의 이해 / 필요성</h3>
+<p><a href="https://www.slideshare.net/mobile/awskr/amazon-eks-aws-community-day-2020">쿠알못이 Amazon EKS로 안정적인 서비스 운영하기 - 최용호(넥슨코리아) :: AWS Community Day 2020</a></p>
+<p>파드는 여러개의 컨테이너를 가질 수 있지만, 여러개의 컨테이너들이 모여서 함께 실행되었을 때 의미있는 경우가 아니고서야 분리된 파드에서 컨테이너를 실행하는 것이 좋음.</p>
+<p>파드를 분리하면 좋은 예 (백엔드/프론트엔드 컨테이너 분리, 마이크로 서비스 아키텍쳐)</p>
+<p><a href="https://martinfowler.com/articles/microservices.html">Microservices</a></p>
+<p>파드안에 여러 컨테이너와 뷸륨을 두면 좋은 예 (ch6, p. 261)</p>
+<h3 id="yaml로-파드-생성" style="position:relative;"><a href="#yaml%EB%A1%9C-%ED%8C%8C%EB%93%9C-%EC%83%9D%EC%84%B1" aria-label="yaml로 파드 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>YAML로 파드 생성</h3>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl create -f <span class="token punctuation">[</span>yaml<span class="token punctuation">]</span></code></pre></div>
+<p>파드를 만들고 GCP나 AWS에서 확인해보자!</p>
+<h3 id="레이블을-이용한-파드-구성" style="position:relative;"><a href="#%EB%A0%88%EC%9D%B4%EB%B8%94%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%8C%8C%EB%93%9C-%EA%B5%AC%EC%84%B1" aria-label="레이블을 이용한 파드 구성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>레이블을 이용한 파드 구성</h3>
+<p>yaml 파일에 labels 를 지정해서 파드를 생성해도 되고 만든 후에 추가해도 되고 수정도 가능</p>
+<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Pod
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> label<span class="token punctuation">-</span>demo           &lt;<span class="token punctuation">-</span><span class="token punctuation">-</span> 파드 이름
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>                    &lt;<span class="token punctuation">-</span><span class="token punctuation">-</span> 레이블 지정
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span> production
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx              &lt;<span class="token punctuation">-</span><span class="token punctuation">-</span> 컨테이너 이름
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> nginx<span class="token punctuation">:</span>1.14.2      &lt;<span class="token punctuation">-</span><span class="token punctuation">-</span> 컨테이너를 만드는 컨테이너 이미지<span class="token punctuation">,</span> 책에서는 docker계정/kubia
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">80</span></code></pre></div>
+<p><a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/">Labels and Selectors</a></p>
+<p>레이블을 왜 쓰는가 ? </p>
+<p>마이크로서비스 아키텍쳐(MSA)를 구성할 때 클러스터안에 분류되지 않은 파드들을 체계적으로 구성하고 결국은 인프라를 효과적으로 설계하고 컨테이너를 포함하고 있는 파드들을 오케스트레이션 하기 위함</p>
+<h3 id="레이블-셀렉터" style="position:relative;"><a href="#%EB%A0%88%EC%9D%B4%EB%B8%94-%EC%85%80%EB%A0%89%ED%84%B0" aria-label="레이블 셀렉터 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>레이블 셀렉터</h3>
+<p>레이블 셀럭터는 특정 키와 값에 따라 필터링해서 같은 기준에 따라 필터링된 파드에 작업을 수행할 때도 사용</p>
+<p>노드 나열 : -l</p>
+<p>추가 열 붙여서 표시 : -L</p>
+<h3 id="워커노드-분류에-레이블-사용" style="position:relative;"><a href="#%EC%9B%8C%EC%BB%A4%EB%85%B8%EB%93%9C-%EB%B6%84%EB%A5%98%EC%97%90-%EB%A0%88%EC%9D%B4%EB%B8%94-%EC%82%AC%EC%9A%A9" aria-label="워커노드 분류에 레이블 사용 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>워커노드 분류에 레이블 사용</h3>
+<p>레이블은 파드에도 추가할수 있지만 노드에도 추가할 수 있음</p>
+<p>워커 노드 ?</p>
+<p><a href="https://kubernetes.io/docs/concepts/architecture/nodes/">Nodes</a></p>
+<p><a href="https://kubernetes.io/docs/reference/glossary/?fundamental=true#term-node">Standardized Glossary</a></p>
+<p>그래서 워커노드에 레이블 왜쓰냐 ?</p>
+<p>GPU 자원이 필요한 딥러닝 학습이나 최적화에 특정 파드를 GPU 자원을 지원하는 노드에 스케쥴링 하고 싶을 때 사용</p>
+<h3 id="파드에-어노테이션-추가" style="position:relative;"><a href="#%ED%8C%8C%EB%93%9C%EC%97%90-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-%EC%B6%94%EA%B0%80" aria-label="파드에 어노테이션 추가 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>파드에 어노테이션 추가</h3>
+<p>파드와 같은 다른 쿠버네티스 오브젝트에 설명을 추가할 때 사용</p>
+<p>어노테이션을 JSON으로 추가해서 나중에 파싱해서 JSON그대로 사용할 수도 있을 것 같고 레이블보다 더 큰용량의 주석을 추가할 수 있다. (256KB까지)</p>
+<h3 id="네임스페이스를-사용한-리소스-그룹화" style="position:relative;"><a href="#%EB%84%A4%EC%9E%84%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EA%B7%B8%EB%A3%B9%ED%99%94" aria-label="네임스페이스를 사용한 리소스 그룹화 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>네임스페이스를 사용한 리소스 그룹화</h3>
+<p>기본적으로 동일한 리소스를 중첩되지 않도록 다른 네임스페이스로 분리해서 사용하기 위함이며 다른 네임스페이스 별로 같은 레이블을 달아서 필터링에 효과적으로 레이블 셀럭터를 사용할 수 있음.</p>
+<ul>
+<li>쿠버네티스 클러스터에 있는 모든 네임스페이스 확인 명령어</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl get ns</code></pre></div>
+<ul>
+<li>특정 네임스페이스에 속한 파드를 출력하는 명령어</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl get po --namespace kube-system</code></pre></div>
+<p>네임스페이스는 리소스들을 그룹으로 격리 하는 것 외에도 특정 사용자가 지정된 리소스에 접근할 수 있도록 허용하고, 개별 사용자가 사용할 수 있는 컴퓨팅 리소스를 제한하는 데에도 사용되므로 12~14장에서 자세히 공부하자!</p>
+<ul>
+<li>YAML파일로 네임스페이스 생성</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl create -f custom-namespace.yaml</code></pre></div>
+<ul>
+<li>쿠버네티스 cli로 네임스페이스 생성</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl create namespace custom-namespace2</code></pre></div>
+<ul>
+<li>생성한 네임스페이스, custom-namespace 에 파드 생성 (yaml에 지정해도 되고 인자로 직접 줘도 됨)</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl create -f kubia-manual.yaml -n custom-namespace</code></pre></div>
+<ul>
+<li>모든 네임스페이스의 파드를 보는 다음 명령어로 각각 네임스페이스에 동일한 이름을 가진 kubia-manual 파드가 있는지 확인</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl get pods --all-namespaces</code></pre></div>
+<ul>
+<li>모든 컨텍스트 확인 명령</li>
+</ul>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl config get-contexts</code></pre></div>
+<p>네임스페이스만 다르게했다고 격리가 되는것은 아니고 파드간 네트워크 인프라 설정에 따라서 foo 네임스페이스 안에 있는 파드가 bar 네임스페이스 안에 있는 파드의 IP주소를 알면 http request를 다른 파드로 전송할 수 도 있다.</p>
+<p>관리되는 파드!</p>
+<p>레플리케이션 컨트롤러 (rc)</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl get pods
+
+kubectl get rc</code></pre></div>
+<h3 id="liveness-probe-라이브니스-프로브" style="position:relative;"><a href="#liveness-probe-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%8B%88%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%B8%8C" aria-label="liveness probe 라이브니스 프로브 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>liveness probe 라이브니스 프로브</h3>
+<p>컨테이너 운영 중 크래시가 발생하면 kubelet이 컨테이너를 다시 실행한다. 하지만 잘못 프로그래밍 된 경우에는 프로그램은 잘못되도 프로세스는 계속 유지된다. 이러한 경우 외부에서 애플리케이션의 체크를 통해</p>
+<p>재시작 하도록 할수 있다.</p>
+<p>liveness probe 라이브니스 프로브를 통해 컨테이너의 정상 작동 여부를 확인할 수 있는데, 이는 pod의 spec 부분에 설정할 수 있다.</p>
+<p>예시로 나온 HTTP GET 프로브는 IP주소, 포트, 경로에 GET 요청을 수행하고 이상이 있을경우 다시 시작한다.</p>
+<p>그외에 TCP 소켓 프로브, Exec 프로브가 있다.</p>
+<p>잘 작동하지 않는 이미지를 배포하고, 해당 파드 배포 생성을 위한 yaml을 작성할때</p>
+<p>liveness probe 예시.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">spec:
+	containers:
+	- image: <span class="token punctuation">..</span>.
+		livenessProbe:
+		httpGet:
+			path: /
+			port: <span class="token number">8080</span></code></pre></div>
+<p>kubectl describe 로 확인해보면 상태값 옵션값 및 최하단에는 종료이유를 로깅해준다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">liveness: http-get http://:8080/ <span class="token assign-left variable">delay</span><span class="token operator">=</span>0s<span class="token punctuation">(</span>컨테이너가 시작되고 프로브가 시작되는 시간설정<span class="token punctuation">)</span> <span class="token assign-left variable">timeout</span><span class="token operator">=</span>1s<span class="token punctuation">(</span>컨테이너가 응답해야하는 허용시간<span class="token punctuation">)</span> <span class="token assign-left variable">period</span><span class="token operator">=</span>10s<span class="token punctuation">(</span>프로브의 실행주기<span class="token punctuation">)</span> <span class="token comment">#success=1(성공 카운트) #failure=3(실패 카운트) </span></code></pre></div>
+<ul>
+<li>라이브니스 프로브는 운영중인 컨테이너에 효과적인 방법이다.</li>
+<li>
+<p>라이브니스 프로브는 애플리케이션의 내부만 체크하고, 외부요인의 영향을 받지 않도록 해야함.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"> ex) 데이터베이스가 응답하지 않는 웹서버는 실패를 반환해서는 안됨. 원인이 데이터베이스에 있기 때문. 잘못된 재시작은 원인을 찾기 어려워진다.</code></pre></div>
+</li>
+<li>연산리소스를 가볍게 해야하며, 1초내에 완료되는게 좋다. 너무 많은일을 하는 프로브는 컨테이너 리소스를 잡아먹고 느려지게 한다.</li>
+<li>라이브니스 프로브는 마스터 노드에서는 관여하지 않는다. 노드 크래시가 났을때 대체 노드를 제공할때는 마스터 노드에서 관여한다.</li>
+<li>따라서 라이브니스 프로브 만으로는 노드 크래시는 해결 할 수 없다.</li>
+</ul>
+<h3 id="레플리케이션-컨트롤러-이하-rc" style="position:relative;"><a href="#%EB%A0%88%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-%EC%9D%B4%ED%95%98-rc" aria-label="레플리케이션 컨트롤러 이하 rc permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>레플리케이션 컨트롤러 이하 rc</h3>
+<p>레플리케이션 컨트롤러는 클러스터에서 노드가 사라지거나 노드에서 파드가 제거된 경우, 사라진 파드를 감지해 교체 파드를 생성한다.</p>
+<ul>
+<li>레이블 셀렉터 : 레플리케이션컨트롤러의 범위에 있는 파드를 결정.</li>
+<li>레플리카 수: 실행할 파드의 수 지정.</li>
+<li>파드 템플릿: 새로운 파드 레플리카를 만들때 사용한다.</li>
+</ul>
+<p>rc 설정후 생성된 파드는 rc의 관리를 받으므로, 삭제시 다시 복구된다.</p>
+<p>파드가 삭제되면 컨트롤러는 새 교체 파드를 만든다.</p>
+<p>하지만, 이 동작의 원리는 삭제에 반응하는것이 아니다.</p>
+<p>삭제를 통보 받으면, desired 되야하는 파드수와 current 파드수를 확인한뒤 비교 후 다시 요건을 맞추기 위해 새로 생성하는 것이다.</p>
+<p>노드에 장애가 생겼을 경우, 새로운 파드가 생성된다.(장애가 없는 노드로의 이전)</p>
+<p>특정 파드의 레이블에 단순히 값을 추가하는 것에는 영향이 없지만, 레이블을 변경하게 되면, 추가로 레이블을 지닌 파드를 새로 생성하고, 변경된 파드는 rc의 관리를 받지 않는 파드로 변하게 된다.(삭제하지 않는다.)</p>
+<p>파드의 스케일링</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">kubectl scale rc kubia <span class="token operator">--</span>replicas<span class="token operator">=</span><span class="token number">10</span></code></pre></div>
+<p>edit 시에는</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">#yaml
+<span class="token operator">...</span>
+spec<span class="token operator">:</span>
+replicas<span class="token operator">:</span> <span class="token number">3</span>  <span class="token operator">&lt;=</span><span class="token operator">==</span>이부분을 조정후 저장</code></pre></div>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">   rc 삭제시 파드는 보존하려면</code></pre></div>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">kubectl <span class="token keyword">delete</span> rc kubia <span class="token operator">--</span>cascade<span class="token operator">=</span><span class="token boolean">false</span></code></pre></div>
+<h3 id="레플리카-셋" style="position:relative;"><a href="#%EB%A0%88%ED%94%8C%EB%A6%AC%EC%B9%B4-%EC%85%8B" aria-label="레플리카 셋 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>레플리카 셋</h3>
+<p>레플리케이션 컨트롤러에 비해 보다 세분화된 파드 설정이 가능한 레플리케이션 수단, 후에 디플로이먼트와 밀접한 관계가 있음.</p>
+<p>레플리케이션 컨트롤러는 레이블 두가지를 동시에 매칭할 수 없지만, 레플리카 셋은 두가지를 동시에 매칭할 수 있다. 또한 key 만으로도</p>
+<p>매칭 할 수 있다.</p>
+<p>간단한 차이이면서 중요한 것</p>
+<p>apiVersion: apps/v1beta2 를 기억하자.</p>
+<p>파드 레이블이 이미 존재하면 새로 생성하지 않고 자신의 관리로 전환한다.</p>
+<p>matchLabels와 matchExpressions</p>
+<p>matchLabels: 일치하는 레이블에 대해 관리.</p>
+<p>matchExpressions: key가 일치하는가, 레이블 이름이 일치하는가 등의 세부적 조건을 설정가능.</p>
+<p>In : 레이블의 값이 지정된 값 중 하나와 일치 해야함.</p>
+<p>NotIn: 레이블의 값이 지정된 값과 일치하지 않아야 함.</p>
+<p>Exists: 지정된 key를 가진 파드만 포함되야 함. value는 중요하지 않음 따라서 이 연산자는 label 값을 지정할 필요가 없다.</p>
+<p>DoesNotExists: 파드에 지정된 키를 레이블이 포함하지 않아야 함</p>
+<h3 id="데몬셋" style="position:relative;"><a href="#%EB%8D%B0%EB%AA%AC%EC%85%8B" aria-label="데몬셋 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>데몬셋</h3>
+<p>클러스터의 모든 노드에 노드당 하나의 파드만 실행되길 원하는 경우에 데몬셋을 사용해볼 수 있다.</p>
+<p>데몬셋은 복제본의 개념이 없음(rs, rc)와 차이점. 다만 노드가 다운됐을때 자동 생성하지 않고, 새로운 노드가 추가되면 다시 파드를 생성한다.</p>
+<p>파드가 유실되면 다시 파드 템플릿으로 생성한다.</p>
+<p>노드를 지정해주지 않으면 데몬셋은 모든 노드에 파드를 배포.</p>
+<p>node-selector 속성으로 노드를 지정한다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9klEQVQY012OzU7CYBBF+wLamSpUSn+ohSKCiKISYzBhoakrwcboyoUxLIgxatCFj2B04RMfP6grFzfnzk3mzljR/Se1hy/S6Tet2Q/BzQertS4atdHQKOqgQavgQn6Keolh03ATXbGRzin25Ruyd47lTeZ4+TthPifOX6lkU+y4tyyTeBep7RT6m7UcoKWqoY+6IWo7aNJDhrdIc4DlHo9xDzK8kyv8/RHlfoZsxGi1USx7dbRiPnEjU7pdsDFA6ofLXCJzLD0yWR8JtrCiyTPh+Ilk8kh6/YJ/doftuDhOGV1z0QX/+5JXaOFlHWkPkYsZ0h3xC/TtdQgQrdIWAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="label"
+        title="label"
+        src="/static/9fb74c9ca5b114c16d00005654ff86be/fcda8/label.png"
+        srcset="/static/9fb74c9ca5b114c16d00005654ff86be/12f09/label.png 148w,
+/static/9fb74c9ca5b114c16d00005654ff86be/e4a3f/label.png 295w,
+/static/9fb74c9ca5b114c16d00005654ff86be/fcda8/label.png 590w,
+/static/9fb74c9ca5b114c16d00005654ff86be/2e237/label.png 790w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>)</p>
+<p>node label을 바꿈에 따라 생성 여부</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 33.78378378378378%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABdElEQVQoz1VRXUsCURDdX6Bzd1ddd11dd/1qQy0VKUpSEZN6SEItCDIMInrIiAjroaci+tWnuXcL6+Ewc2Fm7vnQjLADvdSGUd6BUWxBz4UgrwaRyoHcDZCVBzlFCD0JERcQwoxAxrqaaZ7zQAkHmnf2Amf2ClmDizdkTpaIhQcQQUMdJq8K8rdB2RBCwg4g0j6EU2LwR8ksqD4A9a9A4R40//Id7vwTweILlcUHcrMVYrmqWlBMmWWECihf5wMuRCLDCrJRz8yp1geN7lTVEo0h9FoXZr0Hc2vA0ttKqkjykpHing/xIklWUt6v1D/SKc22sF3SGs2bPsOZrOBNnhBMHpEZXSPmN/7Lk8f5sKp6ag3TjnyVJHpz0OY+NGt3jHRzCLszhdvowWofIW4XIo+k0ZlyFIrspRX8ARVaCoLnVHCFJvtc59kStMI5sxov4Z/eozh9gHt8gzinpRsWS/6BTJiTjN6ptX+ylx5Wu6DDW+XhN4j/x0fYselFAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="change label"
+        title="change label"
+        src="/static/db37a283748aceeeafa5b6b9e4596465/fcda8/change_label.png"
+        srcset="/static/db37a283748aceeeafa5b6b9e4596465/12f09/change_label.png 148w,
+/static/db37a283748aceeeafa5b6b9e4596465/e4a3f/change_label.png 295w,
+/static/db37a283748aceeeafa5b6b9e4596465/fcda8/change_label.png 590w,
+/static/db37a283748aceeeafa5b6b9e4596465/73fd0/change_label.png 793w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>)</p>
+<h3 id="잡-리소스" style="position:relative;"><a href="#%EC%9E%A1-%EB%A6%AC%EC%86%8C%EC%8A%A4" aria-label="잡 리소스 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>잡 리소스</h3>
+<p>특정 작업에 대한 컨트롤을 위한 job을 설정해서 파드를 관리할 수 있다.</p>
+<p>기본 배치 잡.</p>
+<p>멀티 파드 실행</p>
+<p>병렬 파드 실행</p>
+<p>크론 잡 실행. (리눅스 크론탭 처럼 사용가능)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 312px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuUlEQVQI103OvYrCQBhGYS9ATaKZmWhmTELiTzabgEoawZ9GEUTYBSvBVkS8//Y4LitYPLzVd/gaIi8Jt3vM4Yg+/tBfLJFKMh+k1OOCIs5YFhUra5ZNyHRMHqWMTEKZDAmDkLbr43Xkn4bXVZjfE/H1RnJ/EJ0v6N2efLNm2NeY3oDURjITowONFD0CS/3r2IjriY+gHyDLKeKrQk1r1KxGVHNU8Y3T9mi5gpbTpWm9PnHs8ad37L1P4mVTILcD188AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="cronjob"
+        title="cronjob"
+        src="/static/24666aff56a34cc45b00d87b69ab259c/17474/cronjob.png"
+        srcset="/static/24666aff56a34cc45b00d87b69ab259c/12f09/cronjob.png 148w,
+/static/24666aff56a34cc45b00d87b69ab259c/e4a3f/cronjob.png 295w,
+/static/24666aff56a34cc45b00d87b69ab259c/17474/cronjob.png 312w"
+        sizes="(max-width: 312px) 100vw, 312px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h2 id="서비스-서비스는-무엇인가" style="position:relative;"><a href="#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80" aria-label="서비스 서비스는 무엇인가 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>서비스! 서비스는 무엇인가!</h2>
+<p>기존방식은 시스템Admin 이 클라이언트 구성파일에 서비스를 제공하는 서버의 정보를 주입해 각 클라이언트 애플리케이션을 구성함.</p>
+<p>쿠버는 이런식으로 하면 안된다.</p>
+<p>이유는 다음과 같다.</p>
+<ul>
+<li>파드는 일시적이다. 파드는 언제든 사라질 수 있으며, 고착화 되지 않는다.(휘발성)</li>
+<li>쿠버네티스는 노드에 파드를 스케쥴링한 후 파드가 시작되기 바로 전에 파드의 IP 주소를 할당한다. 따라서 클라이언트는 미리 알수 없다.</li>
+<li>수평 스케일링은 여러 파드가 동일한 서비스를 제공할 수 있음을 의미한다. 클라이언트는 서비스를 지원하는 파드의 수와 IP에 상관하면 안된다. 개별 IP 목록을 유지할 필요가 없다. 대신 모든 파드는 단일 IP주소로 접근이 가능해야 한다.</li>
+</ul>
+<p>위의 이유로 쿠버네티스는 Service 서비스를 제공한다.</p>
+<p>쿠버네티스의 서비스는 동일한 서비스를 제공하는 파드 그룹에 지속적인 단일 접점을 만들려고 할때 생성하는 리소스다.</p>
+<p>(Like LoadBalancer)</p>
+<p>예시로 나온 서비스는 프론트와 백엔드간의 연결시 변하는 상황에 따른 문제를 겪지 않도록 각각 파드에 서비스를 만들어서 서로 파드의 영향없이 서비스를 통해 접근되도록 하는 예시이다.</p>
+<p>서비스 역시 특정 그룹의 연결을 위해 label selector를 이용해 그룹을 지정 할 수 있다.</p>
+<p>서비스 생성하는 가장 쉬운 방법</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl expose rc kubia --type<span class="token operator">=</span>LoadBalancer --name kubia-http</code></pre></div>
+<p>위는 2장의 예시다.</p>
+<p>yaml을 통해서도 당연히 만들수 있다.(과정은 생략)</p>
+<p>생성한 서비스를 조회하는 명령어 옵션</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl get svc</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 552px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 12.162162162162163%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgUlEQVQI1yWO2Q6CUAxE+YPOdYMA4gUiiwveqAkxxvBGwv9/0FjtQx8mPT3TyI0zcQt0h5IozpT+QySeWMVE1lDaN1HdiW1G5B3lNBH1w5h9T+l0n+itvyp/ZCSXmVKNRNoQm1QFL5PmrUIDJSwmib0VDvrArqDDmiiD5Z+8fv7nCxV+NrUiyieyAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="svc"
+        title="svc"
+        src="/static/ec03df056454bd795d40c262a820672b/08c0b/svc.png"
+        srcset="/static/ec03df056454bd795d40c262a820672b/12f09/svc.png 148w,
+/static/ec03df056454bd795d40c262a820672b/e4a3f/svc.png 295w,
+/static/ec03df056454bd795d40c262a820672b/08c0b/svc.png 552w"
+        sizes="(max-width: 552px) 100vw, 552px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>실습간 pod레이블을 잘못 설정했었는데, 그채로 서비스 생성하니 exec 때 연동이 안됐음.</p>
+<p>다시 레이블 변경후 재호출 하니 잘됨(편안~)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 5.405405405405405%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAATUlEQVQI1y3JQQpAQACGUTeYf8iUTGg2SmMKUcpSWbv/YT6JxVu9rJgW7LGjuGHShRlPzHqjMCPnke9RFVAzoDaiLn33KmusLVHusL8HWygbM/+sZLcAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="exec"
+        title="exec"
+        src="/static/ceb097c32c2a29cb678094fe903f4b51/fcda8/exec.png"
+        srcset="/static/ceb097c32c2a29cb678094fe903f4b51/12f09/exec.png 148w,
+/static/ceb097c32c2a29cb678094fe903f4b51/e4a3f/exec.png 295w,
+/static/ceb097c32c2a29cb678094fe903f4b51/fcda8/exec.png 590w,
+/static/ceb097c32c2a29cb678094fe903f4b51/1b853/exec.png 592w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>exec 가 하는 일은 도커와 같다. 도커에도 실행중인 컨테이너에 명령어 전달하려면 exec를 사용.</p>
+<p>옵션간 — 의 의미는 kubectl 명령어가 끝났음을 의미.</p>
+<p>호출을 지속적으로 서비스에 진행하다 보면 LB처럼 응답하는 파드가 변경된다.</p>
+<p>만약 매번 같은 파드가 응답하길 원한다면 sessionAffinity옵션의 값을 None에서 ClientIP로 설정한다.</p>
+<p>어피니티 옵션을 ClientIP로 변경하고 요청을 보내면 요청한 파드만 응답한다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 14.18918918918919%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAiklEQVQI1zVOywrAIAzz/79PUTYd7gnq1LHDDrtkpDAhJG1SW+Wcg7UWWmtQk40xGMcRwzBIHWNEaw33faP3juu6pD7PE6UUvO+L/6l937Ftmwwty4J1XXEch+hpmhBCEP4xz7P0vPfCREpJPn2eB4oX0ORGbss5yxWsa60SpmaPHq+jZpY+8fvMfmLR3a3KmU7lAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="reason"
+        title="reason"
+        src="/static/848228814627b54a16eac6fff35b0718/fcda8/reason.png"
+        srcset="/static/848228814627b54a16eac6fff35b0718/12f09/reason.png 148w,
+/static/848228814627b54a16eac6fff35b0718/e4a3f/reason.png 295w,
+/static/848228814627b54a16eac6fff35b0718/fcda8/reason.png 590w,
+/static/848228814627b54a16eac6fff35b0718/efc66/reason.png 885w,
+/static/848228814627b54a16eac6fff35b0718/0fb99/reason.png 965w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>출처: <a href="https://lascrea.tistory.com/202"></a><a href="https://lascrea.tistory.com/202">https://lascrea.tistory.com/202</a></p>
+<p>동일한 서비스에서 여러 개의 포트 노출</p>
+<p>하나의 서비스에서 멀티포트를 지원하려면 각 포트의 이름을 지정해야 한다.</p>
+<p>이름 및 용도의 포트들을 지정하고 파드의 타켓 포트도 작성해준다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 3.378378378378378%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAUUlEQVQI12Pgt43+z28f/19A2+6/gFnAf35Dz//82o7/BVRM//NrAsUUDf4LCEv859ew/s+vZf9fQFTmv6Cg6H9BAWGgGjOIGhCtZgFk2/4HAIj/HJGqBOOQAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="port"
+        title="port"
+        src="/static/bb79d8ff68f2134f202167fbb6037c74/fcda8/port.png"
+        srcset="/static/bb79d8ff68f2134f202167fbb6037c74/12f09/port.png 148w,
+/static/bb79d8ff68f2134f202167fbb6037c74/e4a3f/port.png 295w,
+/static/bb79d8ff68f2134f202167fbb6037c74/fcda8/port.png 590w,
+/static/bb79d8ff68f2134f202167fbb6037c74/dba9a/port.png 652w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>이렇게 생성된 서비스에 파드를 생성시 포트 네임을 지정하면 바로 적용이 가능하다.</p>
+<p>후에 포트가 변경시에는 이름을 변경하는게 아니라 파드 스펙에서 포트번호를 변경하면 된다.</p>
+<h3 id="서비스-검색" style="position:relative;"><a href="#%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B2%80%EC%83%89" aria-label="서비스 검색 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>서비스 검색</h3>
+<p>서비스가 한번 생성되면 서비스가 지워지지 않는 한 파드는 삭제되고 새로 생서되기도 한다. 하지만 언제나 서비스의 IP로 접근할 수 있어야 하는데, 다음과 같은 방법들을 제공 한다.</p>
+<ol>
+<li>
+<p>환경변수를 통한 서비스 검색</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl <span class="token builtin class-name">exec</span> 파드명 -- <span class="token function">env</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 348px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 29.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABCElEQVQY00WR6VICQQyE9w2SRQ6rlJIqD0RgZV0Wi8Ibb/HA0vd/lDadLO6PqUwymS/dM4lMvyCDK8h0DcnfIKdPkNEd5Ozd6peWP0PG95GfWN/wxmu63YO2dpGmzVjahDbaSKLRmvJVgLNHy68DNryFlOuoc42WkMlLnDEfL6GdPQPvQNtdA7cq4PGFKVjVIEbWuKda2+vhLAZzIF0QyIF+voAczV1l4lazB0jxUcGqS9xbkxSf8GehbdbK73qgAbU7QCqpqwvLsx/I+W9M5SXC+JaTV7ckuUWq6y+gB2Wc9+fQXmaAjqnachBXWDbJul/U8k2F53wvWjH13iwNv/wfq0/YgDbxD9Opqj+qqgI0AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="search service"
+        title="search service"
+        src="/static/9d90f98972969e23ce9af0ee75e81f8b/34ea4/search_service.png"
+        srcset="/static/9d90f98972969e23ce9af0ee75e81f8b/12f09/search_service.png 148w,
+/static/9d90f98972969e23ce9af0ee75e81f8b/e4a3f/search_service.png 295w,
+/static/9d90f98972969e23ce9af0ee75e81f8b/34ea4/search_service.png 348w"
+        sizes="(max-width: 348px) 100vw, 348px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+</li>
+<li>
+<p>DNS를 통한 서비스 검색</p>
+<p>kube-dns 에서 자체 처리</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 566px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 6.081081081081082%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAUklEQVQI1yXLTQpAUBhGYTt4Pz9JVzIhKVdipkzEQIn9r+a4ZXieOpH6DU0X6la0vGg8kT/QfGOuxaoeS4vfhh0rg7mGWAmWufA8WO1Dx1iS8wFq/Ru6BXKk5gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="by dns"
+        title="by dns"
+        src="/static/0a808949648f4bb42daa2c93485981be/6fe44/by_dns.png"
+        srcset="/static/0a808949648f4bb42daa2c93485981be/12f09/by_dns.png 148w,
+/static/0a808949648f4bb42daa2c93485981be/e4a3f/by_dns.png 295w,
+/static/0a808949648f4bb42daa2c93485981be/6fe44/by_dns.png 566w"
+        sizes="(max-width: 566px) 100vw, 566px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>파드가 내부 DNS 서버를 사용할지 여부는 각 파드 스펙의 dnsPolicy속성으로 구성할 수 있음.</p>
+</li>
+</ol>
+<p>FQDN</p>
+<p>호스트와 도메인을 함께 명시하여 전체 경로를 모두 표기하는 것을 FQDN 이라 한다.</p>
+<p>FQDN와 달리 전체 경로명이 아닌 하위 일부 경로만으로 식별 가능하게 하는 이름을 PQDN(Partially~)라 한다.</p>
+<p>쿠버네티스의 경우 다른 Pod를 찾을 시 동일 네임스페이스 안에서 찾을 때에는 PQDN을 사용할 수 있지만,</p>
+<p>네임스페이스 외부에서 찾을 때에는 FQDN을 사용해야 한다</p>
+<p>명칭만 정확히 아는것만이 아니라 포트번호도 알고 있어야 한다.</p>
+<p>서비스연결 파드에 직접 접속해서 bash 실행. (like Docker)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcUlEQVQ4y52T6U7CUBCF+wZ3blkqSwuoQEtpMZoYDS41gktifP+3GWdp6a0aAX+czM38+HLumRnPpAWa5B5N+oQm2yCMMoTBDCFakFKt3RAhGKk6Q7S2g+B3RfabPJO/KIzrxTvCZIUQxgReIoxXUq1to4UWqS1vARFU9AO4fEazeCR3VFdvBMnVoQAzdVm62bn602F8h2Z2g1IJDCF9sX+OMJyrU64OxO6RJ+4EVsjXxRk7DBN9lw4PB7oZkiQ3dsXDYWjv9EhgVmW40SlzbgzkLGmqFvxGdvuBkuGtrk7yoK44Q67dqHZ2XIZrdUk7KZnJHlINonpNDlQzw2pt3C8fDeTseML5ljLcaoayh9k/gZwdZ8hZ8pdHvwMPlceDMPO1uiS4rAndq9xtq9e8CmdAbt/teebqk7J7RXP5oQ5psnAyIeCYKskP6rt11Lhnp1cOpdCzm17rMPj8eG2qFeqfleL3tFyrWHvDuD7VzgC/AO/IhM3joRVCAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="fqdn"
+        title="fqdn"
+        src="/static/75a421d9c1b4a436a0feefad2448ab61/fcda8/fqdn.png"
+        srcset="/static/75a421d9c1b4a436a0feefad2448ab61/12f09/fqdn.png 148w,
+/static/75a421d9c1b4a436a0feefad2448ab61/e4a3f/fqdn.png 295w,
+/static/75a421d9c1b4a436a0feefad2448ab61/fcda8/fqdn.png 590w,
+/static/75a421d9c1b4a436a0feefad2448ab61/2e237/fqdn.png 790w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>위의 축약이 가능한 이유는 컨테이너에 resolv.conf에 이미 잘 명시가 되어 있어서 이다.</p>
+<h2 id="클러스터-외부에-있는-서비스-연결" style="position:relative;"><a href="#%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0-%EC%99%B8%EB%B6%80%EC%97%90-%EC%9E%88%EB%8A%94-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%B0%EA%B2%B0" aria-label="클러스터 외부에 있는 서비스 연결 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>클러스터 외부에 있는 서비스 연결</h2>
+<p>서비스 기능을 사용해 외부 서비스로 연결을 전달할 수도 있다.</p>
+<h3 id="서비스-엔드포인트" style="position:relative;"><a href="#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%94%EB%93%9C%ED%8F%AC%EC%9D%B8%ED%8A%B8" aria-label="서비스 엔드포인트 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>서비스 엔드포인트</h3>
+<p>서비스는 직접적으로 파드를 연결하지 않는다. 서비스 엔드포인트를 통해 접근할 뿐이다.</p>
+<p>describe로 svc를 조회하면 엔드포인트를 조회할 수 있다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl get endpoints kubia </code></pre></div>
+<p>셀렉터는 IP와 포트 목록을 작성하는 데 사용되며, 엔드포인츠에 저장된다.</p>
+<h3 id="서비스-엔드포인트-수동구성" style="position:relative;"><a href="#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%97%94%EB%93%9C%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%88%98%EB%8F%99%EA%B5%AC%EC%84%B1" aria-label="서비스 엔드포인트 수동구성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>서비스 엔드포인트 수동구성</h3>
+<p>파드 셀렉터 없이 서비스를 만들면 쿠버네티스는 엔드포인트 리소스를 만들지 못한다. 수동으로 생성하려면 서비스와 엔드포인트 리소스 모두 만들어야 한다.</p>
+<p>또한 externalName을 이용해서 직접 외부 주소를 전달 할 수도 있다.</p>
+<p>이렇게되면 서비스는 내부 DNS가 아닌 외부 도메인으로 연결하게 된다. 추후 서비스 연결을 변경할 경우 externalName 속성을 수정하거나, ClusterIP 로 변경 후 서비스 스펙을 만들어 다른 서비스를 가리키도록 할수도 있다.</p>
+<p>ExternalName 서비스는 DNS 레벨에서만 구현된다. CNAME레코드가 생성되어, 연결 시 바로(FQDN) 외부 연결을 하도록 한다.</p>
+<p>따라서 ExternalName 유형의 서비스는 ClusterIP를 얻지 못한다.</p>
+<h3 id="외부-클라이언트에-서비스-노출" style="position:relative;"><a href="#%EC%99%B8%EB%B6%80-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%85%B8%EC%B6%9C" aria-label="외부 클라이언트에 서비스 노출 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>외부 클라이언트에 서비스 노출</h3>
+<p>외부에서 서비스를 접근하게 하려면 ,</p>
+<h3 id="nodeport-로-서비스를-생성" style="position:relative;"><a href="#nodeport-%EB%A1%9C-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%83%9D%EC%84%B1" aria-label="nodeport 로 서비스를 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NodePort 로 서비스를 생성</h3>
+<p>각 클러스터 노드는 노드 자체에서 포트를 개방하고 해당 포트로 수신된 트래픽을 서비스로 전달한다.</p>
+<h3 id="서비스-유형을-loadbalancer로-설정" style="position:relative;"><a href="#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%ED%98%95%EC%9D%84-loadbalancer%EB%A1%9C-%EC%84%A4%EC%A0%95" aria-label="서비스 유형을 loadbalancer로 설정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>서비스 유형을 LoadBalancer로 설정</h3>
+<p>클라우드 인프라에 프로비저닝된 로드밸런서로 서비스에 접근할 수 있다. 로드밸런서는 모든 노드의 노드포트로 트래픽을 전달한다.</p>
+<h3 id="단일-ip주소로-여러-서비스를-노출하는-ingress-리소스-생성" style="position:relative;"><a href="#%EB%8B%A8%EC%9D%BC-ip%EC%A3%BC%EC%86%8C%EB%A1%9C-%EC%97%AC%EB%9F%AC-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EB%85%B8%EC%B6%9C%ED%95%98%EB%8A%94-ingress-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EC%83%9D%EC%84%B1" aria-label="단일 ip주소로 여러 서비스를 노출하는 ingress 리소스 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>단일 IP주소로 여러 서비스를 노출하는 Ingress 리소스 생성</h3>
+<p>HTTP(7계층)에서 동작하는 서비스로 4계층(TCP/UDP)보다 더 많은 기능을 제공할 수 있다.</p>
+<ol>
+<li>
+<p>NodePort 서비스</p>
+<p>spec: type에 NodePort로 설정</p>
+<p>nodePort를 지정해서 클러스터 노드에 지정된 포트로 액세스 하게 함.</p>
+<p>각 노드에 30123 포트를 호출해야 하는데 EXTERNAL-IP를 조회해서 30123 포트에 curl 을 하면 조회된다.</p>
+<p>물론 EKS도 방화벽에 규칙등재해야 curl 리턴이 온다.</p>
+<p>단점, 노드에 장애가 나면 클라이언트는 더 이상 서비스에 접근할 수 없다.</p>
+<p>이를 보완하기 위해 다음의 로드밸런서를 보자.</p>
+</li>
+<li>LoadBalancer</li>
+</ol>
+<p>로드밸런서는 단순히 타입을 지정하면 클라우드에 있는 로드밸런서를 연결한다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 2.0270270270270268%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAASUlEQVQI1zWKSwqAIBQAu//1wjDp+6zMoFwE/RZNKLQYhoHJtgvW8yX6J3a4YQoHuneo2pJXgu5c8rI/6THWU7Qjqhkw4ill5gP8ikrFZFlDWgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="lb"
+        title="lb"
+        src="/static/8b014db054806ed0d63c02ddf6b4d348/fcda8/lb.png"
+        srcset="/static/8b014db054806ed0d63c02ddf6b4d348/12f09/lb.png 148w,
+/static/8b014db054806ed0d63c02ddf6b4d348/e4a3f/lb.png 295w,
+/static/8b014db054806ed0d63c02ddf6b4d348/fcda8/lb.png 590w,
+/static/8b014db054806ed0d63c02ddf6b4d348/efc66/lb.png 885w,
+/static/8b014db054806ed0d63c02ddf6b4d348/c83ae/lb.png 1180w,
+/static/8b014db054806ed0d63c02ddf6b4d348/bb543/lb.png 1418w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>뿅 하고 생성됨! ( 미니쿠베 OTL)</p>
+<p>aws는 public IP대신 퍼블릭 dns로 주소를 줌.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 12.837837837837837%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3UlEQVQI1x2Ou0rDUABA8wn33oQmTpo2jXk1D2NCH2JbwUUoqODg5gfUtCIVLHYTXLs0XVTEHz22DocDZzqaKG8R5Q0yGiPbp4juHbJ/j+qM0Z0M6eSocIhyS5TfRz/00aMRRtDD7PSwwgIrPecgyDG8As2afuE+bnfUOPNPWs+/hIsfknlNvPjGq2rCakMw2xLNNuTVGm9aM3l6YPWa87I842014P1jxPDCQxPxJTKfILMrRHGN9AcoO0E1E2QrQzkn/+dy7/3trgs7xXBSTNul0QxotGPM4xR1FPIHXRZlVjj+G1YAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="aws dns"
+        title="aws dns"
+        src="/static/6fed7e3eff734722ad12cc3f0fbdd1a7/fcda8/aws_dns.png"
+        srcset="/static/6fed7e3eff734722ad12cc3f0fbdd1a7/12f09/aws_dns.png 148w,
+/static/6fed7e3eff734722ad12cc3f0fbdd1a7/e4a3f/aws_dns.png 295w,
+/static/6fed7e3eff734722ad12cc3f0fbdd1a7/fcda8/aws_dns.png 590w,
+/static/6fed7e3eff734722ad12cc3f0fbdd1a7/be86f/aws_dns.png 662w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>잘 됩니다~!</p>
+<p>이미 로드밸런서 구성으로 훌륭해 졌지만, 로드 밸런싱의 구조상 클라이언트가 노드포트를 통해 접근할 경우, 임의 로 선택된 파드가 동일한 노드에서 실행중일 수도 있고, 아닐 수 도 있다. 아닐 경우는 추가적으로 노드를 순회해야 하므로, 불필요한 지연이 발생될 수 있다. 따라서 ExternalTrafficPolicy필드의 옵션을 Cluster에서 Local로 변경하면, 외부의 연결을 수신한 노드에서 실행중인 파드로만 트래픽을 전달 할 수 있다.</p>
+<p>이렇게 하면 각 노드에 있는 파드로의 전달은 이루어진다. 하지만 노드마다 파드수가 다르므로 부하 분산에는 좋지 않다.</p>
+<p>nodeport를 사용하면 패킷에서 소스 네트워크 변환이 이루어져서 클라이언트 IP를 볼 수 없어 문제가 될 수 있다.</p>
+<ol start="3">
+<li>Ingress 서비스</li>
+</ol>
+<p>로드밸런서 서비스는 자신의 공용IP 주소를 가진 로드밸런서가 필요하지만, Ingress는 한 IP주소로 수십개의 서비스에 접근이 가능하도록 지원해준다. 인그레스는 경로에 따라 전달을 한다. 7계층에서동작(HTTP) 쿠키 기반 세션 어피니티도 제공한다</p>
+<p>(그럼 첨부터 이걸 쓰라고 하지…)</p>
+<p>라고 썼지만 여기서부터 지옥이 펼쳐진다. EKS ingress</p>
+<p>(잠시 후퇴)</p>
+<p>minikube 너무 잘됩니다 ㅡㅜ AWS는 구조상의 이유로 ALB 컨트롤러를 EKS가 제어할수 있도록 설정해야 하는데, 아직 그부분이 매끄럽게 되지 않아서 시간 소요가 있을것 같네요. 일단 minikube에서는 너무 잘되고 아마도 gcp도 잘될거라 생각됩니다.</p>
+<p>본론으로 돌아와서 인그레스는 직접적인 도메인주소 DNS로 부터 IP정보를 제공하고 클라이언트가 요청시 컨트롤러는 헤더에서 클라이언트가 요청하려는 서비스를 결정하고 서비스와 관련된 엔드포인트 파드로 전달한다.</p>
+<p>인그레스는 여러개의 서비스를 핸들할 수 있도록 되어 있고, 직접 서비스에 전달하지 않는다. 파드를 선택하는데에만 사용한다.</p>
+<p>같은 IP주소의 인그레스를 통과하지만, 설정된 경로와 노드에 따라 다른 서비스로 연결이 가능하다.</p>
+<p>또한 인증서를 입혀서 https도 적용가능하다!(이게 이렇게 한줄에 정리해도 되는건지 모르겠습니다)</p>
+<h3 id="레디니스-프로브" style="position:relative;"><a href="#%EB%A0%88%EB%94%94%EB%8B%88%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%B8%8C" aria-label="레디니스 프로브 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>레디니스 프로브</h3>
+<p>파드가 연결을 수락할 준비가 됐을 때 신호보내기.</p>
+<p>파드가 레이블을 가지고 레이블이 일치하는 서비스에 연결되는데 파드가 만들어지자 마자 서비스는 요청을 시작한다. 하지만 파드 생성후 서비스 프로세스가 실행되기까지 시간이 걸리는 경우도 있다. 이런때를 대비해서 트리거가 필요하다.</p>
+<ul>
+<li>exec 프로브 : 프로세스의 종료 상태 코드로 판단.</li>
+<li>HTTP GET 프로브 : 응답상태 코드</li>
+<li>TCP 소켓 프로브 : 소켓 연결 여부</li>
+</ul>
+<p>컨테이너가 시작될때 레디니스 점검 시작 타이밍을 initialDelaySeconds로 지정 가능.</p>
+<p>파드가 준비되지 않았다면 제거. 정상이면 주기적으로 체크</p>
+<p>라이브니스 프로브와 달리 컨테이너가 준비상태 점검에 실패해도 종료되거나 다시 시작하지 않는다.</p>
+<p>레디니스 프로브는 요청을 처리할 준비가 된 파드의 컨테이너만 요청을 수신하도록 한다.</p>
+<p>레디니스 프로브를 사용하면 클라이언트가 정상 상태인 파드하고만 통신하고 시스템에 문제가 있다는 것을 절대 알아차리지 못한다.</p>
+<p>레디니스 프로브에서 강조해야 할 두가지</p>
+<ul>
+<li>파드에 레디니스 프로브를 추가하지 않으면 파드가 시작하는 즉시 서비스 엔드포인트가 된다. 항상 서비스가 온전히 수행할 수 있는 상태를 가지도록 레디니스 프로브를 정의하라.</li>
+<li>레디니스 프로브에 파드의 종료코드를 포함하지 말것. 파드를 제거하는 코드는 필요없다.</li>
+</ul>
+<p>헤드리스 서비스로 개별 파드 찾기</p>
+<p>클라이언트가 모든 파드에 연결하려면 각 파드의 IP를 알아야한다. 쿠버네티스 API를 통해 확인할 수 있지만, 애플리케이션을 k8s와 무관하게 유지하려고 노력해야 하므로, 이는 바람직하지 않다.</p>
+<p>보통 DNS를 통해 조회할 수 있는데, 이때 서비스 설정 중 clusterIP필드 값을 None으로 설정하면, DNS 서버는 하나의 IP대신 파드 IP들을 반환한다.</p>
+<p>None 옵션은 바로 헤드리스 옵션이다.</p>
+<p>dnsutils를 이용해서 조회해보면 준비된 파드는 서비스 엔드포인트에 연결되어 응답했다.</p>
+<p>만약 준비된 파드만이 아닌 모든 파드를 조회하고 싶다면 아래의 어노테이션을 추가한다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"> service.alpha.kubernetes.io/tolerate-unready-endpoints: <span class="token string">"true"</span></code></pre></div>
+<p>서비스 문제해결하기</p>
+<ol>
+<li>외부가 아닌 클러스터 내에서 서비스의 클러스터 IP에 연결되는지 확인한다.</li>
+<li>서비스에 엑세스할 수 있는지 확인하려고 서비스 IP로 핑을 할 필요없다.</li>
+<li>레디니스 프로브를 정의했다면 성공했는지 확인하라.</li>
+<li>파드가 서비스의 일부인지 확인하려면 kubectl get endpoints를 사용해 확인한다.</li>
+<li>FQDN이나 그 일부로 서비스에 엑세스하려고 하는데 작동하지 않는 경우 FQDN대신 클러스터 IP를 사용해 엑세스할 수 있는지 확인 한다.</li>
+<li>대상 포트가 아닌 서비스로 노출된 포트에 연결하고 있는지 확인한다.</li>
+<li>파드 IP에 직접 연결해 파드가 올바른 포트에 연결돼 있는지 확인한닫.</li>
+<li>파드IP로 애플리케이션에 액세스할 수 없는 경우 애플리케이션이 로컬호스트에만 바인딩하고 있는지 확인한다.</li>
+</ol>
+<h3 id="디플로이먼트" style="position:relative;"><a href="#%EB%94%94%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%A8%BC%ED%8A%B8" aria-label="디플로이먼트 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>디플로이먼트</h3>
+<p>레플리카셋 기능을 활용한다. 리소스를 통해 선언적인 애플리케이션 업데이트를 가능하게 한다.</p>
+<p>파드의 업데이트!</p>
+<p>파드는 기본적으로 레플리케이션 컨트롤러나 레플리카 셋 모두 지원한다.</p>
+<p>또는 외부서비스와 연결된 파드의 경우 클라이언트와 직접 엑세스되기도 한다.</p>
+<p>파드에 담긴 APP에 버전 업데이트 한다고 가정했을때, 파드를 갱신하는 방법은 두가지가 있다.</p>
+<ol>
+<li>기존 파드를 모두 삭제한 다음 새 파드를 시작한다.</li>
+<li>새로운 파드를 시작하고, 기동하면 기존 파드를 삭제한다. 새파드를 모두 추가한 다음 한꺼번에 기존 파드를 삭제하거나 순차적으로 새파드를 추가하고 기존 파드를 점진적으로 제거해 이 작업을 수행할 수 있다.</li>
+</ol>
+<p>1번의 단점은 짧은 시간동안 다운타임이 발생한다.</p>
+<p>2번의 단점은 두가지 버전을 동시에 실행해야 한다.</p>
+<p>RC에서 수동으로 업데이트 하는 사례 1</p>
+<p>레플리케이션에서 관리되는 파드는 템플릿을 수정하고 기존 파드를 삭제시 레이블 셀렉터와 일치하는 파드가 없을시 새 인스턴스를 시작한다.</p>
+<p>Blue/Green deployment</p>
+<p>바꾸려는 버전의 파드를 미리 생성하고, 서비스의 셀렉터를 변경 할 수 있다. 이방식은 블루/그린 배포라고 말한다. 이경우에는 한번에 많은 파드가 실행되므로 리소스를 많이 잡아먹는 단점이 있다.</p>
+<p>rolling update</p>
+<p>파드를 한번에 모두 실행하고 한번에 삭제하는 방법 댓힌 파드를 단계별로 교체하는 롤링 업데이트도 할 수 있다. 수동으로 할 경우 이 모든 일을 수동으로 진행해야 하므로, 어렵고 오류가 발생할 수 있다.</p>
+<p>rc를 통해 자동 롤링 업데이트 수행.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl rolling-update kubia-v1 kubia-v2 —image<span class="token operator">=</span><span class="token string">"luksa/kubia:v2"</span> </code></pre></div>
+<p>라고 나오지만 Deprecated된 명령어 이기 때문에 굿바이.</p>
+<p>그렇다면 왜 제거했을까? 더 나은 대안이 있기 때문이다.</p>
+<p>이런 방식의 롤링업데이트는 클라이언트를 통해서 지원되기 때문에 안전보장이 되지 않는다.</p>
+<p>진행중 클라이언트의 통신이 끊어질 경우, 중단될 수 있기 때문이다. 또한 이러한 수동적 방식은</p>
+<p>쿠버네티스가 선언적 설정에 따라 움직이는 방식에서 멀어지는 직접적인 방식이다.</p>
+<p>따라서 우리는 이러한 부분을 선언적 방식으로 대처할 수 있는 Deployment를 사용해서 해결할 수 있다.</p>
+<p>Deployment</p>
+<p>디플로이먼트는 레이블 셀렉터, 레플리카 수 , 파드 템플릿으로 구성된다. 또한 업데이트 방식을 설정하는 필드도 지원한다.</p>
+<div class="gatsby-highlight" data-language="yaml"><pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> kubia
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">3</span>
+  <span class="token key atrule">template</span><span class="token punctuation">:</span>
+    <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+      <span class="token key atrule">name</span><span class="token punctuation">:</span> kubia
+      <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+        <span class="token key atrule">app</span><span class="token punctuation">:</span> kubia
+    <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+      <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">image</span><span class="token punctuation">:</span> luksa/kubia<span class="token punctuation">:</span>v1
+        <span class="token key atrule">name</span><span class="token punctuation">:</span> nodejs
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">app</span><span class="token punctuation">:</span> kubia</code></pre></div>
+<p>디플로이먼트를 사용하게 되면 디플로이먼트를 통해 rc- pod가 관리된다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k create -f kubia-deployment-v1.yaml --record   
+<span class="token comment">#레코드 옵션은 리비전 기록을 볼수 있는 좋은 커맨드 옵션 </span></code></pre></div>
+<p>디플로이먼트가 생성되고 파드와 레플리카셋을 조회해보면 특징이 있다.</p>
+<p>디플로이먼트는 파드를 직접 관리하지 않고 레플리카 셋을 통해 관리한다. 따라서 파드의 이름에 해시값이 추가 되는데, 이는 바로 레플리카 셋에 적용된 해시값이다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTElEQVQY0yXP20vCcADF8VFppZvut02n6Sy6mblcLbMsojtauVw5LYgwLLpQRD0H0X/+bdjDh3MezsuRUk4d1bJRRJZYLEE8LlCzi8jJNLLIkcwsEpd1EulZ4oqBYhSYGI8xGZ0kEkkyGtUZiWj/xjSkZu+ZevCGc/tD9fabVT/snS+c1iO17gcbnXdc/xU3+GS9/cRm/5eNyxfWWgNO/AP8C5sgcOl2XXo9F+nI86iGw2JjQGn/itJBQHGvg306wDnts9K4w27eUzq8YdV7onL+gNO8o9zoc3i2Q+vcpuU5XLQd2iHJqDRJTi2hWWVEvow6VURRzTCXkLXcMI2FLRK6RcKcQ1YzKGHX52tExwVjUS28HYr8k/I1n2zlGGvnZihX9TCLdYyZCiI9TWZ5l/zmJam5dYQ5jSKrGIUy1vY1WrqAKlIIPYPQzKE/umyYE3YZCaQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="deployment"
+        title="deployment"
+        src="/static/96c5d3736718d6efa4fe0db6f03557dd/fcda8/deployment.png"
+        srcset="/static/96c5d3736718d6efa4fe0db6f03557dd/12f09/deployment.png 148w,
+/static/96c5d3736718d6efa4fe0db6f03557dd/e4a3f/deployment.png 295w,
+/static/96c5d3736718d6efa4fe0db6f03557dd/fcda8/deployment.png 590w,
+/static/96c5d3736718d6efa4fe0db6f03557dd/2a195/deployment.png 620w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>디플로이먼트의 업데이트 전략</p>
+<ul>
+<li>RollingUpdate : 이전의 방식대로 순차적으로 개별적 파드 교체</li>
+<li>Recreate: 한번에 지우고 한번에 새로 만들기</li>
+</ul>
+<p>스펙 변경 하는 명령어</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl patch deployment kubia -p <span class="token string">'{....}'</span></code></pre></div>
+<p>컨테이너 이미지 교체 하는 명령어</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k <span class="token builtin class-name">set</span> image deployment kubia <span class="token assign-left variable">nodejs</span><span class="token operator">=</span>luksa/kubia:v2 </code></pre></div>
+<p>롤 아웃 진행상황 확인하는 명령어</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k rollout status deployment kubia</code></pre></div>
+<p>롤아웃 롤백하는 명령어</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k rollout undo deployment kubia</code></pre></div>
+<p>리비전 히스토리 조회하는 명령어</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k rollout <span class="token function">history</span> deployment kubia</code></pre></div>
+<p>특정 리비전 넘버로 롤백하는 옵션</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k rollout undo deployment kubia --to-revision<span class="token operator">=</span><span class="token number">1</span></code></pre></div>
+<p>롤아웃 속도 제어</p>
+<p>maxSurge와 maxUnavailable</p>
+<p>strategy에 rollingUpdate 속성아래에 정의 가능한 옵션</p>
+<p>maxSurge: 디플로이먼트가 의도하는 레플리카 수보다 얼마나 많은 파드 인스턴스 수를 허용할 수 있는지 결정한다. 기본적으로 25%로 설정되고 의도한 개수보다 최대 25% 더많은 파드 인스턴스가 있을수 있다. 레플리카 수가 4로 설정됐다면 동시에 5개이상 파드 인스턴스가 실행되지 않는다.</p>
+<p>maxUnavailable</p>
+<p>업데이트 중에 의도하는 레플리카 수를 기준으로 사용할 수 없는 파드 인스턴스 수를 결정한다. 기본적으로 25%설정되고 사용가능한 파드수는 의도하는 레필리카 수의 75%이하로 떨어지지 않아야 한다.</p>
+<p>각각 1, 0 일떄</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 474px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3klEQVQY0z2P607CQBCF+wB2l+7S7qVggBBaCqhtULnfAgE1MSa+/7Mcp4Ppj8meyZz59kwQDypEpg+VZlQj0r2mF5GByddwT2dI5RAPX+HLD36l9jDjDc+T0XvTB6bYwc5OSOff6Cx+WfvyBl99/UPmUJ0cYahoYQv3fIGdHKD8ELpbIHxoQbRiCNkm8IKAZDLFloHp2w/s9MgwO9lDCMVA3R2zrr2++iTPCcoR8HHKIKkszTVx9giSbIW63MuVz0nyWt/uQDK3++X9fFpIsiV/yAkJWCcXUkNGtkn4B4ajb8sIpSFGAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1 0"
+        title="1 0"
+        src="/static/21dacd7de247c6a51f2271b670852cf6/5595f/1_0.png"
+        srcset="/static/21dacd7de247c6a51f2271b670852cf6/12f09/1_0.png 148w,
+/static/21dacd7de247c6a51f2271b670852cf6/e4a3f/1_0.png 295w,
+/static/21dacd7de247c6a51f2271b670852cf6/5595f/1_0.png 474w"
+        sizes="(max-width: 474px) 100vw, 474px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>각각 1, 1 일때</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 509px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9klEQVQY0x2QW0/CQBCF+65lt7vtdi+lEMDaQgGLYgmC8Ua8JUqiiQ/+/99x2M7TPJyZ75wzgSq3iMwYsj+DcAWEmUDYAkw6pOUdzOIAJizM1StM8waZVeBJjmS0gq6fkFZ7cDWAnj+TFuj6EWZ5QLb5hbv5Qjq9R3/7B5l7A78Q6TFYlNJxB1cXLSI1JL3HYoTn3M8EevaAZLJGkFY7gtjVB6VQRUtgSp3XHlr6hNrDXtCZC3eJ8IxBDubgvkVnxiLt2+zoNrDNO8XN9//I2h/Y609YX40Jg3jU+FdMCehuj3Drb8TDBcKQk8akpXTdrio26HGFE+G5cDhmNgsXAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="1 1"
+        title="1 1"
+        src="/static/4b5cc454f1e49587cbc0bd136f9a1071/71554/1_1.png"
+        srcset="/static/4b5cc454f1e49587cbc0bd136f9a1071/12f09/1_1.png 148w,
+/static/4b5cc454f1e49587cbc0bd136f9a1071/e4a3f/1_1.png 295w,
+/static/4b5cc454f1e49587cbc0bd136f9a1071/71554/1_1.png 509w"
+        sizes="(max-width: 509px) 100vw, 509px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>롤아웃 일시정지</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k rollout pause deployment kubia</code></pre></div>
+<p>위의 정지 상태가 되면 새파드 하나만 생성되고 중지된다. 이렇게 하면 카나리 릴리즈를 효과적으로 실행할 수 있다. 무슨 말이냐 하면, 잘못된 버전이 롤아웃되서 클라이언트에게 전달되는 것을 최소화 하는 전략이다. 일단 이렇게 포징하면 하나만 생성된 상태에서 체크할 수 있고 롤아웃을 계속 할지 롤백할지 선택할 수 있다.</p>
+<p>롤아웃 재개</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k rollout resume deployment kubia</code></pre></div>
+<p>잘못된 버전의 롤아웃 방지</p>
+<p>minReadySeconds속성은 파드를 사용 가능한 것으로 취급하기 전에 새로 만든 파드를 준비할 시간을 지정한다. 파드가 사용가능할 때까지 롤아웃 프로세스가 계속되지 않는다. 파드가 준비된 후 쿠버네티스가 10초 동안 대기하도록 해 롤아웃 프로세스 속도를 늦출 수 있다. minReadySeconds 가 지나기 전에 새 파드가 제대로 작동하지 않고 레디니스 프로브가 실패하기 시작하면 새 버전의 롤아웃이 효과적으로 차단 된다.</p>
+<p>롤아웃 데드라인 설정</p>
+<p>롤아웃이 10분동안 진행되지 않으면 실패한 것으로 간주된다.</p>
+<p>ProgressDeadlineExceeded 조건이 표시된다.</p>
+<p>지금까지 레플리케이션 콘트롤러 , 레플리카 셋, 서비스의 노드포트, 로드발란서, 인그리스등을 따로 학습하고, 서비스 하에 파드 및 컨트롤러 제어를 간편하게 할 수 있는 deployment를 알아봤다.</p>
+<p>롤아웃 기능이 왜 필요 한지, 운영상 매우 민감한 이슈인 배포때 뼈저리게 느낄 수 있는데, 수시로 업데이트가 이루어지는 작금의 개발 시대에서는 이러한 부분에 대한 이해는 필수이다.</p>
+<ul>
+<li>
+<p>EKS에서 ingress ALB 로드 밸런서 컨트롤러 구축하기</p>
+<p>구축하는 방법은 사실 쉽다 그런데 설명은 불친절했다.</p>
+<p><a href="https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/alb-ingress.html">Amazon EKS의 ALB 수신 컨트롤러</a></p>
+<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html">Amazon EKS cluster IAM role</a></p>
+<p><a href="https://kubernetes-sigs.github.io/aws-alb-ingress-controller/guide/controller/setup/">Setup - AWS ALB Ingress Controller</a></p>
+<p>클러스터에 IAM OIDC 공급자를 생성하고 클러스터에 연결해야한다. (쉽게 말해 권한을 줘야만 된다)</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">eksctl utils associate-iam-oidc-provider <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --region region-code <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --cluster prod <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --approve</code></pre></div>
+<p>정책정보를 다운받아서 내 AWS 에 생성해야한다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> -o iam-policy.json <span class="token operator">&lt;</span>https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.8/docs/examples/iam-policy.json<span class="token operator">></span></code></pre></div>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">aws iam create-policy <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --policy-name ALBIngressControllerIAMPolicy <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --policy-document file://iam-policy.json</code></pre></div>
+<p>생성 후에는 화면에 만들어진 정책의 넘버가 표기 된다. 이를 잘 기록해둬야 한다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">eksctl create iamserviceaccount <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --region region-code <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --name alb-ingress-controller <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --namespace kube-system <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --cluster prod <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --attach-policy-arn arn:aws:iam::<span class="token string">'???'</span>:policy/ALBIngressControllerIAMPolicy <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --override-existing-serviceaccounts <span class="token punctuation">\</span><span class="token punctuation">\</span>
+    --approve</code></pre></div>
+<p>왜냐하면 방금 적은 넘버를 ’???’ 자리에 입력해야 하므로!</p>
+<p>이제 실제로 인그레스를 만드는 작업을 진행할텐데 그전에 미리 해야 할 일이 있다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">eksctl get cluster 생성한 클러스터 명 </code></pre></div>
+<p>위 명령어를 수행하면 클러스터의 간략한 정보가 나오는데 이때 vpc-id와 subnet은 따로 메모해둔다.</p>
+<p>rbac-role도 주입하고</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl apply -f <span class="token operator">&lt;</span>https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.8/docs/examples/rbac-role.yaml<span class="token operator">></span></code></pre></div>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">kubectl apply -f <span class="token operator">&lt;</span>https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.8/docs/examples/alb-ingress-controller.yaml<span class="token operator">></span></code></pre></div>
+<p>위의 원격지 yaml을 바로 실행하고 후에 수정하는 방법과 저 파일을 wget해서 수정해서 apply하든 편하게 하면 되는데 중요한건</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">spec:
+      containers:
+      - args:
+        - --ingress-class<span class="token operator">=</span>alb
+        - --cluster-name<span class="token operator">=</span>your cluster name
+        - --aws-vpc-id<span class="token operator">=</span>your vpc-id
+        - --aws-region<span class="token operator">=</span>your region-code</code></pre></div>
+<p>위의 스펙 명시는 되야 한다는 것이다.</p>
+<p>나는 위의 원격지파일을 wget으로 다운받아서 수정후 아래의 수정사항을 반영함.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">k apply -f alb-ingress-controller.yaml</code></pre></div>
+<p>수정 사항을 반영하고, k get pod —all-namespaces 이나, kubectl get pods -n kube-system 같이 하면 인그레스 컨트롤러가 러닝되는걸 확인할 수 있습니다.</p>
+</li>
+</ul>
+<h3 id="kubectl-cheatsheet" style="position:relative;"><a href="#kubectl-cheatsheet" aria-label="kubectl cheatsheet permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>kubectl cheatsheet</h3>
+<p><a href="https://kubernetes.io/ko/docs/reference/kubectl/cheatsheet/">kubectl 치트 시트</a></p>
+<ul>
+<li>
+<p>EKS</p>
+<p>eks를 터미널에서 실행하려면 AWS계정에 AMI에서 progrmatic access 계정을 생성하고, 필요한 권한을 설정 해야한다.(생각보다 세부적으로 하려면 권한의 양이 많아서 일단, ADMIN(full access)으로 설정) 나중에는 한번 세부권한에 대해 알아보고 기록해보도록 하겠다.</p>
+<p>기본 설치에 대한 링크는 아래에서 확인!</p>
+<p><a href="https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/getting-started-eksctl.html">eksctl 시작하기</a></p>
+<p>클러스터를 생성하는 명령어</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">eksctl create cluster --name kubia --version <span class="token number">1.15</span> --region ap-northeast-2 
+<span class="token string">" 잠깐! 이대로 실행하면 과금폭탄의 진행이다. default로는 m5.large 스펙이 기동되기 때문이다."</span> 
+<span class="token string">"노드 스펙을 정하기위해 managed-nodegroup을 생성하는 법도 있지만 간단하게 스펙 옵션 값만 조정해도 된다."</span>
+eksctl create cluster --name kubia --version <span class="token number">1.15</span> --region ap-northeast-2 --node-type t2.micro --nodes <span class="token number">3</span> --nodes-max <span class="token number">5</span> </code></pre></div>
+<p>위와 같이 옵션을 추가해서 실행하면 목표하는 스펙(ex. t2.micro)으로 워커노드를 기동할 수 있다.</p>
+<p>기타 명령어 들은 <code class="language-text">kubectl</code> 로 기동하는 부분이니 실습과 다를게 없다. 만약 서버 스펙상 pods가 생성이 안되고 pending 된다고 할때는</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">eksctl get nodegroup로 노드그룹 명을 조회
+eksctl scale nodegroup --cluster kubia --nodes <span class="token string">'원하는 개수'</span> --name <span class="token string">'조회한 노드그룹 명'</span>
+<span class="token string">" 만약 max-capacity가 늘리려는 노드보다 부족할 경우 --node-max '원하는 최대 노드 수' 를 설정한다."</span> </code></pre></div>
+<p>클러스터를 삭제하려면</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">eksctl delete cluster --name kubia</code></pre></div>
+<p>등이 있겠다. 이 정도의 선수 지식 이면 일단 aws eks를 터미널에서 시작하는데 불편함은 없을 것이다. 세부적인 설정 변경은 cli상에서 커맨드에 —help 옵션을 입력해서 알아보도록 하자.</p>
+<p>추가 사항! gke는 그냥될것 같은데 aws의 EKS는 워커노드로 EC2 인스턴스를 노드 개수만큼 생성한다. 개별적 pod에 ssh접속하려면,</p>
+<p>ec2인증서를 등록하거나, 본인 PC 의 ssh 키를 등록해줘야한다. (openssh 로 생성) ./ id_rsa.key 같은것. 근데 그냥 본인 EC2에 생성한 키페어를 개인적으로는 추천!</p>
+<p>그렇게 작성한 커맨드 옵션은 다음과 같다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">eksctl create cluster --name kubia --version <span class="token number">1.15</span> --region ap-northeast-2 --node-type t2.micro --nodes-max <span class="token number">5</span> --nodes <span class="token number">4</span> --ssh-access --ssh-public-key<span class="token operator">=</span><span class="token string">'본인 ec2 인증서 키 이름'</span></code></pre></div>
+<p>위와 같이 클러스터 생성 혹은 노드 그룹 생성시 설정해줘야 해당 EC2 인스턴스 생성시 인증서가 포함되고, 나중에 pod에 ssh 접속시 접속이 가능하다!</p>
+<p>여러가지 쿠버네티스 환경을 쓸때 전환방법</p>
+<p><strong>컨텍스트 나열</strong><code class="language-text">kubectl config get-contexts</code> <strong>컨텍스트 전환</strong><code class="language-text">kubectl config set current-contex MY-CONTEXT</code></p>
+</li>
+</ul></div><div class="social-share"><a class="resp-sharing-button__link" href="#" target="_blank" rel="noopener" aria-label="Share on Facebook"><div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"></path></svg></div><span class="service-label">Share on Facebook</span></div></a><a class="resp-sharing-button__link" href="#" rel="noopener" aria-label="Share on Twitter"><div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"></path></svg></div><span class="service-label">Share on Twitter</span></div></a></div><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEzUlEQVQ4yxWRa0xTBxiGj7SnPee0PZfe6QWlIIpCKx1CKVMEB1VRNwREEdIWSsulVFtcoeWAVKGAXFaBcgsOW5jgEJmDsWmibGqmG6LDxc1l6lxQl3jbfixmW7a4Q/L9+P487/N++YBTZ851fr5o9k1emv/xzZv/rt+8NzY+8+vtm/NT5z8JTl6a/qJh7PLxuYevlpb++vsf0j8lCYuqd1tnPx2dnhgGyLYOU9/F7e7R2fl7CzfuFBvJ/uqa1vx9VRk73blZ7abcmorKoSv3ps6eG5+cNdpbZPLwjo6GyYnhs+NDwMmRiabx6wmmnoqeq+3eAV3cjvrsXJtWa0lJMSZpCtTqRIzwkt66ukaPzVFXXBKlUPj7OkZGhwLBAWBbrnVrQWPGwUBmhX93os7yXqErJz+VK7LFKTPDFMl8eQyE5b6TUWCstGTne20V2qSN/oET/YM9/QPdwFs6o36/2+idsXx4NSkq7khldYOpNAMTdGUk1yQo00RSEUDT7903GQz0tnXXOBy6ban+we4Pejp9XR1Anq2pv29iZPrG5LXvCvZk97T3jno8QdOuKdOOr917nckbFAhK1h65MHP+8sy0oSA/K2dXZ5+vpaOl3usBHMeHLy7cv/3geYtviKxxXbsyf/fyhVsn7HPkgbm6wq6dmkpdakNzp8NhJ48eSUlLKyrVe9ubj7Ufs1SUA97e4De37sxdXwycmT3e2ur3D40GPl7otj8NVN9uK/uyPJ10upqGxlzN3bVlVQnro23ug7VNdZ7Wo7rMTOCn+7/8+/qP35+9ePXb06W7C3cX5r9fXPz2ZP0t557T6YktOrW9sc//0Vijz9dWad2wNtJ5zFXtqSEbyTi1Cnj98smLxw+fPX7wcunnP58/evHk0emR4GddrptkTk+qulijDAwHJ6ZOjY33l5SZNmrjXE3uw3WH3Q3O6DUK4JDVlJ+XZTEbDfpSg96akrydx5YX6zRfNRs8uoRd0YoE5YZya5l/sCuvMG/P/nerah0Ot816yLxKwgPqSZfz/Sq7o1YaGsNH5RJULsPDuBC+caVMu1IuhFE2iIUKI2NiNQdKjKWHy4rK9ZVOc8qWxDABBvT1dlvLrZs0W1GQCOPJpYQ8lCPmw1wkhIWsYBFMTIAQYo5YiMpXR8buL9qba8jWl+5ThMuiwoRA1wnfIZuDQ+cIEJ4YlUhwqZgtFMC4ACYojA8vj5DFlfJlKIJvTnt7d7YuXZccysdiIySA1+tt9DTRARofIgQsgZAtFLJ4PAjnQSgfxiiS2oUsgsfC2SAzXqPemq5RxoTLhIQyUgaUmM2GQgMI0AgGm0sJ2TxKSDBQHGRRPEUKEC4Fs2gQhwGpE1SbN8VFrhSGi7mx4SKgqFifk5XNBECMibBBhIdgOAPB6NByFhPlLvtRDshAQmgYDCUmqrQapUyER8t566mbzRZj6uZUCGBwGEwWCOMMFkqHcBAmmBTMoSJQOsykhXBCaHwOR5OkileukRIcilwrEQCuWnu8SiWiXkJnwDSQy1xuS3UmGAgBLg9EY8B0GgKEiPhcjVa1brVMhqPrZOIIIQ9obnV5nCU/zPgCZJEYYuNUcwilnFQKReI0JkwHUZDJAlZIRQJN/PoIGW8Vga8RC1Zxsf8BWqqTRPHp5RsAAAAASUVORK5CYII=" alt="[ulfrid]" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/238463c442b24ddacdc96d7c355c4277/e5b88/profile.png 1x,
+/static/238463c442b24ddacdc96d7c355c4277/e7bd6/profile.png 1.5x,
+/static/238463c442b24ddacdc96d7c355c4277/a12fc/profile.png 2x" /><img loading="lazy" width="72" height="72" srcset="/static/238463c442b24ddacdc96d7c355c4277/e5b88/profile.png 1x,
+/static/238463c442b24ddacdc96d7c355c4277/e7bd6/profile.png 1.5x,
+/static/238463c442b24ddacdc96d7c355c4277/a12fc/profile.png 2x" src="/static/238463c442b24ddacdc96d7c355c4277/e5b88/profile.png" alt="[ulfrid]" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class="author-name"><span class="author-name-prefix">Written by</span><a class="author-name-content" href="/about"><span>@<!-- -->[ulfrid]</span></a><div class="author-introduction">기술 블로그 및 공부 정리</div><p class="author-socials"><a href="https://github.com/ulfrid">GitHub</a></p></div></div></div></div><ul class="navigator"><li><a rel="prev" href="/development/react/">← <!-- -->React 정리</a></li><li></li></ul><div><div id="disqus_thread"></div></div><footer class="footer">©<a href="https://github.com/ulfrid">ulfrid</a>, Built with<!-- --> <a href="https://github.com/JaeYeopHan/gatsby-starter-bee">Gatsby-starter-bee</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/devops/kubernetes/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-31bd25ec256a9117a66a.js"],"app":["/app-b5d5590d1ae2e2c1dbd2.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-15096bed533ed0ff8b58.js"],"component---src-pages-404-js":["/component---src-pages-404-js-64b4b10bec6f94406ee7.js"],"component---src-pages-about-js":["/component---src-pages-about-js-7c98c55521c7b23b4710.js"],"component---src-pages-index-js":["/component---src-pages-index-js-23e4d33b5477a553dcb1.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-319b7d624799590c3221.js"]};/*]]>*/</script><script src="/polyfill-31bd25ec256a9117a66a.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-319b7d624799590c3221.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-dac198b907be935f6361.js" async=""></script><script src="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-d44b6b4c4a028d914d9b.js" async=""></script><script src="/133dca110fad53aa1997b630637bbac3134a2d14-053e3a1c7a3e8968b985.js" async=""></script><script src="/styles-e9d24b1846c7d6eb9685.js" async=""></script><script src="/app-b5d5590d1ae2e2c1dbd2.js" async=""></script><script src="/framework-305b3707783ccc9d7ca6.js" async=""></script><script src="/webpack-runtime-f4b5444aca52378c1927.js" async=""></script></body></html>
